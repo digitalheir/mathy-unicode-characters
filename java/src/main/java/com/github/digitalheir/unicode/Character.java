@@ -21,30 +21,32 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.util.Objects.isNull;
+
 
 /**
- * 
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "afii",
-    "latex",
-    "varlatex",
-    "mathlatex",
-    "elsevier",
-    "ams",
-    "aps",
-    "acs",
-    "aip",
-    "ieee",
-    "wolfram",
-    "springer",
-    "entity",
-    "font",
-    "comment",
-    "surrogate",
-    "bmp",
-    "description"
+        "afii",
+        "latex",
+        "varlatex",
+        "mathlatex",
+        "elsevier",
+        "ams",
+        "aps",
+        "acs",
+        "aip",
+        "ieee",
+        "wolfram",
+        "springer",
+        "entity",
+        "font",
+        "comment",
+        "surrogate",
+        "bmp",
+        "description"
 })
 @XmlRootElement(name = "character")
 public class Character {
@@ -95,11 +97,9 @@ public class Character {
 
     /**
      * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getId() {
         return id;
@@ -107,11 +107,9 @@ public class Character {
 
     /**
      * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setId(String value) {
         this.id = value;
@@ -119,11 +117,9 @@ public class Character {
 
     /**
      * Gets the value of the dec property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDec() {
         if (dec == null) {
@@ -135,11 +131,9 @@ public class Character {
 
     /**
      * Sets the value of the dec property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDec(String value) {
         this.dec = value;
@@ -147,11 +141,9 @@ public class Character {
 
     /**
      * Gets the value of the mode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getMode() {
         if (mode == null) {
@@ -163,11 +155,9 @@ public class Character {
 
     /**
      * Sets the value of the mode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setMode(String value) {
         this.mode = value;
@@ -175,11 +165,9 @@ public class Character {
 
     /**
      * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getType() {
         if (type == null) {
@@ -191,11 +179,9 @@ public class Character {
 
     /**
      * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setType(String value) {
         this.type = value;
@@ -203,11 +189,9 @@ public class Character {
 
     /**
      * Gets the value of the image property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getImage() {
         return image;
@@ -215,11 +199,9 @@ public class Character {
 
     /**
      * Sets the value of the image property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setImage(String value) {
         this.image = value;
@@ -227,11 +209,9 @@ public class Character {
 
     /**
      * Gets the value of the afii property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAfii() {
         return afii;
@@ -239,11 +219,9 @@ public class Character {
 
     /**
      * Sets the value of the afii property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAfii(String value) {
         this.afii = value;
@@ -251,11 +229,9 @@ public class Character {
 
     /**
      * Gets the value of the latex property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getLatex() {
         return latex;
@@ -263,11 +239,9 @@ public class Character {
 
     /**
      * Sets the value of the latex property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setLatex(String value) {
         this.latex = value;
@@ -275,11 +249,9 @@ public class Character {
 
     /**
      * Gets the value of the varlatex property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getVarlatex() {
         return varlatex;
@@ -287,11 +259,9 @@ public class Character {
 
     /**
      * Sets the value of the varlatex property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setVarlatex(String value) {
         this.varlatex = value;
@@ -299,11 +269,9 @@ public class Character {
 
     /**
      * Gets the value of the mathlatex property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getMathlatex() {
         return mathlatex;
@@ -311,11 +279,9 @@ public class Character {
 
     /**
      * Sets the value of the mathlatex property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setMathlatex(String value) {
         this.mathlatex = value;
@@ -323,11 +289,9 @@ public class Character {
 
     /**
      * Gets the value of the elsevier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Elsevier }
-     *     
+     *
+     * @return possible object is
+     * {@link Elsevier }
      */
     public Elsevier getElsevier() {
         return elsevier;
@@ -335,11 +299,9 @@ public class Character {
 
     /**
      * Sets the value of the elsevier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Elsevier }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Elsevier }
      */
     public void setElsevier(Elsevier value) {
         this.elsevier = value;
@@ -347,11 +309,9 @@ public class Character {
 
     /**
      * Gets the value of the ams property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAMS() {
         return ams;
@@ -359,11 +319,9 @@ public class Character {
 
     /**
      * Sets the value of the ams property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAMS(String value) {
         this.ams = value;
@@ -371,11 +329,9 @@ public class Character {
 
     /**
      * Gets the value of the aps property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAPS() {
         return aps;
@@ -383,11 +339,9 @@ public class Character {
 
     /**
      * Sets the value of the aps property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAPS(String value) {
         this.aps = value;
@@ -395,11 +349,9 @@ public class Character {
 
     /**
      * Gets the value of the acs property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getACS() {
         return acs;
@@ -407,11 +359,9 @@ public class Character {
 
     /**
      * Sets the value of the acs property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setACS(String value) {
         this.acs = value;
@@ -419,11 +369,9 @@ public class Character {
 
     /**
      * Gets the value of the aip property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAIP() {
         return aip;
@@ -431,11 +379,9 @@ public class Character {
 
     /**
      * Sets the value of the aip property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAIP(String value) {
         this.aip = value;
@@ -443,11 +389,9 @@ public class Character {
 
     /**
      * Gets the value of the ieee property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getIEEE() {
         return ieee;
@@ -455,11 +399,9 @@ public class Character {
 
     /**
      * Sets the value of the ieee property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setIEEE(String value) {
         this.ieee = value;
@@ -467,11 +409,9 @@ public class Character {
 
     /**
      * Gets the value of the wolfram property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Wolfram }
-     *     
+     *
+     * @return possible object is
+     * {@link Wolfram }
      */
     public Wolfram getWolfram() {
         return wolfram;
@@ -479,11 +419,9 @@ public class Character {
 
     /**
      * Sets the value of the wolfram property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Wolfram }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Wolfram }
      */
     public void setWolfram(Wolfram value) {
         this.wolfram = value;
@@ -491,11 +429,9 @@ public class Character {
 
     /**
      * Gets the value of the springer property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSpringer() {
         return springer;
@@ -503,11 +439,9 @@ public class Character {
 
     /**
      * Sets the value of the springer property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSpringer(String value) {
         this.springer = value;
@@ -515,25 +449,23 @@ public class Character {
 
     /**
      * Gets the value of the entity property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the entity property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEntity().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Entity }
-     * 
-     * 
      */
     public List<Entity> getEntity() {
         if (entity == null) {
@@ -544,25 +476,23 @@ public class Character {
 
     /**
      * Gets the value of the font property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the font property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getFont().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Font }
-     * 
-     * 
      */
     public List<Font> getFont() {
         if (font == null) {
@@ -573,11 +503,9 @@ public class Character {
 
     /**
      * Gets the value of the comment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getComment() {
         return comment;
@@ -585,11 +513,9 @@ public class Character {
 
     /**
      * Sets the value of the comment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setComment(String value) {
         this.comment = value;
@@ -597,11 +523,9 @@ public class Character {
 
     /**
      * Gets the value of the surrogate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Surrogate }
-     *     
+     *
+     * @return possible object is
+     * {@link Surrogate }
      */
     public Surrogate getSurrogate() {
         return surrogate;
@@ -609,11 +533,9 @@ public class Character {
 
     /**
      * Sets the value of the surrogate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Surrogate }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Surrogate }
      */
     public void setSurrogate(Surrogate value) {
         this.surrogate = value;
@@ -621,11 +543,9 @@ public class Character {
 
     /**
      * Gets the value of the bmp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Bmp }
-     *     
+     *
+     * @return possible object is
+     * {@link Bmp }
      */
     public Bmp getBmp() {
         return bmp;
@@ -633,11 +553,9 @@ public class Character {
 
     /**
      * Sets the value of the bmp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Bmp }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Bmp }
      */
     public void setBmp(Bmp value) {
         this.bmp = value;
@@ -645,11 +563,9 @@ public class Character {
 
     /**
      * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Description }
-     *     
+     *
+     * @return possible object is
+     * {@link Description }
      */
     public Description getDescription() {
         return description;
@@ -657,14 +573,15 @@ public class Character {
 
     /**
      * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Description }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Description }
      */
     public void setDescription(Description value) {
         this.description = value;
     }
 
+    public Object getNormalizedWolfram() {
+        return isNull(wolfram.getId()) ? wolfram : wolfram.getvalue();
+    }
 }
