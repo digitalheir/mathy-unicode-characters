@@ -3,3 +3,5 @@ node_modules/
 java/target/
 *.iml
 .idea/
+ts-compiled/
+*.log
