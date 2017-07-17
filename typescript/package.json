@@ -1,0 +1,26 @@
+{
+  "name": "mathy-unicode-characters",
+  "version": "1.0.0",
+  "description": "JavaScript / TypeScript utility to translate mathy Unicode characters to LaTeX, Mathematica or Wolfram",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/digitalheir/mathy-unicode-characters.git"
+  },
+  "keywords": [
+    "unicode"
+  ],
+  "author": "Maarten Trompper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalheir/mathy-unicode-characters/issues"
+  },
+  "homepage": "https://github.com/digitalheir/mathy-unicode-characters#readme",
+  "devDependencies": {
+    "ts-node": "^3.2.0",
+    "typescript": "^2.4.1"
+  }
+}
