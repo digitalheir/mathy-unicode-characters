@@ -31,7 +31,7 @@ export interface SurrogateRef {
 
 export interface Font {
     name: string;
-    post: string; // TODO number
+    post: number;
 }
 export interface BmpEntity {
 

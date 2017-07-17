@@ -1,19 +1,15 @@
 package com.github.digitalheir.simple;
 
-import com.github.digitalheir.unicode.Bmp;
-import com.github.digitalheir.unicode.Description;
-import com.github.digitalheir.unicode.Elsevier;
-import com.github.digitalheir.unicode.Entity;
-import com.github.digitalheir.unicode.Font;
-import com.github.digitalheir.unicode.Surrogate;
-import com.github.digitalheir.unicode.Wolfram;
+import com.github.digitalheir.unicode.*;
 
 import java.util.List;
+import java.util.stream.Stream;
 
+import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 import static java.util.Objects.requireNonNull;
 
 public class UnicodeCharacter {
-    public final String id;
     // number | [number] | [number, number] | [number, number, number]
     public final Object dec;
 
@@ -30,39 +26,39 @@ public class UnicodeCharacter {
     public final String acs;
     public final String aip;
     public final String ieee;
-    public final Wolfram wolfram;
+    // string | (IdHaving & ValueHaving)
+    public final Object wolfram;
     public final String springer;
     public final List<Entity> entity;
-    public final List<Font> font;
+    public final Object font;
     public final String comment;
     public final Surrogate surrogate;
     public final Bmp bmp;
-    public final Description description;
+    public final Object description;
 
-    public UnicodeCharacter(String id,
-                            Object dec,
-                            String mode,
-                            String type,
-                            String image,
-                            String afii,
-                            String latex,
-                            String varlatex,
-                            String mathlatex,
-                            Elsevier elsevier,
-                            String ams,
-                            String aps,
-                            String acs,
-                            String aip,
-                            String ieee,
-                            Wolfram wolfram,
-                            String springer,
-                            List<Entity> entity,
-                            List<Font> font,
-                            String comment,
-                            Surrogate surrogate,
-                            Bmp bmp,
-                            Description description) {
-        this.id = requireNonNull(id);
+    public UnicodeCharacter(
+            Object dec,
+            String mode,
+            String type,
+            String image,
+            String afii,
+            String latex,
+            String varlatex,
+            String mathlatex,
+            Elsevier elsevier,
+            String ams,
+            String aps,
+            String acs,
+            String aip,
+            String ieee,
+            Wolfram wolfram,
+            String springer,
+            List<Entity> entity,
+            List<Font> font,
+            String comment,
+            Surrogate surrogate,
+            Bmp bmp,
+            Description description) {
         this.dec = requireNonNull(dec);
         this.mode = mode;
         this.type = type;
@@ -77,13 +73,46 @@ public class UnicodeCharacter {
         this.acs = (acs);
         this.aip = (aip);
         this.ieee = (ieee);
-        this.wolfram = (wolfram);
+        this.wolfram = nonNull(wolfram) && isNull(wolfram.getId()) ? wolfram.getvalue() : wolfram;
         this.springer = (springer);
         this.entity = (entity);
-        this.font = (font);
+        this.font = (font != null && font.size() == 1 ? font.get(0) : font);
         this.comment = (comment);
         this.surrogate = (surrogate);
         this.bmp = (bmp);
-        this.description = requireNonNull(description);
+        requireNonNull(description);
+        this.description = isNull(description.getUnicode()) ? description.getvalue() : description;
+    }
+
+    public UnicodeCharacter(com.github.digitalheir.unicode.Character c) {
+        this(
+                c.dec.contains("-") ?
+                        Stream.of(c.dec.split("-"))
+                                .mapToInt(Integer::parseInt)
+                                .toArray()
+                        : new Integer(c.dec),
+
+                c.mode,
+                c.type,
+                c.image,
+                c.afii,
+                c.latex,
+                c.varlatex,
+                c.mathlatex,
+                c.elsevier,
+                c.ams,
+                c.aps,
+                c.acs,
+                c.aip,
+                c.ieee,
+                c.wolfram,
+                c.springer,
+                c.entity,
+                c.font,
+                c.comment,
+                c.surrogate,
+                c.bmp,
+                c.description
+        );
     }
 }

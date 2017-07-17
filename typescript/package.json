@@ -4,6 +4,7 @@
   "description": "JavaScript / TypeScript utility to translate mathy Unicode characters to LaTeX, Mathematica or Wolfram",
   "main": "index.js",
   "scripts": {
+    "build:ts": "tsc",
     "test": "mocha"
   },
   "repository": {

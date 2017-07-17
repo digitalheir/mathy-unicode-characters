@@ -1,4 +1,4 @@
-import {characters} from "./characters";
+import {characters} from "./charlist";
 import {groups} from "./groups";
 import {mathvariants} from "./mathvariants";
 
