@@ -44,8 +44,46 @@ function isString(x: any): x is string {
 
 const StartingU = /^U/;
 
+const fromCodePoint = function (...argz: (string | number)[]) {
+    const MAX_SIZE = 0x4000;
+    const codeUnits = [];
+    let highSurrogate;
+    let lowSurrogate;
+    let index = -1;
+    const length = arguments.length;
+    if (!length) {
+        return "";
+    }
+    let result = "";
+    while (++index < length) {
+        let codePoint: number = Number(arguments[index]);
+        if (
+            !isFinite(codePoint) ||       // `NaN`, `+Infinity`, or `-Infinity`
+            codePoint < 0 ||              // not a valid Unicode code point
+            codePoint > 0x10FFFF ||       // not a valid Unicode code point
+            Math.floor(codePoint) != codePoint // not an integer
+        ) {
+            throw RangeError("Invalid code point: " + codePoint);
+        }
+        if (codePoint <= 0xFFFF) { // BMP code point
+            codeUnits.push(codePoint);
+        } else { // Astral code point; split in surrogate halves
+            // http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+            codePoint -= 0x10000;
+            highSurrogate = (codePoint >> 10) + 0xD800;
+            lowSurrogate = (codePoint % 0x400) + 0xDC00;
+            codeUnits.push(highSurrogate, lowSurrogate);
+        }
+        if (index + 1 == length || codeUnits.length > MAX_SIZE) {
+            result += String.fromCharCode.apply(undefined, codeUnits);
+            codeUnits.length = 0;
+        }
+    }
+    return result;
+};
+
 function getAsString(hexaDecimals: number[]): string {
-    return String.fromCharCode(
+    return fromCodePoint(
         ...hexaDecimals
     );
 }
@@ -98,6 +136,8 @@ export const ListRow: StatelessComponent<{ unicodeId: string }> = ({unicodeId}) 
     ;
 
 
+    const description = unicode2description[unicodeId as Unicode2description];
+
     return <li
         data-decimal={decimal}
         data-image={imageNone}
@@ -106,31 +146,45 @@ export const ListRow: StatelessComponent<{ unicodeId: string }> = ({unicodeId}) 
     >
         <div className="unicode-character">{getAsString(hexaDecimals)}</div>
         <div className="unicode-character-codepoint">{unicodeId.replace(StartingU, "U+")}</div>
-        {
-            unicode2description[unicodeId as Unicode2description] || ""
-        }
-        {
-            latex
-                ? <div className="unicode-character-row-latex">{latex}</div>
-                : ""
-        }
-        {aip ? <div className="unicode-character-row-aip">{aip}</div> : ""}
-        {acs ? <div className="unicode-character-row-acs">{acs}</div> : ""}
-        {afii ? <div className="unicode-character-row-afii">{afii}</div> : ""}
-        {ams ? <div className="unicode-character-row-ams">{ams}</div> : ""}
-        {aps ? <div className="unicode-character-row-aps">{aps}</div> : ""}
-        {bmp ? <div className="unicode-character-row-bmp">{bmp}</div> : ""}
-        {elsevierDesc ? <div className="unicode-character-row-elsevierDesc">{elsevierDesc}</div> : ""}
-        {ieee ? <div className="unicode-character-row-ieee">{ieee}</div> : ""}
-        {mathlatex ? <div className="unicode-character-row-mathlatex">{mathlatex}</div> : ""}
-        {mode ? <div className="unicode-character-row-mode">{mode}</div> : ""}
-        {springer ? <div className="unicode-character-row-springer">{springer}</div> : ""}
-        {type ? <div className="unicode-character-row-type">{type}</div> : ""}
-        {varlatex ? <div className="unicode-character-row-varlatex">{varlatex}</div> : ""}
-        {wolfram ? <div className="unicode-character-row-wolfram">{isString(wolfram)
-            ? wolfram
-            : <span><span>{wolfram.value}</span>{" ("}<span>{wolfram.id}</span>{")"}</span>
-        }</div> : ""}
+
+        <dl>
+            {description ? <dt className="unicode-character-row-description-term">description</dt> : ""}
+            {description ? <dd className="unicode-character-row-description">{description}</dd> : ""}
+            {latex ? <dt className="unicode-character-row-latex-term">latex</dt> : ""}
+            {latex ? <dd className="unicode-character-row-latex">{latex}</dd> : ""}
+            {aip ? <dt className="unicode-character-row-aip-term">aip</dt> : ""}
+            {aip ? <dd className="unicode-character-row-aip">{aip}</dd> : ""}
+            {acs ? <dt className="unicode-character-row-acs-term">acs</dt> : ""}
+            {acs ? <dd className="unicode-character-row-acs">{acs}</dd> : ""}
+            {afii ? <dt className="unicode-character-row-afii-term">afii</dt> : ""}
+            {afii ? <dd className="unicode-character-row-afii">{afii}</dd> : ""}
+            {ams ? <dt className="unicode-character-row-ams-term">ams</dt> : ""}
+            {ams ? <dd className="unicode-character-row-ams">{ams}</dd> : ""}
+            {aps ? <dt className="unicode-character-row-aps-term">aps</dt> : ""}
+            {aps ? <dd className="unicode-character-row-aps">{aps}</dd> : ""}
+            {bmp ? <dt className="unicode-character-row-bmp-term">bmp</dt> : ""}
+            {bmp ? <dd className="unicode-character-row-bmp">{bmp}</dd> : ""}
+            {elsevierDesc ? <dt className="unicode-character-row-elsevierDesc-term">elsevier description</dt> : ""}
+            {elsevierDesc ? <dd className="unicode-character-row-elsevierDesc">{elsevierDesc}</dd> : ""}
+            {ieee ? <dt className="unicode-character-row-ieee-term">ieee</dt> : ""}
+            {ieee ? <dd className="unicode-character-row-ieee">{ieee}</dd> : ""}
+            {mathlatex ? <dt className="unicode-character-row-mathlatex-term">mathlatex</dt> : ""}
+            {mathlatex ? <dd className="unicode-character-row-mathlatex">{mathlatex}</dd> : ""}
+            {mode ? <dt className="unicode-character-row-mode-term">mode</dt> : ""}
+            {mode ? <dd className="unicode-character-row-mode">{mode}</dd> : ""}
+            {springer ? <dt className="unicode-character-row-springer-term">springer</dt> : ""}
+            {springer ? <dd className="unicode-character-row-springer">{springer}</dd> : ""}
+            {type ? <dt className="unicode-character-row-type-term">type</dt> : ""}
+            {type ? <dd className="unicode-character-row-type">{type}</dd> : ""}
+            {varlatex ? <dt className="unicode-character-row-varlatex-term">varlatex</dt> : ""}
+            {varlatex ? <dd className="unicode-character-row-varlatex">{varlatex}</dd> : ""}
+
+            {wolfram ? <dt className="unicode-character-row-wolfram-term">wolfram</dt> : ""}
+            {wolfram ? <dd className="unicode-character-row-wolfram">{isString(wolfram)
+                ? wolfram
+                : <span><span>{wolfram.value}</span>{" ("}<span>{wolfram.id}</span>{")"}</span>
+            }</dd> : ""}
+        </dl>
     </li>;
 };
 

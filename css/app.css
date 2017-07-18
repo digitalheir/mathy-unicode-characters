@@ -2,6 +2,33 @@ body {
     margin: 24px 48px;
 }
 
+.unicode-character-list dl {
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0
+}
+.unicode-character-list dt {
+    font-weight: bold;
+    float: left;
+    width: 25%;
+    padding: 0;
+    margin: 0
+}
+.unicode-character-list dd {
+    float: left;
+    width: 75%;
+    padding: 0;
+    margin: 0
+}
+
+.unicode-character-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .unicode-character-row {
     text-align: center;
 }
