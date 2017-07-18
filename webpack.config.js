@@ -1,4 +1,5 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 const plugins = [
     new CopyWebpackPlugin([
@@ -10,12 +11,23 @@ const plugins = [
         {
             from: "src/public"
         }
-    ])
+    ]),
+    new StaticSiteGeneratorPlugin({
+        entry: "renderStatic",
+        paths: [
+            '/'
+        ], locals: {
+            // Properties here are merged into `locals`
+            // passed to the exported render function
+            // greet: 'Hello'
+        }
+    })
 ];
 
 const config = {
     entry: {
-        app: __dirname + "/src/ts/app.tsx"
+        app: __dirname + "/src/ts/app.tsx",
+        renderStatic: __dirname + "/src/render.tsx"
     },
     devtool: "source-map",
     output: {
