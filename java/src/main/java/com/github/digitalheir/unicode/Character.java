@@ -8,6 +8,8 @@
 
 package com.github.digitalheir.unicode;
 
+import com.github.digitalheir.simple.SimpleSurrogate;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -22,6 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.Objects.isNull;
+import static java.util.stream.Stream.of;
 
 
 /**
@@ -29,559 +32,580 @@ import static java.util.Objects.isNull;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-        "afii",
-        "latex",
-        "varlatex",
-        "mathlatex",
-        "elsevier",
-        "ams",
-        "aps",
-        "acs",
-        "aip",
-        "ieee",
-        "wolfram",
-        "springer",
-        "entity",
-        "font",
-        "comment",
-        "surrogate",
-        "bmp",
-        "description"
+    "afii",
+    "latex",
+    "varlatex",
+    "mathlatex",
+    "elsevier",
+    "ams",
+    "aps",
+    "acs",
+    "aip",
+    "ieee",
+    "wolfram",
+    "springer",
+    "entity",
+    "font",
+    "comment",
+    "surrogate",
+    "bmp",
+    "description"
 })
 @XmlRootElement(name = "character")
 public class Character {
 
-    @XmlAttribute(name = "id", required = true)
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlID
-    public String id;
-    @XmlAttribute(name = "dec")
-    @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
-    public String dec;
-    @XmlAttribute(name = "mode")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    public String mode;
-    @XmlAttribute(name = "type")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    public String type;
-    @XmlAttribute(name = "image")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    public String image;
-    public String afii;
-    public String latex;
-    public String varlatex;
-    public String mathlatex;
-    @XmlElement(name = "Elsevier")
-    public Elsevier elsevier;
-    @XmlElement(name = "AMS")
-    public String ams;
-    @XmlElement(name = "APS")
-    public String aps;
-    @XmlElement(name = "ACS")
-    public String acs;
-    @XmlElement(name = "AIP")
-    public String aip;
-    @XmlElement(name = "IEEE")
-    public String ieee;
-    @XmlElement(name = "Wolfram")
-    public Wolfram wolfram;
-    @XmlElement(name = "Springer")
-    public String springer;
-    public List<Entity> entity;
-    public List<Font> font;
-    public String comment;
-    public Surrogate surrogate;
-    public Bmp bmp;
-    @XmlElement(required = true)
-    public Description description;
+  @XmlAttribute(name = "id", required = true)
+  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+  @XmlID
+  public String id;
+  @XmlAttribute(name = "dec")
+  @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
+  public String dec;
+  @XmlAttribute(name = "mode")
+  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+  public String mode;
+  @XmlAttribute(name = "type")
+  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+  public String type;
+  @XmlAttribute(name = "image")
+  @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+  public String image;
+  public String afii;
+  public String latex;
+  public String varlatex;
+  public String mathlatex;
+  @XmlElement(name = "Elsevier")
+  public Elsevier elsevier;
+  @XmlElement(name = "AMS")
+  public String ams;
+  @XmlElement(name = "APS")
+  public String aps;
+  @XmlElement(name = "ACS")
+  public String acs;
+  @XmlElement(name = "AIP")
+  public String aip;
+  @XmlElement(name = "IEEE")
+  public String ieee;
+  @XmlElement(name = "Wolfram")
+  public Wolfram wolfram;
+  @XmlElement(name = "Springer")
+  public String springer;
+  public List<Entity> entity;
+  public List<Font> font;
+  public String comment;
+  public Surrogate surrogate;
+  public Bmp bmp;
+  @XmlElement(required = true)
+  public Description description;
 
-    /**
-     * Gets the value of the id property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getId() {
-        return id;
-    }
+  /**
+   * Gets the value of the id property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getId() {
+    return id;
+  }
 
-    /**
-     * Sets the value of the id property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+  /**
+   * Sets the value of the id property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setId(String value) {
+    this.id = value;
+  }
 
-    /**
-     * Gets the value of the dec property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getDec() {
-        if (dec == null) {
-            return "0";
-        } else {
-            return dec;
-        }
+  /**
+   * Gets the value of the dec property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getDec() {
+    if (dec == null) {
+      return "0";
+    } else {
+      return dec;
     }
+  }
 
-    /**
-     * Sets the value of the dec property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setDec(String value) {
-        this.dec = value;
-    }
+  /**
+   * Sets the value of the dec property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setDec(String value) {
+    this.dec = value;
+  }
 
-    /**
-     * Gets the value of the mode property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getMode() {
-        if (mode == null) {
-            return "unknown";
-        } else {
-            return mode;
-        }
+  /**
+   * Gets the value of the mode property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getMode() {
+    if (mode == null) {
+      return "unknown";
+    } else {
+      return mode;
     }
+  }
 
-    /**
-     * Sets the value of the mode property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setMode(String value) {
-        this.mode = value;
-    }
+  /**
+   * Sets the value of the mode property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setMode(String value) {
+    this.mode = value;
+  }
 
-    /**
-     * Gets the value of the type property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getType() {
-        if (type == null) {
-            return "other";
-        } else {
-            return type;
-        }
+  /**
+   * Gets the value of the type property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getType() {
+    if (type == null) {
+      return "other";
+    } else {
+      return type;
     }
+  }
 
-    /**
-     * Sets the value of the type property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setType(String value) {
-        this.type = value;
-    }
+  /**
+   * Sets the value of the type property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setType(String value) {
+    this.type = value;
+  }
 
-    /**
-     * Gets the value of the image property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getImage() {
-        return image;
-    }
+  /**
+   * Gets the value of the image property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getImage() {
+    return image;
+  }
 
-    /**
-     * Sets the value of the image property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setImage(String value) {
-        this.image = value;
-    }
+  /**
+   * Sets the value of the image property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setImage(String value) {
+    this.image = value;
+  }
 
-    /**
-     * Gets the value of the afii property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getAfii() {
-        return afii;
-    }
+  /**
+   * Gets the value of the afii property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getAfii() {
+    return afii;
+  }
 
-    /**
-     * Sets the value of the afii property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setAfii(String value) {
-        this.afii = value;
-    }
+  /**
+   * Sets the value of the afii property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setAfii(String value) {
+    this.afii = value;
+  }
 
-    /**
-     * Gets the value of the latex property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getLatex() {
-        return latex;
-    }
+  /**
+   * Gets the value of the latex property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getLatex() {
+    return latex;
+  }
 
-    /**
-     * Sets the value of the latex property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setLatex(String value) {
-        this.latex = value;
-    }
+  /**
+   * Sets the value of the latex property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setLatex(String value) {
+    this.latex = value;
+  }
 
-    /**
-     * Gets the value of the varlatex property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getVarlatex() {
-        return varlatex;
-    }
+  /**
+   * Gets the value of the varlatex property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getVarlatex() {
+    return varlatex;
+  }
 
-    /**
-     * Sets the value of the varlatex property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setVarlatex(String value) {
-        this.varlatex = value;
-    }
+  /**
+   * Sets the value of the varlatex property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setVarlatex(String value) {
+    this.varlatex = value;
+  }
 
-    /**
-     * Gets the value of the mathlatex property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getMathlatex() {
-        return mathlatex;
-    }
+  /**
+   * Gets the value of the mathlatex property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getMathlatex() {
+    return mathlatex;
+  }
 
-    /**
-     * Sets the value of the mathlatex property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setMathlatex(String value) {
-        this.mathlatex = value;
-    }
+  /**
+   * Sets the value of the mathlatex property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setMathlatex(String value) {
+    this.mathlatex = value;
+  }
 
-    /**
-     * Gets the value of the elsevier property.
-     *
-     * @return possible object is
-     * {@link Elsevier }
-     */
-    public Elsevier getElsevier() {
-        return elsevier;
-    }
+  /**
+   * Gets the value of the elsevier property.
+   *
+   * @return possible object is
+   * {@link Elsevier }
+   */
+  public Elsevier getElsevier() {
+    return elsevier;
+  }
 
-    /**
-     * Sets the value of the elsevier property.
-     *
-     * @param value allowed object is
-     *              {@link Elsevier }
-     */
-    public void setElsevier(Elsevier value) {
-        this.elsevier = value;
-    }
+  /**
+   * Sets the value of the elsevier property.
+   *
+   * @param value allowed object is
+   *              {@link Elsevier }
+   */
+  public void setElsevier(Elsevier value) {
+    this.elsevier = value;
+  }
 
-    /**
-     * Gets the value of the ams property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getAMS() {
-        return ams;
-    }
+  /**
+   * Gets the value of the ams property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getAMS() {
+    return ams;
+  }
 
-    /**
-     * Sets the value of the ams property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setAMS(String value) {
-        this.ams = value;
-    }
+  /**
+   * Sets the value of the ams property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setAMS(String value) {
+    this.ams = value;
+  }
 
-    /**
-     * Gets the value of the aps property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getAPS() {
-        return aps;
-    }
+  /**
+   * Gets the value of the aps property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getAPS() {
+    return aps;
+  }
 
-    /**
-     * Sets the value of the aps property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setAPS(String value) {
-        this.aps = value;
-    }
+  /**
+   * Sets the value of the aps property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setAPS(String value) {
+    this.aps = value;
+  }
 
-    /**
-     * Gets the value of the acs property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getACS() {
-        return acs;
-    }
+  /**
+   * Gets the value of the acs property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getACS() {
+    return acs;
+  }
 
-    /**
-     * Sets the value of the acs property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setACS(String value) {
-        this.acs = value;
-    }
+  /**
+   * Sets the value of the acs property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setACS(String value) {
+    this.acs = value;
+  }
 
-    /**
-     * Gets the value of the aip property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getAIP() {
-        return aip;
-    }
+  /**
+   * Gets the value of the aip property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getAIP() {
+    return aip;
+  }
 
-    /**
-     * Sets the value of the aip property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setAIP(String value) {
-        this.aip = value;
-    }
+  /**
+   * Sets the value of the aip property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setAIP(String value) {
+    this.aip = value;
+  }
 
-    /**
-     * Gets the value of the ieee property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getIEEE() {
-        return ieee;
-    }
+  /**
+   * Gets the value of the ieee property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getIEEE() {
+    return ieee;
+  }
 
-    /**
-     * Sets the value of the ieee property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setIEEE(String value) {
-        this.ieee = value;
-    }
+  /**
+   * Sets the value of the ieee property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setIEEE(String value) {
+    this.ieee = value;
+  }
 
-    /**
-     * Gets the value of the wolfram property.
-     *
-     * @return possible object is
-     * {@link Wolfram }
-     */
-    public Wolfram getWolfram() {
-        return wolfram;
-    }
+  /**
+   * Gets the value of the wolfram property.
+   *
+   * @return possible object is
+   * {@link Wolfram }
+   */
+  public Wolfram getWolfram() {
+    return wolfram;
+  }
 
-    /**
-     * Sets the value of the wolfram property.
-     *
-     * @param value allowed object is
-     *              {@link Wolfram }
-     */
-    public void setWolfram(Wolfram value) {
-        this.wolfram = value;
-    }
+  /**
+   * Sets the value of the wolfram property.
+   *
+   * @param value allowed object is
+   *              {@link Wolfram }
+   */
+  public void setWolfram(Wolfram value) {
+    this.wolfram = value;
+  }
 
-    /**
-     * Gets the value of the springer property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getSpringer() {
-        return springer;
-    }
+  /**
+   * Gets the value of the springer property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getSpringer() {
+    return springer;
+  }
 
-    /**
-     * Sets the value of the springer property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setSpringer(String value) {
-        this.springer = value;
-    }
+  /**
+   * Sets the value of the springer property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setSpringer(String value) {
+    this.springer = value;
+  }
 
-    /**
-     * Gets the value of the entity property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the entity property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getEntity().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Entity }
-     */
-    public List<Entity> getEntity() {
-        if (entity == null) {
-            entity = new ArrayList<Entity>();
-        }
-        return this.entity;
+  /**
+   * Gets the value of the entity property.
+   * <p>
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the entity property.
+   * <p>
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getEntity().add(newItem);
+   * </pre>
+   * <p>
+   * <p>
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Entity }
+   */
+  public List<Entity> getEntity() {
+    if (entity == null) {
+      entity = new ArrayList<Entity>();
     }
+    return this.entity;
+  }
 
-    /**
-     * Gets the value of the font property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the font property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getFont().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Font }
-     */
-    public List<Font> getFont() {
-        if (font == null) {
-            font = new ArrayList<Font>();
-        }
-        return this.font;
+  /**
+   * Gets the value of the font property.
+   * <p>
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the font property.
+   * <p>
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getFont().add(newItem);
+   * </pre>
+   * <p>
+   * <p>
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Font }
+   */
+  public List<Font> getFont() {
+    if (font == null) {
+      font = new ArrayList<Font>();
     }
+    return this.font;
+  }
 
-    /**
-     * Gets the value of the comment property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getComment() {
-        return comment;
-    }
+  /**
+   * Gets the value of the comment property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getComment() {
+    return comment;
+  }
 
-    /**
-     * Sets the value of the comment property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setComment(String value) {
-        this.comment = value;
-    }
+  /**
+   * Sets the value of the comment property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setComment(String value) {
+    this.comment = value;
+  }
 
-    /**
-     * Gets the value of the surrogate property.
-     *
-     * @return possible object is
-     * {@link Surrogate }
-     */
-    public Surrogate getSurrogate() {
-        return surrogate;
-    }
+  /**
+   * Gets the value of the surrogate property.
+   *
+   * @return possible object is
+   * {@link Surrogate }
+   */
+  public Surrogate getSurrogate() {
+    return surrogate;
+  }
 
-    /**
-     * Sets the value of the surrogate property.
-     *
-     * @param value allowed object is
-     *              {@link Surrogate }
-     */
-    public void setSurrogate(Surrogate value) {
-        this.surrogate = value;
-    }
+  /**
+   * Sets the value of the surrogate property.
+   *
+   * @param value allowed object is
+   *              {@link Surrogate }
+   */
+  public void setSurrogate(Surrogate value) {
+    this.surrogate = value;
+  }
 
-    /**
-     * Gets the value of the bmp property.
-     *
-     * @return possible object is
-     * {@link Bmp }
-     */
-    public Bmp getBmp() {
-        return bmp;
-    }
+  /**
+   * Gets the value of the bmp property.
+   *
+   * @return possible object is
+   * {@link Bmp }
+   */
+  public Bmp getBmp() {
+    return bmp;
+  }
 
-    /**
-     * Sets the value of the bmp property.
-     *
-     * @param value allowed object is
-     *              {@link Bmp }
-     */
-    public void setBmp(Bmp value) {
-        this.bmp = value;
-    }
+  /**
+   * Sets the value of the bmp property.
+   *
+   * @param value allowed object is
+   *              {@link Bmp }
+   */
+  public void setBmp(Bmp value) {
+    this.bmp = value;
+  }
 
-    /**
-     * Gets the value of the description property.
-     *
-     * @return possible object is
-     * {@link Description }
-     */
-    public Description getDescription() {
-        return description;
-    }
+  /**
+   * Gets the value of the description property.
+   *
+   * @return possible object is
+   * {@link Description }
+   */
+  public Description getDescription() {
+    return description;
+  }
 
-    /**
-     * Sets the value of the description property.
-     *
-     * @param value allowed object is
-     *              {@link Description }
-     */
-    public void setDescription(Description value) {
-        this.description = value;
-    }
+  /**
+   * Sets the value of the description property.
+   *
+   * @param value allowed object is
+   *              {@link Description }
+   */
+  public void setDescription(Description value) {
+    this.description = value;
+  }
 
-    public Object getNormalizedWolfram() {
-        return isNull(wolfram.getId()) ? wolfram : wolfram.getvalue();
-    }
+  public Object getNormalizedWolfram() {
+    return isNull(wolfram.getId()) ? wolfram.getvalue() : wolfram;
+  }
+
+  public Object getNormalizedDec() {
+    return dec.contains("-")
+        ? of(dec.split("-"))
+        .mapToInt(Integer::parseInt)
+        .toArray()
+        : new Integer(dec)
+        ;
+  }
+
+  public SimpleSurrogate createSimpleSurrogate() {
+    return surrogate == null ? null : new SimpleSurrogate(surrogate);
+  }
+
+  public String getBmpRef() {
+    return bmp == null ? null : ((Character) bmp.getRef()).getId();
+  }
+
+  public Object getNormalizedDescription() {
+  return isNull(description.getUnicode()) ? description.getvalue() : description;
+  }
 }

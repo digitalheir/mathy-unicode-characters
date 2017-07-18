@@ -1,0 +1,11 @@
+/webpack.config.js
+/ts-compiled-webpack/
+*.map
+*.tgz
+/node_modules/
+/sources/
+/src/
+/tests/
+/deprecated/
+/*.min.js
+/*.min.js.*

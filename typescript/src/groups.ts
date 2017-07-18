@@ -70,3 +70,5 @@ export const groups = {
         "html4-symbol": true
     }
 };
+
+export type Group = keyof typeof groups;

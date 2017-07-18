@@ -8,20 +8,18 @@
 
 package com.github.digitalheir.simple;
 
-import com.github.digitalheir.unicode.Character;
 import com.github.digitalheir.unicode.Entitygroups;
 import com.github.digitalheir.unicode.Mathvariants;
 
-import java.util.List;
 import java.util.Map;
 
 public class Charlist {
 
     public final Entitygroups entitygroups;
     public final Mathvariants mathvariants;
-    public final Map<String, UnicodeCharacter> character;
+    public final Map<String, CharacterInformation> character;
 
-    public Charlist(Entitygroups entitygroups, Mathvariants mathvariants, Map<String, UnicodeCharacter> character) {
+    public Charlist(Entitygroups entitygroups, Mathvariants mathvariants, Map<String, CharacterInformation> character) {
         this.entitygroups = entitygroups;
         this.mathvariants = mathvariants;
         this.character = character;
