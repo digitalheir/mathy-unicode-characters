@@ -33,11 +33,11 @@ const StartingU = /^U/;
 
 export const DetailsRow: StatelessComponent<{
     name: string,
-    key: string,
+    keyName: string,
     value: string
-}> = ({name, key, value}) => {
+}> = ({name, keyName, value}) => {
     return <tr className={"unicode-character-row-" + name}>
-        <td>{key}</td>
+        <td>{keyName}</td>
         <td>{value}</td>
     </tr>;
 };
@@ -104,23 +104,24 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter }> = ({char}) 
 
         <table>
             <tbody>
-            {!!description ? <DetailsRow name="description" key={"description"} value={description}/> : ""}
-            {!!elsevierDesc ? <DetailsRow name="elsevierDesc" key={"elsevier description"} value={elsevierDesc}/> : ""}
-            {!!type ? <DetailsRow name="type" key={"type"} value={type}/> : ""}
-            {!!mode ? <DetailsRow name="mode" key={"mode"} value={mode}/> : ""}
-            {!!latex ? <DetailsRow name="latex" key={"latex"} value={latex}/> : ""}
-            {!!mathlatex ? <DetailsRow name="mathlatex" key={"mathlatex"} value={mathlatex}/> : ""}
-            {!!varlatex ? <DetailsRow name="varlatex" key={"varlatex"} value={varlatex}/> : ""}
-            {!!wolfram ? <DetailsRow name="wolfram" key={"wolfram"} value={wolfram}/> : ""}
-            {!!wolframId ? <DetailsRow name="wolframId" key={"wolfram id"} value={wolframId}/> : ""}
-            {!!aip ? <DetailsRow name="aip" key={"aip"} value={aip}/> : ""}
-            {!!acs ? <DetailsRow name="acs" key={"acs"} value={acs}/> : ""}
-            {!!afii ? <DetailsRow name="afii" key={"afii"} value={afii}/> : ""}
-            {!!ams ? <DetailsRow name="ams" key={"ams"} value={ams}/> : ""}
-            {!!aps ? <DetailsRow name="aps" key={"aps"} value={aps}/> : ""}
-            {!!bmp ? <DetailsRow name="bmp" key={"bmp"} value={bmp}/> : ""}
-            {!!ieee ? <DetailsRow name="ieee" key={"ieee"} value={ieee}/> : ""}
-            {!!springer ? <DetailsRow name="springer" key={"springer"} value={springer}/> : ""}
+            {!!description ? <DetailsRow name="description" keyName={"description"} value={description}/> : ""}
+            {!!elsevierDesc ?
+                <DetailsRow name="elsevierDesc" keyName={"elsevier description"} value={elsevierDesc}/> : ""}
+            {!!type ? <DetailsRow name="type" keyName={"type"} value={type}/> : ""}
+            {!!mode ? <DetailsRow name="mode" keyName={"mode"} value={mode}/> : ""}
+            {!!latex ? <DetailsRow name="latex" keyName={"latex"} value={latex}/> : ""}
+            {!!mathlatex ? <DetailsRow name="mathlatex" keyName={"mathlatex"} value={mathlatex}/> : ""}
+            {!!varlatex ? <DetailsRow name="varlatex" keyName={"varlatex"} value={varlatex}/> : ""}
+            {!!wolfram ? <DetailsRow name="wolfram" keyName={"wolfram"} value={wolfram}/> : ""}
+            {!!wolframId ? <DetailsRow name="wolframId" keyName={"wolfram id"} value={wolframId}/> : ""}
+            {!!aip ? <DetailsRow name="aip" keyName={"aip"} value={aip}/> : ""}
+            {!!acs ? <DetailsRow name="acs" keyName={"acs"} value={acs}/> : ""}
+            {!!afii ? <DetailsRow name="afii" keyName={"afii"} value={afii}/> : ""}
+            {!!ams ? <DetailsRow name="ams" keyName={"ams"} value={ams}/> : ""}
+            {!!aps ? <DetailsRow name="aps" keyName={"aps"} value={aps}/> : ""}
+            {!!bmp ? <DetailsRow name="bmp" keyName={"bmp"} value={bmp}/> : ""}
+            {!!ieee ? <DetailsRow name="ieee" keyName={"ieee"} value={ieee}/> : ""}
+            {!!springer ? <DetailsRow name="springer" keyName={"springer"} value={springer}/> : ""}
             </tbody>
         </table>
     </li>;
@@ -173,10 +174,12 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
     }
 
     render() {
+        let staticRender = this.props.staticRender;
         return <div>
 
             <input
-                disabled={this.props.staticRender}
+                placeholder={"search" + (staticRender ? " (loading)" : "")}
+                disabled={staticRender}
                 style={{
                     width: "100%",
                     margin: 0,
