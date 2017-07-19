@@ -1,3 +1,3 @@
-# latex-parser demo
+# mathy unicode characters demo
 
-Visit at https://digitalheir.github.io/latex-parser/
+Visit at https://digitalheir.github.io/mathy-unicode-characters/
