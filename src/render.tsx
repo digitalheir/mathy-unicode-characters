@@ -1,5 +1,5 @@
 import * as React from "react";
-import {renderToStaticMarkup} from "react-dom/server";
+import {renderToStaticMarkup, renderToString} from "react-dom/server";
 import {App} from "./ts/components/static/App";
 
 // Client render (optional):
@@ -25,5 +25,5 @@ function getComponent(path: string) {
 }
 
 export default (locals: any, callback: any) => {
-    callback(undefined, "<!DOCTYPE html>" + renderToStaticMarkup(getComponent(locals.path)));
+    callback(undefined, "<!DOCTYPE html>" + renderToString(getComponent(locals.path)));
 };
