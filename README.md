@@ -2,7 +2,7 @@
 
 This repository exists to make it easier to map between Unicode characters and various other markup languages.
 
-It is based on an XML file [published by W3C](https://www.w3.org/TR/unicode-xml/), withdrawn since 2016 but still tremendously useful. (XML mirrored [here](https://github.com/digitalheir/mathy-unicode-characters/blob/master/java/src/main/resources/unicode.xml).)
+It is based on an XML file [published by W3C](https://www.w3.org/TR/unicode-xml/). The document has been withdrawn since 2016 but is still tremendously useful. (XML mirrored [here](https://github.com/digitalheir/mathy-unicode-characters/blob/master/java/src/main/resources/unicode.xml).)
 
 ## Website
 The full list of Unicode characters and their conversions is searchable on [a related website](https://digitalheir.github.io/mathy-unicode-characters/).
