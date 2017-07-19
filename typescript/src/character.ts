@@ -93,7 +93,3 @@
 
 import {UnicodeIdentification} from "./characters/unicodeIdentification";
 import {decimal2unicode} from "./characters/decimal2unicode";
-
-export function getUnicodeIdentifierFromDecimal(...codepoints: number[]): UnicodeIdentification | undefined {
-    return <UnicodeIdentification>decimal2unicode[codepoints.join("-")];
-}

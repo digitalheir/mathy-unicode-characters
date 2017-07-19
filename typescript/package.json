@@ -1,6 +1,6 @@
 {
   "name": "mathy-unicode-characters",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "JavaScript / TypeScript utility to translate mathy Unicode characters to and from LaTeX, Mathematica, Wolfram, Elsevier Grid, etc.",
   "main": "index.js",
   "types": "index.d.ts",

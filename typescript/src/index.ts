@@ -12,7 +12,6 @@ export * from "./characters/mathlatex2unicode";
 export * from "./characters/mode2unicode";
 export * from "./characters/springer2unicode";
 export * from "./characters/type2unicode";
-export * from "./characters/unicode";
 export * from "./characters/unicode2acs";
 export * from "./characters/unicode2afii";
 export * from "./characters/unicode2aip";
@@ -36,8 +35,16 @@ export * from "./characters/unicodeIdentification";
 export * from "./characters/varlatex2unicode";
 export * from "./characters/wolfram2unicode";
 
+export * from "./character-lists/unicodeList_math";
+export * from "./character-lists/unicodeList_mixed";
+export * from "./character-lists/unicodeList_null";
+export * from "./character-lists/unicodeList_text";
+export * from "./character-lists/unicodeList_unknown";
+export * from "./character-lists/unicodeLists";
+
 
 export * from "./mathvariants";
 export * from "./charlist";
 export * from "./groups";
 export * from "./character";
+export * from "./UnicodeCharacter";
