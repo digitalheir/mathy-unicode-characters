@@ -11,7 +11,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    textalign: center;
+    text-align: center;
 }
 
 .unicode-character-list tr td:first-child {/*todo class */
@@ -38,7 +38,7 @@ body {
     margin: 2em 0 0 0;
 }
 
-.unicode-character-codepoint
+.unicode-character-codepoint {
     font-size: small;
 }
 
