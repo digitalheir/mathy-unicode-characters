@@ -2,7 +2,7 @@ body {
     margin: 24px 48px;
 }
 
-#mount-point input {
+#mount-point input {/*todo class */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     textalign: center;
 }
 
-.unicode-character-list tr td:first-child {
+.unicode-character-list tr td:first-child {/*todo class */
  font-weight: bold;   
 }
 
@@ -31,6 +31,15 @@ body {
 
 .unicode-character-row {
     text-align: center;
+}
+
+.unicode-character-row table {
+    display: inline-table;
+    margin: 2em 0 0 0;
+}
+
+.unicode-character-codepoint
+    font-size: small;
 }
 
 .unicode-character {
