@@ -108,7 +108,6 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
                            typeOf="ListItem"
         key={char._id}
         style={{display: visible ? "block" : "none"}}
-        data-decimal={JSON.stringify(decimal)}
         data-image={imageNone}
         id={char._id}
         className="unicode-character-row"
@@ -197,7 +196,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
         >
 
             <input
-                placeholder={"search" + (staticRender ? " (loading)" : "")}
+                placeholder={"filter by search term, LaTeX command, etc" + (staticRender ? " (loading)" : "")}
                 disabled={staticRender}
                 style={{
                     width: "100%",
