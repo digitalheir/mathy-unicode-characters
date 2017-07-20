@@ -23,6 +23,7 @@ body {
 }
 
 .unicode-character-list {
+    display: block;
     list-style: none;
     margin: 0;
     margin-top: 48px;
@@ -30,6 +31,7 @@ body {
 }
 
 .unicode-character-row {
+    display: block;
     text-align: center;
 }
 
