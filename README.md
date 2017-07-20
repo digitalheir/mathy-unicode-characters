@@ -9,12 +9,27 @@ The full list of Unicode characters and their conversions is searchable on [a re
 
 ![Example character from website](https://raw.githubusercontent.com/digitalheir/mathy-unicode-characters/gh-pages/img/less%20than%20nor%20equal%20to.png)
 
-## API
+## Usage
 The repository consists of multiple sub-projects for different languages:
 
 * [`java`](https://github.com/digitalheir/mathy-unicode-characters/tree/master/java) contains [the source file in XML](https://github.com/digitalheir/mathy-unicode-characters/blob/master/java/src/main/resources/unicode.xml), an unmarshaller that converts XML to [plain old Java objects](https://en.wikipedia.org/wiki/Plain_old_Java_object) and can write JSON files that map Unicode characters to math markup languages and vice versa.
 * [`json`](https://github.com/digitalheir/mathy-unicode-characters/tree/master/json) contains mappings from and to Unicode.
 * [`typescript`](https://github.com/digitalheir/mathy-unicode-characters/tree/master/typescript) contains the maps as typed JavaScript objects, published on npm under package name [`mathy-unicode-characters`](https://www.npmjs.com/package/mathy-unicode-characters)
+  ```typescript
+  import {
+    unicodeList, // :: UnicodeCharacter[]
+    prettyPrintCodePoint,
+    latex2unicode // :: {[latexCommand: string]: string}
+  } from "mathy-unicode-characters";
+  
+  console.log(unicodeList.length);
+  
+  console.log(prettyPrintCodePoint(unicodeList[0])); // U+000000
+  
+  console.log(latex2unicode["\pm"]); // U000B1 (±)
+  
+  console.log(Object.keys(latex2unicode).length); // all latex commands that are supported
+  ```
 
 ## Supported encodings
 * convert from acs to unicode
