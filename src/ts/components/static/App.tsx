@@ -104,6 +104,8 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
     const hexaDecimals: number[] = char._id.split("-").map(s => s.replace(StartingU, "0x")).map(x => parseInt(x, 16));
 
     return <li
+    property="itemListElement" 
+                           typeOf="ListItem"
         key={char._id}
         style={{display: visible ? "block" : "none"}}
         data-decimal={JSON.stringify(decimal)}
@@ -111,30 +113,30 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
         id={char._id}
         className="unicode-character-row"
     >
-        <header className="unicode-character">{getAsString(hexaDecimals)}</header>
-        <div className="unicode-character-codepoint">{
+        <header property="name" className="unicode-character">{getAsString(hexaDecimals)}</header>
+        <div className="unicode-character-codepoint" property="identifier">{
             prettyPrintCodePoints(char).join(" ")
         }</div>
 
         <table>
             <tbody>
-            {!!description ? <DetailsRow name="description" keyName={"description"} value={description}/> : ""}
-            {!!elsevierDesc ? <DetailsRow name="elsevierDesc" keyName={"elsevier description"} value={elsevierDesc}/> : ""}
-            {!!type ? <DetailsRow name="type" keyName={"type"} value={type}/> : ""}
-            {!!mode ? <DetailsRow name="mode" keyName={"mode"} value={mode}/> : ""}
-            {!!latex ? <DetailsRow name="latex" keyName={"latex"} value={latex}/> : ""}
-            {!!mathlatex ? <DetailsRow name="mathlatex" keyName={"mathlatex"} value={mathlatex}/> : ""}
-            {!!varlatex ? <DetailsRow name="varlatex" keyName={"varlatex"} value={varlatex}/> : ""}
-            {!!wolfram ? <DetailsRow name="wolfram" keyName={"wolfram"} value={wolfram}/> : ""}
-            {!!wolframId ? <DetailsRow name="wolframId" keyName={"wolfram id"} value={wolframId}/> : ""}
-            {!!aip ? <DetailsRow name="aip" keyName={"aip"} value={aip}/> : ""}
-            {!!acs ? <DetailsRow name="acs" keyName={"acs"} value={acs}/> : ""}
-            {!!afii ? <DetailsRow name="afii" keyName={"afii"} value={afii}/> : ""}
-            {!!ams ? <DetailsRow name="ams" keyName={"ams"} value={ams}/> : ""}
-            {!!aps ? <DetailsRow name="aps" keyName={"aps"} value={aps}/> : ""}
-            {!!bmp ? <DetailsRow name="bmp" keyName={"bmp"} value={bmp}/> : ""}
-            {!!ieee ? <DetailsRow name="ieee" keyName={"ieee"} value={ieee}/> : ""}
-            {!!springer ? <DetailsRow name="springer" keyName={"springer"} value={springer}/> : ""}
+            {!!description ? <DetailsRow property="description" name="description" keyName={"description"} value={description}/> : ""}
+            {!!elsevierDesc ? <DetailsRow property="description" name="elsevierDesc" keyName={"elsevier description"} value={elsevierDesc}/> : ""}
+            {!!type ? <DetailsRow property="disambiguatingDescription" name="type" keyName={"type"} value={type}/> : ""}
+            {!!mode ? <DetailsRow property="disambiguatingDescription" name="mode" keyName={"mode"} value={mode}/> : ""}
+            {!!latex ? <DetailsRow  property="identifier" name="latex" keyName={"latex"} value={latex}/> : ""}
+            {!!mathlatex ? <DetailsRow  property="identifier" name="mathlatex" keyName={"mathlatex"} value={mathlatex}/> : ""}
+            {!!varlatex ? <DetailsRow  property="identifier" name="varlatex" keyName={"varlatex"} value={varlatex}/> : ""}
+            {!!wolfram ? <DetailsRow  property="identifier" name="wolfram" keyName={"wolfram"} value={wolfram}/> : ""}
+            {!!wolframId ? <DetailsRow  property="identifier" name="wolframId" keyName={"wolfram id"} value={wolframId}/> : ""}
+            {!!aip ? <DetailsRow property="identifier" name="aip" keyName={"aip"} value={aip}/> : ""}
+            {!!acs ? <DetailsRow property="identifier" name="acs" keyName={"acs"} value={acs}/> : ""}
+            {!!afii ? <DetailsRow property="identifier" name="afii" keyName={"afii"} value={afii}/> : ""}
+            {!!ams ? <DetailsRow property="identifier" name="ams" keyName={"ams"} value={ams}/> : ""}
+            {!!aps ? <DetailsRow property="identifier" name="aps" keyName={"aps"} value={aps}/> : ""}
+            {!!bmp ? <DetailsRow property="identifier" name="bmp" keyName={"bmp"} value={bmp}/> : ""}
+            {!!ieee ? <DetailsRow property="identifier" name="ieee" keyName={"ieee"} value={ieee}/> : ""}
+            {!!springer ? <DetailsRow property="identifier" name="springer" keyName={"springer"} value={springer}/> : ""}
             </tbody>
         </table>
     </li>;
@@ -189,7 +191,10 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 
     render() {
         let staticRender = this.props.staticRender;
-        return <div>
+        return <div
+        vocab="http://schema.org/" 
+        typeof="ItemList"
+        >
 
             <input
                 placeholder={"search" + (staticRender ? " (loading)" : "")}
@@ -209,6 +214,8 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 }}
 
             />
+    
+      <span property="numberOfItems">315</span>
 
             <List items={this.props.chars}
                 idsVisible={
