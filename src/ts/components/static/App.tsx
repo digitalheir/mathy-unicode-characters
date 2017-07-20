@@ -227,6 +227,8 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 
             <span property="numberOfItems">315</span>
 
+
+
             <List items={this.props.chars}
                   idsVisible={
                       filterObjects(
@@ -257,7 +259,7 @@ export const App: StatelessComponent<{}> = () => <html lang="en">
     <body>
 
     <div id="mount-point">
-        <UnicodeApp staticRender={true} chars={unicodeList.map(char => {
+        <UnicodeApp staticRender={true} chars={unicodeList.slice(0,500).map(char => {
             return {
                 normalizedStrings: normalizeStrings(char),
                 char
