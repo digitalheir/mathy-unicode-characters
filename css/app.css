@@ -1,8 +1,9 @@
 body {
     margin: 24px 48px;
+    overflow-x: visible;
 }
 
-#mount-point input {/*todo class */
+input.filter { /*todo class */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -14,23 +15,43 @@ body {
     text-align: center;
 }
 
-.unicode-character-list tr td:first-child {/*todo class */
- font-weight: bold;   
-    width: 160px;
+.unicode-character-list tr td:first-child { /*todo class */
+    font-weight: bold;
+    width: 50%;
+}
+.key-name {
+    font-weight: bold;
+    width: 50%;
 }
 
-.unicode-character-list tr td{
-    padding: 0 12px;
+.unicode-character-list tr td {
+    padding: 4px 0;
+}
+
+.unicode-character-list tr {
+    overflow-x: visible;
+}
+
+.option-toggles label {
+    padding-left: 6px;
 }
 
 .unicode-character-list {
     display: block;
     list-style: none;
-    
+
     width: 600px;
     max-width: 100%;
     margin: 48px auto 0 auto;
     padding: 0;
+}
+
+.description {
+    font-weight: bold;
+}
+
+.type, .mode {
+    font-size: small;
 }
 
 .unicode-character-row {
@@ -39,7 +60,8 @@ body {
 }
 
 .unicode-character-row table {
-    display: inline-table;
+    /*display: block;*/
+    width: 100%;
     margin: 2em 0 0 0;
 }
 

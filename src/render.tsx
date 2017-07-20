@@ -25,5 +25,5 @@ function getComponent(path: string) {
 }
 
 export default (locals: any, callback: any) => {
-    callback(undefined, "<!DOCTYPE html>" + renderToString(getComponent(locals.path)));
+    callback(undefined, "<!DOCTYPE html>\n" + renderToString(getComponent(locals.path)).replace("</li>", "</li>\n"));
 };
