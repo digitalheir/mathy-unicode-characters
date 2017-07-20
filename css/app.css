@@ -16,6 +16,7 @@ body {
 
 .unicode-character-list tr td:first-child {/*todo class */
  font-weight: bold;   
+    width: 160px;
 }
 
 .unicode-character-list tr td{
@@ -26,6 +27,7 @@ body {
     display: block;
     list-style: none;
     margin: 0;
+    width: 600px;
     margin-top: 48px;
     padding: 0;
 }
