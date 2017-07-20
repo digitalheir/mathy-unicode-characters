@@ -100,9 +100,9 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
     // if (surrogate !== undefined && typeof surrogate !== "string") throw new Error(surrogate);
     // if (wolfram !== undefined && typeof wolfram !== "string") throw new Error(wolfram);
 
-    // TODO from util
-    const hexaDecimals: number[] = char._id.split("-").map(s => s.replace(StartingU, "0x")).map(x => parseInt(x, 16));
-
+    // TODO from util?
+    const hexaDecimals: number[] = char._id.replace(StartingU, "").split("-").map(x => parseInt("0x" + x, 16));
+    
     return <li
     property="itemListElement" 
                            typeOf="ListItem"
