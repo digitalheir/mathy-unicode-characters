@@ -7,11 +7,14 @@ import {
 } from "mathy-unicode-characters";
 import {getAsString} from "../../char-util";
 
-export const List: StatelessComponent<{ items: UnicodeCharacter[] }> = ({items}) => <ul
+export const List: StatelessComponent<{ items: UnicodeCharacter[], idsVisible: Set<string> }> = ({items, idsVisible}) => <ul
     className="unicode-character-list">
     {
         items.map(
-            unicodeChar => <ListRow char={unicodeChar} key={unicodeChar._id}/>
+            unicodeChar => <ListRow 
+                            visible={idsVisible.has(unicodeChar._id)}
+                            char={unicodeChar}
+                            key={unicodeChar._id}/>
         )
     }
 </ul>;
@@ -36,13 +39,15 @@ export const DetailsRow: StatelessComponent<{
     keyName: string,
     value: string
 }> = ({name, keyName, value}) => {
-    return <tr className={"unicode-character-row-" + name}>
+    //  className={"" + name}
+    // TODO semantic markup
+    return <tr>
         <td>{keyName}</td>
         <td>{value}</td>
     </tr>;
 };
 
-export const ListRow: StatelessComponent<{ char: UnicodeCharacter }> = ({char}) => {
+export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: boolean }> = ({char, visible}) => {
     const decimal = char.dec;
     const latex = char.latex;
     const aip = char.aip;
@@ -92,12 +97,14 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter }> = ({char}) 
     const hexaDecimals: number[] = char._id.split("-").map(s => s.replace(StartingU, "0x")).map(x => parseInt(x, 16));
 
     return <li
+        key={char._id}
+        style={{display: visible ? "block" : "none"}}
         data-decimal={JSON.stringify(decimal)}
         data-image={imageNone}
         id={char._id}
         className="unicode-character-row"
     >
-        <div className="unicode-character">{getAsString(hexaDecimals)}</div>
+        <h2 className="unicode-character">{getAsString(hexaDecimals)}</h2>
         <div className="unicode-character-codepoint">{
             prettyPrintCodePoint(char)
         }</div>
@@ -105,8 +112,7 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter }> = ({char}) 
         <table>
             <tbody>
             {!!description ? <DetailsRow name="description" keyName={"description"} value={description}/> : ""}
-            {!!elsevierDesc ?
-                <DetailsRow name="elsevierDesc" keyName={"elsevier description"} value={elsevierDesc}/> : ""}
+            {!!elsevierDesc ? <DetailsRow name="elsevierDesc" keyName={"elsevier description"} value={elsevierDesc}/> : ""}
             {!!type ? <DetailsRow name="type" keyName={"type"} value={type}/> : ""}
             {!!mode ? <DetailsRow name="mode" keyName={"mode"} value={mode}/> : ""}
             {!!latex ? <DetailsRow name="latex" keyName={"latex"} value={latex}/> : ""}
@@ -137,10 +143,10 @@ export interface WrappedUnicodeCharacter {
     normalizedStrings: string[];
 }
 
-function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): UnicodeCharacter[] {
+function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<string> {
     if (words.length === 0) return arr.map(c => c.char);
 
-    return arr.filter(
+    return new Set(arr.filter(
         obj => words.every(word =>
             obj.normalizedStrings
                 .some(
@@ -148,7 +154,8 @@ function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Unicode
                 )
         )
     )
-        .map(c => c.char)
+        .map(c => c.char._id)
+                   )
         ;
 }
 
@@ -196,8 +203,8 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 
             />
 
-            <List items={
-
+            <List items={this.props.chars}
+                idsVisible={
                 filterObjects(
                     this.props.chars,
                     this.state.query.split(/\s+/)
