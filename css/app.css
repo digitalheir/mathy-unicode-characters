@@ -2,7 +2,7 @@ body {
     margin: 24px 48px;
 }
 
-.unicode-character-list tr:first-child {
+.unicode-character-list tr td:first-child {
  font-weight: bold;   
 }
 
