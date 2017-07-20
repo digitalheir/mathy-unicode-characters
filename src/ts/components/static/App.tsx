@@ -3,28 +3,31 @@ import {PureComponent, StatelessComponent} from "react";
 import {
     Unicode2description,
     unicodeList,
-    UnicodeCharacter, 
+    UnicodeCharacter,
     normalizeStrings
 } from "mathy-unicode-characters";
+
 import {getAsString} from "../../char-util";
 
 export function prettyPrintCodePoints(u: UnicodeCharacter): string[] {
     return u._id.split("-")
-      .map(s => "U+" + (s.charAt(0) === "U" ? s.substring(1) : s)
-    ;
+        .map(function (s) {
+            return "U+" + (s.charAt(0) === "U" ? s.substring(1) : s);
+        });
 }
 
-export const List: StatelessComponent<{ items: UnicodeCharacter[], idsVisible: Set<string> }> = ({items, idsVisible}) => <ul
-    className="unicode-character-list">
-    {
-        items.map(
-            unicodeChar => <ListRow 
-                            visible={idsVisible.has(unicodeChar._id)}
-                            char={unicodeChar}
-                            key={unicodeChar._id}/>
-        )
-    }
-</ul>;
+export const List: StatelessComponent<{ items: WrappedUnicodeCharacter[], idsVisible: Set<string> }> = ({items, idsVisible}) =>
+    <ul
+        className="unicode-character-list">
+        {
+            items.map(
+                unicodeChar => <ListRow
+                    visible={idsVisible.has(unicodeChar.char._id)}
+                    char={unicodeChar.char}
+                    key={unicodeChar.char._id}/>
+            )
+        }
+    </ul>;
 
 function castt(x: any): x is Unicode2description {
     return ("a".length === 1);
@@ -44,13 +47,14 @@ const StartingU = /^U/;
 export const DetailsRow: StatelessComponent<{
     name: string,
     keyName: string,
-    value: string
-}> = ({name, keyName, value}) => {
+    value: string,
+    property: string
+}> = ({name, keyName, value, property}) => {
     //  className={"" + name}
     // TODO semantic markup
     return <tr>
         <td>{keyName}</td>
-        <td>{value}</td>
+        <td property={property}>{value}</td>
     </tr>;
 };
 
@@ -102,10 +106,10 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
 
     // TODO from util?
     const hexaDecimals: number[] = char._id.replace(StartingU, "").split("-").map(x => parseInt("0x" + x, 16));
-    
+
     return <li
-    property="itemListElement" 
-                           typeOf="ListItem"
+        property="itemListElement"
+        typeof="ListItem"
         key={char._id}
         style={{display: visible ? "block" : "none"}}
         data-image={imageNone}
@@ -119,15 +123,20 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
 
         <table>
             <tbody>
-            {!!description ? <DetailsRow property="description" name="description" keyName={"description"} value={description}/> : ""}
-            {!!elsevierDesc ? <DetailsRow property="description" name="elsevierDesc" keyName={"elsevier description"} value={elsevierDesc}/> : ""}
+            {!!description ? <DetailsRow property="description" name="description" keyName={"description"}
+                                         value={description}/> : ""}
+            {!!elsevierDesc ? <DetailsRow property="description" name="elsevierDesc" keyName={"elsevier description"}
+                                          value={elsevierDesc}/> : ""}
             {!!type ? <DetailsRow property="disambiguatingDescription" name="type" keyName={"type"} value={type}/> : ""}
             {!!mode ? <DetailsRow property="disambiguatingDescription" name="mode" keyName={"mode"} value={mode}/> : ""}
-            {!!latex ? <DetailsRow  property="identifier" name="latex" keyName={"latex"} value={latex}/> : ""}
-            {!!mathlatex ? <DetailsRow  property="identifier" name="mathlatex" keyName={"mathlatex"} value={mathlatex}/> : ""}
-            {!!varlatex ? <DetailsRow  property="identifier" name="varlatex" keyName={"varlatex"} value={varlatex}/> : ""}
-            {!!wolfram ? <DetailsRow  property="identifier" name="wolfram" keyName={"wolfram"} value={wolfram}/> : ""}
-            {!!wolframId ? <DetailsRow  property="identifier" name="wolframId" keyName={"wolfram id"} value={wolframId}/> : ""}
+            {!!latex ? <DetailsRow property="identifier" name="latex" keyName={"latex"} value={latex}/> : ""}
+            {!!mathlatex ?
+                <DetailsRow property="identifier" name="mathlatex" keyName={"mathlatex"} value={mathlatex}/> : ""}
+            {!!varlatex ?
+                <DetailsRow property="identifier" name="varlatex" keyName={"varlatex"} value={varlatex}/> : ""}
+            {!!wolfram ? <DetailsRow property="identifier" name="wolfram" keyName={"wolfram"} value={wolfram}/> : ""}
+            {!!wolframId ?
+                <DetailsRow property="identifier" name="wolframId" keyName={"wolfram id"} value={wolframId}/> : ""}
             {!!aip ? <DetailsRow property="identifier" name="aip" keyName={"aip"} value={aip}/> : ""}
             {!!acs ? <DetailsRow property="identifier" name="acs" keyName={"acs"} value={acs}/> : ""}
             {!!afii ? <DetailsRow property="identifier" name="afii" keyName={"afii"} value={afii}/> : ""}
@@ -135,7 +144,8 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
             {!!aps ? <DetailsRow property="identifier" name="aps" keyName={"aps"} value={aps}/> : ""}
             {!!bmp ? <DetailsRow property="identifier" name="bmp" keyName={"bmp"} value={bmp}/> : ""}
             {!!ieee ? <DetailsRow property="identifier" name="ieee" keyName={"ieee"} value={ieee}/> : ""}
-            {!!springer ? <DetailsRow property="identifier" name="springer" keyName={"springer"} value={springer}/> : ""}
+            {!!springer ?
+                <DetailsRow property="identifier" name="springer" keyName={"springer"} value={springer}/> : ""}
             </tbody>
         </table>
     </li>;
@@ -152,7 +162,8 @@ export interface WrappedUnicodeCharacter {
 }
 
 function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<string> {
-    if (words.length === 0) return arr.map(c => c.char);
+    if (words.length === 0)
+        return new Set(arr.map(c => c.char._id));
 
     return new Set(arr.filter(
         obj => words.every(word =>
@@ -161,9 +172,9 @@ function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<str
                     (objectWord) => (objectWord.indexOf(word) >= 0)
                 )
         )
+        )
+            .map(c => c.char._id)
     )
-        .map(c => c.char._id)
-                   )
         ;
 }
 
@@ -189,10 +200,10 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
     }
 
     render() {
-        let staticRender = this.props.staticRender;
+        const staticRender = this.props.staticRender;
         return <div
-        vocab="http://schema.org/" 
-        typeof="ItemList"
+            vocab="http://schema.org/"
+            typeof="ItemList"
         >
 
             <input
@@ -213,18 +224,18 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 }}
 
             />
-    
-      <span property="numberOfItems">315</span>
+
+            <span property="numberOfItems">315</span>
 
             <List items={this.props.chars}
-                idsVisible={
-                filterObjects(
-                    this.props.chars,
-                    this.state.query.split(/\s+/)
-                        .map(s => s.trim())
-                        .filter(s => s !== "")
-                )
-            }/>
+                  idsVisible={
+                      filterObjects(
+                          this.props.chars,
+                          this.state.query.split(/\s+/)
+                              .map(s => s.trim())
+                              .filter(s => s !== "")
+                      )
+                  }/>
 
         </div>;
     }

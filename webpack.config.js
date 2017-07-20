@@ -63,7 +63,8 @@ const config = {
                 loader: "awesome-typescript-loader",
                 exclude: /node_modules/,
                 options: {
-
+                useBabel: true,
+                useCache: false,
                 }
             }
         ]
