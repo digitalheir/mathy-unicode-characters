@@ -3,9 +3,16 @@ import {PureComponent, StatelessComponent} from "react";
 import {
     Unicode2description,
     unicodeList,
-    UnicodeCharacter, prettyPrintCodePoint, normalizeStrings
+    UnicodeCharacter, 
+    normalizeStrings
 } from "mathy-unicode-characters";
 import {getAsString} from "../../char-util";
+
+export function prettyPrintCodePoints(u: UnicodeCharacter): string[] {
+    return u._id.split("-")
+      .map(s => "U+" + (s.charAt(0) === "U" ? s.substring(1) : s)
+    ;
+}
 
 export const List: StatelessComponent<{ items: UnicodeCharacter[], idsVisible: Set<string> }> = ({items, idsVisible}) => <ul
     className="unicode-character-list">
@@ -106,7 +113,7 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
     >
         <header className="unicode-character">{getAsString(hexaDecimals)}</header>
         <div className="unicode-character-codepoint">{
-            prettyPrintCodePoint(char)
+            prettyPrintCodePoints(char).join(" ")
         }</div>
 
         <table>
