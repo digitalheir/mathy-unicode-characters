@@ -104,7 +104,7 @@ export const ListRow: StatelessComponent<{ char: UnicodeCharacter, visible: bool
         id={char._id}
         className="unicode-character-row"
     >
-        <h2 className="unicode-character">{getAsString(hexaDecimals)}</h2>
+        <header className="unicode-character">{getAsString(hexaDecimals)}</header>
         <div className="unicode-character-codepoint">{
             prettyPrintCodePoint(char)
         }</div>
