@@ -2,6 +2,10 @@ body {
     margin: 24px 48px;
 }
 
+.unicode-character-list tr:first-child {
+ font-weight: bold;   
+}
+
 .unicode-character-list dl {
     text-align: left;
     width: 100%;
