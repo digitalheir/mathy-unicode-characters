@@ -70,6 +70,7 @@ export const defaultOptions: ShowDetailsOptions = {
     bmp: false,
     ieee: false,
     springer: false,
+    ["hide characters with no representation selected above"]: true
 };
 
 export interface ShowDetailsOptions {
@@ -83,6 +84,7 @@ export interface ShowDetailsOptions {
     bmp: boolean;
     ieee: boolean;
     springer: boolean;
+    ["hide characters with no representation selected above"]: boolean;
 }
 
 function getDetailRows(options: ShowDetailsOptions,
@@ -349,11 +351,29 @@ export const ListRow: StatelessComponent<{
         ieee,
         springer
     );
-
+const showCharacter = (visible  && 
+               (
+    !showOptions["hide characters with no representation selected above"] 
+               || [
+                   "latex",
+                   "wolfram",
+                   "aip",
+                   "acs",
+                   "afii",
+                   "ams",
+                   "aps",
+                   "bmp",
+                   "ieee",
+                   "springer",
+               ].some(n => showOptions[n] && char[n] !== undefined)
+               )
+               );
     return <li
         typeof="Intangible"
         key={char._id}
-        style={{display: visible ? "block" : "none"}}
+        style={{display: 
+               showCharacter
+               ? "block" : "none"}}
         data-image={imageNone}
         id={char._id}
         className="unicode-character-row"
@@ -410,6 +430,7 @@ function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<str
 export interface UAState {
     query: string;
     showOptions: ShowDetailsOptions;
+    showOptionsToggle: boolean;
 }
 
 export interface UAProps {
@@ -423,7 +444,8 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
         super(props);
         this.state = {
             query: "",
-            showOptions: props.defaultShowOptions
+            showOptions: props.defaultShowOptions,
+            showOptionsToggle: true
         };
     }
 
@@ -452,7 +474,8 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 style={{
                     width: "100%",
                     margin: 0,
-                    padding: 0
+                    padding: 0,
+                    borderWidth: "1px"
                 }}
                 type="text"
                 name="q"
@@ -465,12 +488,26 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 
             />
 
+            <div className="options-toggle" style={{
+                display: (this.state.showOptionsToggle ? "block" : "none"),
+                
+                padding: 0,
+                right: 0,
+                top: 0,
+                position: "fixed"
+            }}>
+                <button 
+className={(this.state.showOptionsToggle ? "activated " : "") + "options-toggle mdl-button mdl-js-button mdl-button--icon mdl-button--colored"}>
+  <i class="material-icons">filter_list</i>
+</button>
+
+
             <div className="option-toggles" style={{
-                width: "100%",
+                display: this.state.showOptionsToggle ? "block" : "none",
                 margin: "24px",
                 padding: 0,
-                left: 0,
-                bottom: 0,
+                right: 0,
+                top: "50px",
                 position: "fixed"
             }}>
                 {
@@ -536,7 +573,7 @@ export const App: StatelessComponent<{}> = () => <html lang="en">
         })}/>
     </div>
 
-    <script src="js/app.js"/>
+    <script defer={true} src="js/app.js"/>
 
     </body>
     </html>
