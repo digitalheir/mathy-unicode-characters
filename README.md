@@ -7,7 +7,7 @@ It is based on an XML file [published by W3C](https://www.w3.org/TR/unicode-xml/
 ## Website
 The full list of Unicode characters and their conversions is searchable on [a related website](https://digitalheir.github.io/mathy-unicode-characters/).
 
-![Example character from website](https://raw.githubusercontent.com/digitalheir/mathy-unicode-characters/gh-pages/img/less%20than%20nor%20equal%20to.png)
+![Example character from website](https://raw.githubusercontent.com/digitalheir/mathy-unicode-characters/gh-pages/img/pencil.png)
 
 ## Usage
 The repository consists of multiple sub-projects for different languages:
