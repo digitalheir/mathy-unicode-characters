@@ -144,7 +144,10 @@ function getDetailsAsDefinedTerms(char, showOptions): ReactNode[] {
     addIfDefined("afii", char.afii, showOptions.afii, arr);
     addIfDefined("ams", char.ams, showOptions.ams, arr);
     addIfDefined("aps", char.aps, showOptions.aps, arr);
-    addIfDefined("bmp", char.bmp, showOptions.bmp, arr);
+    
+            // todo bmp is a reference to another unicode char
+            addIfDefined("bmp", char.bmp, showOptions.bmp, arr);
+            
     addIfDefined("ieee", char.ieee, showOptions.ieee, arr);
     addIfDefined("springer", char.springer, showOptions.springer, arr);
     
