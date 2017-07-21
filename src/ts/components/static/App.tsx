@@ -435,6 +435,7 @@ export interface UAState {
 }
 
 export interface UAProps {
+    q?: string;
     staticRender?: boolean;
     chars: WrappedUnicodeCharacter[];
     defaultShowOptions: ShowDetailsOptions;
@@ -444,7 +445,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
     constructor(props: UAProps) {
         super(props);
         this.state = {
-            query: "",
+            query: !!props.q ? props.q : "",
             showOptions: props.defaultShowOptions,
             showOptionsToggle: true
         };
