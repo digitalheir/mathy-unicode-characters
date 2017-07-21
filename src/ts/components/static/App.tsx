@@ -87,6 +87,70 @@ export interface ShowDetailsOptions {
     ["hide characters with no representation selected above"]: boolean;
 }
 
+const UnicodeCharacterDefinitionList: StatelessComponent{char: UnicodeCharacter, showOptions: ShowDetailsOptions}  = ({char, showOptions}) => {
+    const elements = getDetailsAsDefinedTerms(char, showOptions);
+    return <dl className="character-details">
+        {elements}
+</dl>
+};
+
+function addIfDefined(k: string, value: string | undefined, wolframId: string | undefined, visible: boolean, array: ReactNode[]) {
+    if(!!value){
+        array.push(<dt style={{display:visible?"block":"none"}} className="detail-name">{k}</dt>);
+        array.push(<dd style={{display:visible?"block":"none"}} className="detail-value" property="identifier">{value}</dt>);
+    }
+}
+
+function addIfDefinedWolfram(value: string | undefined, visible: boolean, array: ReactNode[]) {
+    if(!!value){
+        const wname: ReactNode[] = [
+            <span key="wolf">wolfram</span>
+        ];
+        if(!!wolframId) wname.push
+            <span key="wolfid"> (<span property="identifier" className="wolfram-id">{wolframId}</span>)</span>
+        );
+    
+        array.push(<dt style={{display:visible?"block":"none"}} className="detail-name">{wname}</dt>);
+        array.push(<dd style={{display:visible?"block":"none"}} className="detail-value" property="identifier">{value}</dt>);
+    }
+}
+ 
+function addIfDefinedSurrogate(value: Surrogate | undefined, array: ReactNode[]) {
+    if(!!value){
+        const surr: ReactNode[] = [
+            <a href={"#"+value.ref} key="surrogate">{prettyPrintCodePoints(/*TODO*/).join(" ")}</span>
+        ];
+        if(!!value.mathvariant) surr.push
+            <span key="mathvariant"> (<span property="disambiguatingDescription"
+                                      className="mathvariant">{value.mathvariant}</span>)</span>
+        );
+        array.push(<dt className="detail-name">surrogate</dt>);
+        array.push(<dd className="detail-value">
+                   {surr}
+                   </dt>);
+    }
+}       
+function getDetailsAsDefinedTerms(char, showOptions): ReactNode[] {
+    const arr: ReactNode[] = [];
+
+    addIfDefinedSurrogate(char.surrogate, arr);
+
+    addIfDefined("latex", char.latex, showOptions.latex, arr);
+    addIfDefined("mathlatex", char.mathlatex, showOptions.mathlatex, arr);
+    addIfDefined("varlatex", char.varlatex, showOptions.varlatex, arr);
+    addIfDefinedWolfram(char.wolfram, char.wolframId, showOptions.wolfram, arr);
+    addIfDefined("aip", char.aip, showOptions.aip, arr);
+    addIfDefined("acs", char.acs, showOptions.acs, arr);
+    addIfDefined("afii", char.afii, showOptions.afii, arr);
+    addIfDefined("ams", char.ams, showOptions.ams, arr);
+    addIfDefined("aps", char.aps, showOptions.aps, arr);
+    addIfDefined("bmp", char.bmp, showOptions.bmp, arr);
+    addIfDefined("ieee", char.ieee, showOptions.ieee, arr);
+    addIfDefined("springer", char.springer, showOptions.springer, arr);
+    
+    return arr;
+}
+
 function getDetailRows(options: ShowDetailsOptions,
                        description: string,
                        elsevierDesc: string,
@@ -300,58 +364,39 @@ export const ListRow: StatelessComponent<{
     const mathlatex = char.mathlatex;
     const mode = char.mode;
     const springer = char.springer;
-    // const surrogate = unicode2surrogate[unicodeId as Unicode2surrogate];
-    // {surrogate ? <div className="unicode-character-row-surrogate">
-    //     {surrogate.mathvariant}
-    //     {surrogate.ref}
-    // </div> : ""}
     const type = char.type;
     const varlatex = char.varlatex;
     const wolfram = char.wolfram;
     const wolframId = char.wolframId;
 
-    if (aip !== undefined && typeof aip !== "string") throw new Error(aip);
-    if (acs !== undefined && typeof acs !== "string") throw new Error(acs);
-    if (afii !== undefined && typeof afii !== "string") throw new Error(afii);
-    if (ams !== undefined && typeof ams !== "string") throw new Error(ams);
-    if (aps !== undefined && typeof aps !== "string") throw new Error(aps);
-    if (bmp !== undefined && typeof bmp !== "string") throw new Error(bmp);
-    if (elsevierDesc !== undefined && typeof elsevierDesc !== "string") throw new Error(elsevierDesc);
-    if (ieee !== undefined && typeof ieee !== "string") throw new Error(ieee);
-    if (mathlatex !== undefined && typeof mathlatex !== "string") throw new Error(mathlatex);
-    if (mode !== undefined && typeof mode !== "string") throw new Error(mode);
-    if (springer !== undefined && typeof springer !== "string") throw new Error(springer);
-    if (type !== undefined && typeof type !== "string") throw new Error(type);
-    if (varlatex !== undefined && typeof varlatex !== "string") throw new Error(varlatex);
     const description = char.description;
     const descriptionUnicodeVersion = char.descriptionUnicodeVersion;
 
     // if (imageNone !== undefined && typeof imageNone !== "string") throw new Error(imageNone);
-    // if (surrogate !== undefined && typeof surrogate !== "string") throw new Error(surrogate);
     // if (wolfram !== undefined && typeof wolfram !== "string") throw new Error(wolfram);
 
     // TODO from util?
     const hexaDecimals: number[] = char._id.replace(StartingU, "").split("-").map(x => parseInt("0x" + x, 16));
-    const rows = getDetailRows(
-        showOptions,
-        description,
-        elsevierDesc,
-        type,
-        mode,
-        latex,
-        mathlatex,
-        varlatex,
-        wolfram,
-        wolframId,
-        aip,
-        acs,
-        afii,
-        ams,
-        aps,
-        bmp,
-        ieee,
-        springer
-    );
+//     const rows = getDetailRows(
+//         showOptions,
+//         description,
+//         elsevierDesc,
+//         type,
+//         mode,
+//         latex,
+//         mathlatex,
+//         varlatex,
+//         wolfram,
+//         wolframId,
+//         aip,
+//         acs,
+//         afii,
+//         ams,
+//         aps,
+//         bmp,
+//         ieee,
+//         springer
+//     );
 const showCharacter = (visible  && 
                (
     !showOptions["hide characters with no representation selected above"] 
@@ -393,11 +438,7 @@ const showCharacter = (visible  &&
                      className="mode">
             {mode}
         </div> : ""}
-        <table>
-            <tbody>
-            {rows}
-            </tbody>
-        </table>
+        <UnicodeCharacterDefinitionList char={char} showOptions={showOptions}/>
     </li>;
 };
 
