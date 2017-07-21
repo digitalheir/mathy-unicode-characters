@@ -1,6 +1,6 @@
 body {
     margin: 24px 48px;
-    overflow-x: visible;
+    overflow-x: hidden;
 }
 
 input.filter { /*todo class */
