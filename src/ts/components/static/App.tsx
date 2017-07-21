@@ -171,26 +171,27 @@ function getDetailRows(options: ShowDetailsOptions,
                 value={varlatex}
             />
         );
-    if (!!wolfram)
-        rows.push(<DetailsRow
-                visible={options.wolfram}
-                key="wolfram"
-                property="identifier"
-                name="wolfram"
-                keyName={"wolfram"}
-                value={wolfram}
-            />
+    if (!!wolfram){
+        const wname: ReactNode[] = [
+            <span key="wolf">wolfram</span>
+        ];
+        if(!!wolframId) wname.push
+            <span key="wolfid"> (<span property="identifier" className="wolfram-id">{wolframId}</span>)</span>
         );
-    // todo merge with wolfram
-    if (!!wolframId)
-        rows.push(<DetailsRow
-                visible={options.wolfram}
-                key="wolframId"
-                property="identifier"
-                name="wolframId"
-                keyName={"wolfram id"
-                } value={wolframId
-            }/>
+                  
+        rows.push(<tr style={{display: options.wolfram ? "table-row" : "none"}}>
+        <td className="key-name">{wname}</td>
+        <td property="identifier">{wolfram}</td>
+                  }
+    </tr>);
+        <DetailsRow
+                visible={}
+                key=""
+                property=""
+                name={wolfram}
+                keyName={"wolfram"}
+                value={}
+            />
         );
     if (!!aip)
         rows.push(<DetailsRow
@@ -555,7 +556,7 @@ export const App: StatelessComponent<{}> = () => <html lang="en">
         <meta charSet="utf-8"/>
         <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
         <title>Unicode to LaTeX / Mathematica / Elsevier / etc.</title>
-        <meta name="description" content=""/>
+        <meta name="description" content="Converter tool for converting LaTeX to Unicode and Unicode to LaTex. Also supports Wolfram, aip, acs, afii, ams, aps, bmp, ieee and springer."/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/main.css"/>
