@@ -484,7 +484,28 @@ export interface UAProps {
     chars: WrappedUnicodeCharacter[];
     defaultShowOptions: ShowDetailsOptions;
 }
-
+export const LabelFor: StatelessComponent<{name: string}> = ({name}) => {
+    
+    switch(name){
+            case "afii":
+    return <label htmlFor={name}>
+                   <abbr title="Association for Font Information Interchange">
+                                    {name}
+                    </abbr></label>;
+                 case "aip":
+            // TODO render aip al &xxx; entity!
+    return <label htmlFor={name}>
+                   <abbr title="American Institute of Physics (XML entity)">
+                                    {name}
+                    </abbr>
+            </label>;
+        default:
+                                return <label htmlFor={name}>
+                                    {name}
+                                </label>;
+               }
+}
+    
 export class UnicodeApp extends PureComponent<UAProps, UAState> {
     constructor(props: UAProps) {
         super(props);
@@ -569,7 +590,7 @@ className={(this.state.showOptionsToggle ? "activated " : "") + "options-toggle 
                                         e.target.checked
                                     )}
                                 />
-                                <label htmlFor={name}>{name}</label>
+                                 <LabelFor name={name}/>
                             </div>
                         )
                 }
