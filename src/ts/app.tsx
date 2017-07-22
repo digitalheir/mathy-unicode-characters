@@ -3,8 +3,9 @@ import {render} from "react-dom";
 import {} from "material-components-web";
 
 import {UnicodeApp} from "./components/static/App";
-import {normalizeStrings, unicodeList} from "mathy-unicode-characters";
 import {defaultOptions} from "./default-options";
+import {unicodeList} from "./mathy-unicode-characters/character-lists/unicodeLists";
+import {normalizeStrings} from "./mathy-unicode-characters/UnicodeCharacter";
 
 const mountPoint = document.getElementById("mount-point");
 

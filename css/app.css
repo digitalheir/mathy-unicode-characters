@@ -17,11 +17,13 @@ input.filter { /*todo class */
 
 .unicode-character-list tr td:first-child { /*todo class */
     font-weight: bold;
-    width: 50%;
 }
 .key-name {
     font-weight: bold;
-    width: 50%;
+}
+
+.detail-name {
+    font-weight: bold;
 }
 
 .unicode-character-list tr td {

@@ -1,14 +1,10 @@
 import * as React from "react";
 import {PureComponent, ReactNode, StatelessComponent} from "react";
-import {
-    Unicode2description,
-    unicodeList,
-    UnicodeCharacter,
-    normalizeStrings, Surrogate
-} from "mathy-unicode-characters";
+
 
 import {getAsString} from "../../char-util";
-import {defaultOptions, ShowDetailsOptions} from "../../default-options";
+import {copyShowDetailsOptions, defaultOptions, ShowDetailsOptions} from "../../default-options";
+import {Surrogate, UnicodeCharacter} from "../../mathy-unicode-characters/UnicodeCharacter";
 
 function prettyPrintCodePoints(u: UnicodeCharacter): string[] {
     return prettyPrintCodePointsFromId(u._id);
@@ -40,14 +36,13 @@ export const List: StatelessComponent<{ showOptions: ShowDetailsOptions, items: 
         }
     </ul>;
 
-function castt(x: any): x is Unicode2description {
-    return ("a".length === 1);
-}
 
+// noinspection JSUnusedLocalSymbols
 function isArray(x: number | number[]): x is number[] {
     return x.constructor === Array;
 }
 
+// noinspection JSUnusedLocalSymbols
 function isString(x: any): x is string {
     return typeof x === "string";
 }
@@ -109,7 +104,7 @@ export const ListRow: StatelessComponent<{
 //     );
     const showCharacter = (visible &&
         (
-            !showOptions["hide characters with no representation selected above"]
+            !showOptions["hide characters with none of selected representations"]
             || [
                 "latex",
                 "wolfram",
@@ -121,7 +116,10 @@ export const ListRow: StatelessComponent<{
                 "bmp",
                 "ieee",
                 "springer",
-            ].some(n => showOptions[n] && char[n] !== undefined)
+            ].some(
+                n => showOptions[n as keyof ShowDetailsOptions]
+                    && char[n as keyof UnicodeCharacter] !== undefined
+            )
         )
     );
     return <li
@@ -167,7 +165,6 @@ export const DetailsRow: StatelessComponent<{
         <td property={property}>{value}</td>
     </tr>;
 };
-
 
 
 const UnicodeCharacterDefinitionList: StatelessComponent<{ char: UnicodeCharacter, showOptions: ShowDetailsOptions }> = ({char, showOptions}) => {
@@ -216,14 +213,14 @@ function addIfDefinedSurrogate(value: Surrogate | undefined, array: ReactNode[])
     }
 }
 
-function getDetailsAsDefinedTerms(char, showOptions): ReactNode[] {
+function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetailsOptions): ReactNode[] {
     const arr: ReactNode[] = [];
 
     addIfDefinedSurrogate(char.surrogate, arr);
 
     addIfDefined("latex", char.latex, showOptions.latex, arr);
-    addIfDefined("mathlatex", char.mathlatex, showOptions.mathlatex, arr);
-    addIfDefined("varlatex", char.varlatex, showOptions.varlatex, arr);
+    addIfDefined("mathlatex", char.mathlatex, showOptions.latex, arr);
+    addIfDefined("varlatex", char.varlatex, showOptions.latex, arr);
     addIfDefinedWolfram(char.wolfram, char.wolframId, showOptions.wolfram, arr);
     addIfDefined("aip", char.aip, showOptions.aip, arr);
     addIfDefined("acs", char.acs, showOptions.acs, arr);
@@ -498,8 +495,13 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
         this.setState({query});
     }
 
+    toggleShowOptionsToggle() {
+        this.setState({showOptionsToggle: !this.state.showOptionsToggle});
+    }
+
     changeShowOption(name: keyof ShowDetailsOptions, checked: boolean) {
-        const showOptions = this.state.showOptions;
+        console.log();
+        const showOptions = copyShowDetailsOptions(this.state.showOptions);
         showOptions[name] = checked;
         this.setState(
             {showOptions}
@@ -534,14 +536,17 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
             />
 
             <div className="options-toggle" style={{
-                display: (this.state.showOptionsToggle ? "block" : "none"),
                 padding: 0,
                 right: 0,
                 top: 0,
                 position: "fixed"
             }}>
                 <button
-                    className={(this.state.showOptionsToggle ? "activated " : "") + "options-toggle mdl-button mdl-js-button mdl-button--icon mdl-button--colored"}>
+                    onClick={() => this.toggleShowOptionsToggle()}
+                    className={(this.state.showOptionsToggle ? "activated " : "")
+                    + "options-toggle mdl-button mdl-js-button mdl-button--icon mdl-button--colored"}
+                >
+
                     <i className="material-icons">filter_list</i>
                 </button>
             </div>

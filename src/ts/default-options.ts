@@ -9,7 +9,7 @@ export interface ShowDetailsOptions {
     bmp: boolean;
     ieee: boolean;
     springer: boolean;
-    ["hide characters with no representation selected above"]: boolean;
+    ["hide characters with none of selected representations"]: boolean;
 }
 
 export const defaultOptions: ShowDetailsOptions = {
@@ -23,5 +23,21 @@ export const defaultOptions: ShowDetailsOptions = {
     bmp: false,
     ieee: false,
     springer: false,
-    ["hide characters with no representation selected above"]: true
+    ["hide characters with none of selected representations"]: true
 };
+
+export function copyShowDetailsOptions(src: ShowDetailsOptions) {
+    return {
+        latex: src.latex,
+        wolfram: src.wolfram,
+        aip: src.aip,
+        acs: src.acs,
+        afii: src.afii,
+        ams: src.ams,
+        aps: src.aps,
+        bmp: src.bmp,
+        ieee: src.ieee,
+        springer: src.springer,
+        ["hide characters with none of selected representations"]: src["hide characters with none of selected representations"]
+    };
+}

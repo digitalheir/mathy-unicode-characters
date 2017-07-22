@@ -2,8 +2,9 @@ import * as React from "react";
 import {StatelessComponent} from "react";
 import {renderToString} from "react-dom/server";
 import {UnicodeApp} from "./App";
-import {normalizeStrings, unicodeList} from "mathy-unicode-characters";
 import {defaultOptions} from "../../default-options";
+import {unicodeList} from "../../mathy-unicode-characters/character-lists/unicodeLists";
+import {normalizeStrings} from "../../mathy-unicode-characters/UnicodeCharacter";
 
 export const Html: StatelessComponent<{}> = () => <html lang="en">
     <head>
