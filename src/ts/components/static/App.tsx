@@ -1,7 +1,7 @@
 import * as React from "react";
 import {PureComponent, ReactNode, StatelessComponent} from "react";
 
-
+import * as _ from "lodash-es";
 import {getAsString} from "../../char-util";
 import {copyShowDetailsOptions, defaultOptions, ShowDetailsOptions} from "../../default-options";
 import {Surrogate, UnicodeCharacter} from "../../mathy-unicode-characters/UnicodeCharacter";
@@ -22,8 +22,19 @@ export interface WrappedUnicodeCharacter {
     normalizedStrings: string[];
 }
 
-export const List: StatelessComponent<{ showOptions: ShowDetailsOptions, items: WrappedUnicodeCharacter[], idsVisible: Set<string> }> = ({showOptions, items, idsVisible}) =>
-    <ul
+export const List: StatelessComponent<{
+    showOptions: ShowDetailsOptions,
+    items: WrappedUnicodeCharacter[],
+    filter: string
+}> = ({showOptions, items, filter}) => {
+    const idsVisible: Set<string> =
+        filterObjects(
+            items,
+            filter.split(/\s+/)
+                .map(s => s.trim())
+                .filter(s => s !== "")
+        );
+    return <ul
         className="unicode-character-list">
         {
             items.map(
@@ -35,7 +46,7 @@ export const List: StatelessComponent<{ showOptions: ShowDetailsOptions, items: 
             )
         }
     </ul>;
-
+};
 
 // noinspection JSUnusedLocalSymbols
 function isArray(x: number | number[]): x is number[] {
@@ -448,6 +459,7 @@ function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<str
 
 export interface UAState {
     query: string;
+    filter: string;
     showOptions: ShowDetailsOptions;
     showOptionsToggle: boolean;
 }
@@ -495,18 +507,30 @@ export const LabelFor: StatelessComponent<{ name: string }> = ({name}) => {
 };
 
 export class UnicodeApp extends PureComponent<UAProps, UAState> {
+    setQueryFilter = _.debounce((filter: string) => {
+            this.setState({filter});
+        },
+        200,
+        {
+            leading: false,
+            trailing: true
+        }
+        );
+
+    setQuery(query: string) {
+        this.setState({query});
+    }
+
     constructor(props: UAProps) {
         super(props);
         this.state = {
             query: !!props.q ? props.q : "",
+            filter: !!props.q ? props.q : "",
             showOptions: props.defaultShowOptions,
             showOptionsToggle: true
         };
     }
 
-    setQuery(query: string) {
-        this.setState({query});
-    }
 
     toggleShowOptionsToggle() {
         this.setState({showOptionsToggle: !this.state.showOptionsToggle});
@@ -544,6 +568,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 }
                 onChange={(e) => {
                     this.setQuery(e.target.value);
+                    this.setQueryFilter(e.target.value);
                 }}
 
             />
@@ -601,14 +626,8 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                   showOptions={
                       this.state.showOptions
                   }
-                  idsVisible={
-                      filterObjects(
-                          this.props.chars,
-                          this.state.query.split(/\s+/)
-                              .map(s => s.trim())
-                              .filter(s => s !== "")
-                      )
-                  }/>
+                  filter={this.state.filter}
+            />
 
         </div>;
     }
