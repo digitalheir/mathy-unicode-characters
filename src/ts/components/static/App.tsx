@@ -4,16 +4,26 @@ import {
     Unicode2description,
     unicodeList,
     UnicodeCharacter,
-    normalizeStrings
+    normalizeStrings, Surrogate
 } from "mathy-unicode-characters";
 
 import {getAsString} from "../../char-util";
+import {defaultOptions, ShowDetailsOptions} from "../../default-options";
 
-export function prettyPrintCodePoints(u: UnicodeCharacter): string[] {
-    return u._id.split("-")
+function prettyPrintCodePoints(u: UnicodeCharacter): string[] {
+    return prettyPrintCodePointsFromId(u._id);
+}
+
+function prettyPrintCodePointsFromId(u: string): string[] {
+    return u.split("-")
         .map(function (s) {
             return "U+" + (s.charAt(0) === "U" ? s.substring(1) : s);
         });
+}
+
+export interface WrappedUnicodeCharacter {
+    char: UnicodeCharacter;
+    normalizedStrings: string[];
 }
 
 export const List: StatelessComponent<{ showOptions: ShowDetailsOptions, items: WrappedUnicodeCharacter[], idsVisible: Set<string> }> = ({showOptions, items, idsVisible}) =>
@@ -44,6 +54,105 @@ function isString(x: any): x is string {
 
 const StartingU = /^U/;
 
+export const ListRow: StatelessComponent<{
+    char: UnicodeCharacter,
+    visible: boolean,
+    showOptions: ShowDetailsOptions
+}> = ({char, showOptions, visible}) => {
+    const decimal = char.dec;
+    const latex = char.latex;
+    const aip = char.aip;
+    const acs = char.acs;
+    const afii = char.afii;
+    const ams = char.ams;
+    const aps = char.aps;
+    const bmp = char.bmp;
+    const elsevierDesc = char.elsevierDesc;
+    // TODO elsevier etc
+    const ieee = char.ieee;
+    const imageNone = char.image;
+    const mathlatex = char.mathlatex;
+    const mode = char.mode;
+    const springer = char.springer;
+    const type = char.type;
+    const varlatex = char.varlatex;
+    const wolfram = char.wolfram;
+    const wolframId = char.wolframId;
+
+    const description = char.description;
+    const descriptionUnicodeVersion = char.descriptionUnicodeVersion;
+
+    // if (imageNone !== undefined && typeof imageNone !== "string") throw new Error(imageNone);
+    // if (wolfram !== undefined && typeof wolfram !== "string") throw new Error(wolfram);
+
+    // TODO from util?
+    const hexaDecimals: number[] = char._id.replace(StartingU, "").split("-").map(x => parseInt("0x" + x, 16));
+//     const rows = getDetailRows(
+//         showOptions,
+//         description,
+//         elsevierDesc,
+//         type,
+//         mode,
+//         latex,
+//         mathlatex,
+//         varlatex,
+//         wolfram,
+//         wolframId,
+//         aip,
+//         acs,
+//         afii,
+//         ams,
+//         aps,
+//         bmp,
+//         ieee,
+//         springer
+//     );
+    const showCharacter = (visible &&
+        (
+            !showOptions["hide characters with no representation selected above"]
+            || [
+                "latex",
+                "wolfram",
+                "aip",
+                "acs",
+                "afii",
+                "ams",
+                "aps",
+                "bmp",
+                "ieee",
+                "springer",
+            ].some(n => showOptions[n] && char[n] !== undefined)
+        )
+    );
+    return <li
+        typeof="Intangible"
+        key={char._id}
+        style={{
+            display:
+                showCharacter
+                    ? "block" : "none"
+        }}
+        data-image={imageNone}
+        id={char._id}
+        className="unicode-character-row"
+    >
+        <header property="name" className="unicode-character">{getAsString(hexaDecimals)}</header>
+        <div className="unicode-character-codepoint" property="identifier">{
+            prettyPrintCodePoints(char).join(" ")
+        }</div>
+        {description ? <div property="description" className="description">{description}</div> : ""}
+        {elsevierDesc ? <div property="description" className="elsevier-description">{elsevierDesc}</div> : ""}
+        {type ? <div property="disambiguatingDescription"
+                     className="type">
+            {type}
+        </div> : ""}
+        {mode ? <div property="disambiguatingDescription"
+                     className="mode">
+            {mode}
+        </div> : ""}
+        <UnicodeCharacterDefinitionList char={char} showOptions={showOptions}/>
+    </li>;
+};
 
 export const DetailsRow: StatelessComponent<{
     visible?: boolean,
@@ -59,77 +168,54 @@ export const DetailsRow: StatelessComponent<{
     </tr>;
 };
 
-export const defaultOptions: ShowDetailsOptions = {
-    latex: true,
-    wolfram: true,
-    aip: false,
-    acs: false,
-    afii: false,
-    ams: false,
-    aps: false,
-    bmp: false,
-    ieee: false,
-    springer: false,
-    ["hide characters with no representation selected above"]: true
-};
 
-export interface ShowDetailsOptions {
-    latex: boolean;
-    wolfram: boolean;
-    aip: boolean;
-    acs: boolean;
-    afii: boolean;
-    ams: boolean;
-    aps: boolean;
-    bmp: boolean;
-    ieee: boolean;
-    springer: boolean;
-    ["hide characters with no representation selected above"]: boolean;
-}
 
-const UnicodeCharacterDefinitionList: StatelessComponent{char: UnicodeCharacter, showOptions: ShowDetailsOptions}  = ({char, showOptions}) => {
+const UnicodeCharacterDefinitionList: StatelessComponent<{ char: UnicodeCharacter, showOptions: ShowDetailsOptions }> = ({char, showOptions}) => {
     const elements = getDetailsAsDefinedTerms(char, showOptions);
     return <dl className="character-details">
         {elements}
-</dl>
+    </dl>;
 };
 
-function addIfDefined(k: string, value: string | undefined, wolframId: string | undefined, visible: boolean, array: ReactNode[]) {
-    if(!!value){
-        array.push(<dt style={{display:visible?"block":"none"}} className="detail-name">{k}</dt>);
-        array.push(<dd style={{display:visible?"block":"none"}} className="detail-value" property="identifier">{value}</dt>);
+function addIfDefined(k: string, value: string | undefined, visible: boolean, array: ReactNode[]) {
+    if (!!value) {
+        array.push(<dt style={{display: visible ? "block" : "none"}} className="detail-name">{k}</dt>);
+        array.push(<dd style={{display: visible ? "block" : "none"}} className="detail-value"
+                       property="identifier">{value}</dd>);
     }
 }
 
-function addIfDefinedWolfram(value: string | undefined, visible: boolean, array: ReactNode[]) {
-    if(!!value){
+function addIfDefinedWolfram(value: string | undefined, wolframId: string | undefined,
+                             visible: boolean, array: ReactNode[]) {
+    if (!!value) {
         const wname: ReactNode[] = [
             <span key="wolf">wolfram</span>
         ];
-        if(!!wolframId) wname.push
+        if (!!wolframId) wname.push(
             <span key="wolfid"> (<span property="identifier" className="wolfram-id">{wolframId}</span>)</span>
         );
-    
-        array.push(<dt style={{display:visible?"block":"none"}} className="detail-name">{wname}</dt>);
-        array.push(<dd style={{display:visible?"block":"none"}} className="detail-value" property="identifier">{value}</dt>);
+        array.push(<dt style={{display: visible ? "block" : "none"}} className="detail-name">{wname}</dt>);
+        array.push(<dd style={{display: visible ? "block" : "none"}} className="detail-value"
+                       property="identifier">{value}</dd>);
     }
 }
- 
+
 function addIfDefinedSurrogate(value: Surrogate | undefined, array: ReactNode[]) {
-    if(!!value){
+    if (!!value) {
         const surr: ReactNode[] = [
-            <a href={"#"+value.ref} key="surrogate">{prettyPrintCodePoints(/*TODO*/).join(" ")}</span>
+            <a href={"#" + value.ref} key="surrogate">{prettyPrintCodePointsFromId(value.ref)}</a>
         ];
-        if(!!value.mathvariant) surr.push
+        if (!!value.mathvariant) surr.push(
             <span key="mathvariant"> (<span property="disambiguatingDescription"
-                                      className="mathvariant">{value.mathvariant}</span>)</span>
+                                            className="mathvariant">{value.mathvariant}</span>)</span>
         );
         array.push(<dt className="detail-name">surrogate</dt>);
         array.push(<dd className="detail-value">
-                   {surr}
-                   </dt>);
+            {surr}
+        </dd>);
     }
-}       
+}
+
 function getDetailsAsDefinedTerms(char, showOptions): ReactNode[] {
     const arr: ReactNode[] = [];
 
@@ -144,13 +230,13 @@ function getDetailsAsDefinedTerms(char, showOptions): ReactNode[] {
     addIfDefined("afii", char.afii, showOptions.afii, arr);
     addIfDefined("ams", char.ams, showOptions.ams, arr);
     addIfDefined("aps", char.aps, showOptions.aps, arr);
-    
-            // todo bmp is a reference to another unicode char
-            addIfDefined("bmp", char.bmp, showOptions.bmp, arr);
-            
+
+    // todo bmp is a reference to another unicode char
+    addIfDefined("bmp", char.bmp, showOptions.bmp, arr);
+
     addIfDefined("ieee", char.ieee, showOptions.ieee, arr);
     addIfDefined("springer", char.springer, showOptions.springer, arr);
-    
+
     return arr;
 }
 
@@ -238,226 +324,118 @@ function getDetailRows(options: ShowDetailsOptions,
                 value={varlatex}
             />
         );
-    if (!!wolfram){
+    if (!!wolfram) {
         const wname: ReactNode[] = [
             <span key="wolf">wolfram</span>
         ];
-        if(!!wolframId) wname.push
+        if (!!wolframId) wname.push(
             <span key="wolfid"> (<span property="identifier" className="wolfram-id">{wolframId}</span>)</span>
         );
-                  
+
         rows.push(<tr style={{display: options.wolfram ? "table-row" : "none"}}>
-        <td className="key-name">{wname}</td>
-        <td property="identifier">{wolfram}</td>
-                  }
-    </tr>);
-        <DetailsRow
-                visible={}
-                key=""
-                property=""
-                name={wolfram}
-                keyName={"wolfram"}
-                value={}
-            />
-        );
-    if (!!aip)
-        rows.push(<DetailsRow
-                visible={options.aip}
-                key="aip"
-                property="identifier"
-                name="aip"
-                keyName={"aip"}
-                value={aip}
-            />
-        );
-    if (!!acs)
-        rows.push(<DetailsRow
-                visible={options.acs}
-                key="acs"
-                property="identifier"
-                name="acs"
-                keyName={"acs"}
-                value={acs}
-            />
-        );
-    if (!!afii)
-        rows.push(<DetailsRow
-                visible={options.afii}
-                key="afii"
-                property="identifier"
-                name="afii"
-                keyName={"afii"}
-                value={afii}
-            />
-        );
-    if (!!ams)
-        rows.push(<DetailsRow
-                visible={options.ams}
-                key="ams"
-                property="identifier"
-                name="ams"
-                keyName={"ams"}
-                value={ams}
-            />
-        );
-    if (!!aps
-    )
-        rows.push(<DetailsRow
-                visible={options.aps}
-                key="aps"
-                property="identifier"
-                name="aps"
-                keyName={"aps"}
-                value={aps}
-            />
-        );
-    if (!!bmp
-    )
-        rows.push(<DetailsRow
-                visible={options.bmp}
-                key="bmp"
-                property="identifier"
-                name="bmp"
-                keyName={"bmp"}
-                value={bmp}
-            />
-        );
-    if (!!ieee
-    )
-        rows.push(<DetailsRow
-                visible={options.ieee}
-                key="ieee"
-                property="identifier"
-                name="ieee"
-                keyName={"ieee"}
-                value={ieee}
-            />
-        );
-    if (!!springer
-    )
-        rows.push(<DetailsRow
-                visible={options.springer}
-                key="springer"
-                property="identifier"
-                name="springer"
-                keyName={"springer"}
-                value={springer}
-            />
-        );
-    return rows;
+            <td className="key-name">{wname}</td>
+            <td property="identifier">{wolfram}</td>
+            }
+        </tr>);
+        if (!!aip)
+            rows.push(<DetailsRow
+                    visible={options.aip}
+                    key="aip"
+                    property="identifier"
+                    name="aip"
+                    keyName={"aip"}
+                    value={aip}
+                />
+            );
+        if (!!acs)
+            rows.push(<DetailsRow
+                    visible={options.acs}
+                    key="acs"
+                    property="identifier"
+                    name="acs"
+                    keyName={"acs"}
+                    value={acs}
+                />
+            );
+        if (!!afii)
+            rows.push(<DetailsRow
+                    visible={options.afii}
+                    key="afii"
+                    property="identifier"
+                    name="afii"
+                    keyName={"afii"}
+                    value={afii}
+                />
+            );
+        if (!!ams)
+            rows.push(<DetailsRow
+                    visible={options.ams}
+                    key="ams"
+                    property="identifier"
+                    name="ams"
+                    keyName={"ams"}
+                    value={ams}
+                />
+            );
+        if (!!aps
+        )
+            rows.push(<DetailsRow
+                    visible={options.aps}
+                    key="aps"
+                    property="identifier"
+                    name="aps"
+                    keyName={"aps"}
+                    value={aps}
+                />
+            );
+        if (!!bmp
+        )
+            rows.push(<DetailsRow
+                    visible={options.bmp}
+                    key="bmp"
+                    property="identifier"
+                    name="bmp"
+                    keyName={"bmp"}
+                    value={bmp}
+                />
+            );
+        if (!!ieee
+        )
+            rows.push(<DetailsRow
+                    visible={options.ieee}
+                    key="ieee"
+                    property="identifier"
+                    name="ieee"
+                    keyName={"ieee"}
+                    value={ieee}
+                />
+            );
+        if (!!springer
+        )
+            rows.push(<DetailsRow
+                    visible={options.springer}
+                    key="springer"
+                    property="identifier"
+                    name="springer"
+                    keyName={"springer"}
+                    value={springer}
+                />
+            );
+        return rows;
+    }
+
 }
-
-export const ListRow: StatelessComponent<{
-    char: UnicodeCharacter,
-    visible: boolean,
-    showOptions: ShowDetailsOptions
-}> = ({char, showOptions, visible}) => {
-    const decimal = char.dec;
-    const latex = char.latex;
-    const aip = char.aip;
-    const acs = char.acs;
-    const afii = char.afii;
-    const ams = char.ams;
-    const aps = char.aps;
-    const bmp = char.bmp;
-    const elsevierDesc = char.elsevierDesc;
-    // TODO elsevier etc
-    const ieee = char.ieee;
-    const imageNone = char.image;
-    const mathlatex = char.mathlatex;
-    const mode = char.mode;
-    const springer = char.springer;
-    const type = char.type;
-    const varlatex = char.varlatex;
-    const wolfram = char.wolfram;
-    const wolframId = char.wolframId;
-
-    const description = char.description;
-    const descriptionUnicodeVersion = char.descriptionUnicodeVersion;
-
-    // if (imageNone !== undefined && typeof imageNone !== "string") throw new Error(imageNone);
-    // if (wolfram !== undefined && typeof wolfram !== "string") throw new Error(wolfram);
-
-    // TODO from util?
-    const hexaDecimals: number[] = char._id.replace(StartingU, "").split("-").map(x => parseInt("0x" + x, 16));
-//     const rows = getDetailRows(
-//         showOptions,
-//         description,
-//         elsevierDesc,
-//         type,
-//         mode,
-//         latex,
-//         mathlatex,
-//         varlatex,
-//         wolfram,
-//         wolframId,
-//         aip,
-//         acs,
-//         afii,
-//         ams,
-//         aps,
-//         bmp,
-//         ieee,
-//         springer
-//     );
-const showCharacter = (visible  && 
-               (
-    !showOptions["hide characters with no representation selected above"] 
-               || [
-                   "latex",
-                   "wolfram",
-                   "aip",
-                   "acs",
-                   "afii",
-                   "ams",
-                   "aps",
-                   "bmp",
-                   "ieee",
-                   "springer",
-               ].some(n => showOptions[n] && char[n] !== undefined)
-               )
-               );
-    return <li
-        typeof="Intangible"
-        key={char._id}
-        style={{display: 
-               showCharacter
-               ? "block" : "none"}}
-        data-image={imageNone}
-        id={char._id}
-        className="unicode-character-row"
-    >
-        <header property="name" className="unicode-character">{getAsString(hexaDecimals)}</header>
-        <div className="unicode-character-codepoint" property="identifier">{
-            prettyPrintCodePoints(char).join(" ")
-        }</div>
-        {description ? <div property="description" className="description">{description}</div> : ""}
-        {elsevierDesc ? <div property="description" className="elsevier-description">{elsevierDesc}</div> : ""}
-        {type ? <div property="disambiguatingDescription"
-                     className="type">
-            {type}
-        </div> : ""}
-        {mode ? <div property="disambiguatingDescription"
-                     className="mode">
-            {mode}
-        </div> : ""}
-        <UnicodeCharacterDefinitionList char={char} showOptions={showOptions}/>
-    </li>;
-};
 
 // <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
 // <!--[if lt IE 8]>
 //  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 // <![endif]-->
 
-export interface WrappedUnicodeCharacter {
-    char: UnicodeCharacter;
-    normalizedStrings: string[];
-}
 
 function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<string> {
-    if (words.length === 0)
+    if (words.length === 0) {
         return new Set(arr.map(c => c.char._id));
+    }
 
     return new Set(arr.filter(
         obj => words.every(word =>
@@ -484,28 +462,28 @@ export interface UAProps {
     chars: WrappedUnicodeCharacter[];
     defaultShowOptions: ShowDetailsOptions;
 }
-export const LabelFor: StatelessComponent<{name: string}> = ({name}) => {
-    
-    switch(name){
-            case "afii":
-    return <label htmlFor={name}>
-                   <abbr title="Association for Font Information Interchange">
-                                    {name}
-                    </abbr></label>;
-                 case "aip":
+
+export const LabelFor: StatelessComponent<{ name: string }> = ({name}) => {
+    switch (name) {
+        case "afii":
+            return <label htmlFor={name}>
+                <abbr title="Association for Font Information Interchange">
+                    {name}
+                </abbr></label>;
+        case "aip":
             // TODO render aip al &xxx; entity!
-    return <label htmlFor={name}>
-                   <abbr title="American Institute of Physics (XML entity)">
-                                    {name}
-                    </abbr>
+            return <label htmlFor={name}>
+                <abbr title="American Institute of Physics (XML entity)">
+                    {name}
+                </abbr>
             </label>;
         default:
-                                return <label htmlFor={name}>
-                                    {name}
-                                </label>;
-               }
-}
-    
+            return <label htmlFor={name}>
+                {name}
+            </label>;
+    }
+};
+
 export class UnicodeApp extends PureComponent<UAProps, UAState> {
     constructor(props: UAProps) {
         super(props);
@@ -521,8 +499,8 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
     }
 
     changeShowOption(name: keyof ShowDetailsOptions, checked: boolean) {
-        const showOptions =
-            Object.assign({}, this.state.showOptions, {[name]: checked}) as ShowDetailsOptions;
+        const showOptions = this.state.showOptions;
+        showOptions[name] = checked;
         this.setState(
             {showOptions}
         );
@@ -557,16 +535,16 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 
             <div className="options-toggle" style={{
                 display: (this.state.showOptionsToggle ? "block" : "none"),
-                
                 padding: 0,
                 right: 0,
                 top: 0,
                 position: "fixed"
             }}>
-                <button 
-className={(this.state.showOptionsToggle ? "activated " : "") + "options-toggle mdl-button mdl-js-button mdl-button--icon mdl-button--colored"}>
-  <i class="material-icons">filter_list</i>
-</button>
+                <button
+                    className={(this.state.showOptionsToggle ? "activated " : "") + "options-toggle mdl-button mdl-js-button mdl-button--icon mdl-button--colored"}>
+                    <i className="material-icons">filter_list</i>
+                </button>
+            </div>
 
 
             <div className="option-toggles" style={{
@@ -590,7 +568,7 @@ className={(this.state.showOptionsToggle ? "activated " : "") + "options-toggle 
                                         e.target.checked
                                     )}
                                 />
-                                 <LabelFor name={name}/>
+                                <LabelFor name={name}/>
                             </div>
                         )
                 }
@@ -617,34 +595,7 @@ className={(this.state.showOptionsToggle ? "activated " : "") + "options-toggle 
 
 }
 
-export const App: StatelessComponent<{}> = () => <html lang="en">
-    <head>
-        <meta charSet="utf-8"/>
-        <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
-        <title>Unicode to LaTeX / Mathematica / Elsevier / etc.</title>
-        <meta name="description" content="Converter tool for converting LaTeX to Unicode and Unicode to LaTex. Also supports Wolfram, aip, acs, afii, ams, aps, bmp, ieee and springer."/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="css/normalize.css"/>
-        <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/material-components-web.css"/>
-        <link rel="stylesheet" href="css/app.css"/>
-    </head>
-    <body>
 
-    <div id="mount-point">
-        <UnicodeApp defaultShowOptions={defaultOptions} staticRender={true} chars={unicodeList.map(char => {
-            return {
-                normalizedStrings: normalizeStrings(char),
-                char
-            };
-        })}/>
-    </div>
-
-    <script defer={true} src="js/app.js"/>
-
-    </body>
-    </html>
-;
 // <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 // <!--<script>-->
 // <!--(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=-->

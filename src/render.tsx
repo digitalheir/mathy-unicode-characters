@@ -1,6 +1,6 @@
 import * as React from "react";
 import {renderToStaticMarkup, renderToString} from "react-dom/server";
-import {App} from "./ts/components/static/App";
+import {Html} from "./ts/components/static/Html";
 
 // Client render (optional):
 if (typeof document !== "undefined") {
@@ -18,12 +18,14 @@ function getComponent(path: string) {
     const relativePath = splitPath(path).slice(1).map(a => "../").join("");
     switch (path) {
         case "/":
-            return <App/>;
+            return <Html/>;
         default:
             throw new Error("Could not find component for path " + path);
     }
 }
 
 export default (locals: any, callback: any) => {
-    callback(undefined, "<!DOCTYPE html>\n" + renderToString(getComponent(locals.path)).replace("</li>", "</li>\n"));
+    callback(undefined, "<!DOCTYPE html>\n" + renderToStaticMarkup(
+        getComponent(locals.path)
+    ).replace("</li>", "</li>\n"));
 };
