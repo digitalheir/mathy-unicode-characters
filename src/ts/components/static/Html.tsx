@@ -40,7 +40,7 @@ export const Html: StatelessComponent<{}> = () => <html lang="en">
 
     </div>
 
-    <script defer={true} src="js/app.js"/>
+    <script async={true} src="js/app.js"/>
 
     </body>
     </html>
