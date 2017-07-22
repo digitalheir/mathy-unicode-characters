@@ -174,7 +174,7 @@ const UnicodeCharacterDefinitionList: StatelessComponent<{ char: UnicodeCharacte
     </dl>;
 };
 
-function addIfDefined(k: string, value: string | undefined, visible: boolean, array: ReactNode[]) {
+function addIfDefined(k: ReactNode, value: string | undefined, visible: boolean, array: ReactNode[]) {
     if (!!value) {
         array.push(<dt style={{display: visible ? "block" : "none"}} className="detail-name">{k}</dt>);
         array.push(<dd style={{display: visible ? "block" : "none"}} className="detail-value"
@@ -199,13 +199,12 @@ function addIfDefinedWolfram(value: string | undefined, wolframId: string | unde
 
 function addIfDefinedSurrogate(value: Surrogate | undefined, array: ReactNode[]) {
     if (!!value) {
-        const surr: ReactNode[] = [
-            <a href={"#" + value.ref} key="surrogate">{prettyPrintCodePointsFromId(value.ref)}</a>
-        ];
+        const surr: ReactNode[] = [];
         if (!!value.mathvariant) surr.push(
-            <span key="mathvariant"> (<span property="disambiguatingDescription"
-                                            className="mathvariant">{value.mathvariant}</span>)</span>
+            <span key="mathvariant"><span property="disambiguatingDescription"
+                                          className="mathvariant">{value.mathvariant}</span> version of </span>
         );
+        surr.push(<a href={"#" + value.ref} key="surrogate">{prettyPrintCodePointsFromId(value.ref)}</a>);
         array.push(<dt className="detail-name">surrogate</dt>);
         array.push(<dd className="detail-value">
             {surr}
@@ -222,14 +221,14 @@ function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetai
     addIfDefined("mathlatex", char.mathlatex, showOptions.latex, arr);
     addIfDefined("varlatex", char.varlatex, showOptions.latex, arr);
     addIfDefinedWolfram(char.wolfram, char.wolframId, showOptions.wolfram, arr);
-    addIfDefined("aip", char.aip, showOptions.aip, arr);
+    addIfDefined(<AipAbbr/>, char.aip, showOptions.aip, arr);
     addIfDefined("acs", char.acs, showOptions.acs, arr);
-    addIfDefined("afii", char.afii, showOptions.afii, arr);
+    addIfDefined(<AfiiAbbr/>, char.afii, showOptions.afii, arr);
     addIfDefined("ams", char.ams, showOptions.ams, arr);
     addIfDefined("aps", char.aps, showOptions.aps, arr);
 
     // todo bmp is a reference to another unicode char
-    addIfDefined("bmp", char.bmp, showOptions.bmp, arr);
+    addIfDefined(<BmpAbbr/>, char.bmp, showOptions.bmp, arr);
 
     addIfDefined("ieee", char.ieee, showOptions.ieee, arr);
     addIfDefined("springer", char.springer, showOptions.springer, arr);
@@ -460,19 +459,33 @@ export interface UAProps {
     defaultShowOptions: ShowDetailsOptions;
 }
 
+export const AfiiAbbr: StatelessComponent<{}> = ({}) => <abbr title="Association for Font Information Interchange">
+    afii
+</abbr>;
+
+export const AipAbbr: StatelessComponent<{}> = ({}) => <abbr title="American Institute of Physics (XML entity)">
+    aip
+</abbr>;
+
+export const BmpAbbr: StatelessComponent<{}> = ({}) => <abbr
+    title={"Basic Multilingual Plane (Plane 0: \"ordinary\" Unicode)"}>
+    bmp
+</abbr>;
+
 export const LabelFor: StatelessComponent<{ name: string }> = ({name}) => {
     switch (name) {
         case "afii":
             return <label htmlFor={name}>
-                <abbr title="Association for Font Information Interchange">
-                    {name}
-                </abbr></label>;
+                <AfiiAbbr/>
+            </label>;
+        case "bmp":
+            return <label htmlFor={name}>
+                <BmpAbbr/>
+            </label>;
         case "aip":
             // TODO render aip al &xxx; entity!
             return <label htmlFor={name}>
-                <abbr title="American Institute of Physics (XML entity)">
-                    {name}
-                </abbr>
+                <AipAbbr/>
             </label>;
         default:
             return <label htmlFor={name}>
@@ -541,16 +554,16 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 top: 0,
                 position: "fixed"
             }}>
-                <button
-                    onClick={() => this.toggleShowOptionsToggle()}
-                    className={(this.state.showOptionsToggle ? "activated " : "")
-                    + "options-toggle mdl-button mdl-js-button mdl-button--icon mdl-button--colored"}
-                >
-
-                    <i className="material-icons">filter_list</i>
-                </button>
+                <i className={(this.state.showOptionsToggle ? "active " : "") + "mdc-icon-toggle material-icons"}
+                   aria-pressed="false"
+                   aria-label="Add to favorites"
+                   role="button"
+                   data-toggle-on='{"label": "Remove from favorites", "content": "favorite"}'
+                   data-toggle-off='{"label": "Add to favorites", "content": "favorite_border"}'
+                   tabIndex={0}
+                   onClick={() => this.toggleShowOptionsToggle()}
+                >filter_list</i>
             </div>
-
 
             <div className="option-toggles" style={{
                 display: this.state.showOptionsToggle ? "block" : "none",
@@ -558,7 +571,9 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 padding: 0,
                 right: 0,
                 top: "50px",
-                position: "fixed"
+                position: "fixed",
+                width: "144px",
+                background: "white"
             }}>
                 {
                     Object.keys(defaultOptions)

@@ -3,6 +3,32 @@ body {
     overflow-x: hidden;
 }
 
+/*
+.mdc-icon-toggle:not(.mdc-ripple-upgraded):hover::before,
+.mdc-icon-toggle:not(.mdc-ripple-upgraded):focus::before,
+.mdc-icon-toggle:not(.mdc-ripple-upgraded):active::after {
+    transition-duration: 85ms;
+    opacity: .6;
+}
+*/
+
+.mdc-icon-toggle::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+abbr[title], acronym[title] {
+    text-decoration: none;
+}
+
+/*
+.mdc-icon-toggle.active::before {
+    opacity: .6;
+}
+*/
+
 input.filter { /*todo class */
     width: 100%;
     margin: 0;
@@ -18,6 +44,7 @@ input.filter { /*todo class */
 .unicode-character-list tr td:first-child { /*todo class */
     font-weight: bold;
 }
+
 .key-name {
     font-weight: bold;
 }

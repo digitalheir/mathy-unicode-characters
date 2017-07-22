@@ -14,6 +14,7 @@ export const Html: StatelessComponent<{}> = () => <html lang="en">
         <meta name="description"
               content="Converter tool for converting LaTeX to Unicode and Unicode to LaTex. Also supports Wolfram, aip, acs, afii, ams, aps, bmp, ieee and springer."/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="css/material-components-web.css"/>
