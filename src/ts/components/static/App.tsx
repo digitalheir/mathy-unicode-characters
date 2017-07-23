@@ -197,7 +197,7 @@ function addIfDefinedWolfram(value: string | undefined, wolframId: string | unde
                              visible: boolean, array: ReactNode[]) {
     if (!!value) {
         const wname: ReactNode[] = [
-            <span key="wolf">wolfram</span>
+            <span key="wolf">Wolfram (Mathematica)</span>
         ];
         if (!!wolframId) wname.push(
             <span key="wolfid"> (<span property="identifier" className="wolfram-id">{wolframId}</span>)</span>
@@ -223,26 +223,41 @@ function addIfDefinedSurrogate(value: Surrogate | undefined, array: ReactNode[])
     }
 }
 
+function addIfDefinedBmp(value: string | undefined, visible: boolean, array: ReactNode[]) {
+    if (!!value) {
+        array.push(
+            <dt style={{display: visible ? "block" : "none"}} className="detail-name">
+                <BmpAbbr key="bmp"/>
+            </dt>
+        );
+        array.push(
+            <dd style={{display: visible ? "block" : "none"}} className="detail-value"
+                property="identifier">
+                <a href={"#" + value} key="ref">{prettyPrintCodePointsFromId(value)}</a>
+            </dd>
+        );
+    }
+
+}
+
 function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetailsOptions): ReactNode[] {
     const arr: ReactNode[] = [];
 
     addIfDefinedSurrogate(char.surrogate, arr);
 
-    addIfDefined("latex", char.latex, showOptions.latex, arr);
-    addIfDefined("mathlatex", char.mathlatex, showOptions.latex, arr);
-    addIfDefined("varlatex", char.varlatex, showOptions.latex, arr);
+    addIfDefined("LaTeX", char.latex, showOptions.latex, arr);
+    addIfDefined("LaTeX (Math mode)", char.mathlatex, showOptions.latex, arr);
+    addIfDefined("LaTeX (variant)", char.varlatex, showOptions.latex, arr);
+    addIfDefined("LaTeX (Springer)", char.springer, showOptions.springer, arr);
     addIfDefinedWolfram(char.wolfram, char.wolframId, showOptions.wolfram, arr);
     addIfDefined(<AipAbbr/>, char.aip, showOptions.aip, arr);
-    addIfDefined("acs", char.acs, showOptions.acs, arr);
+    addIfDefined(<AcsAbbr/>, char.acs, showOptions.acs, arr);
     addIfDefined(<AfiiAbbr/>, char.afii, showOptions.afii, arr);
-    addIfDefined("ams", char.ams, showOptions.ams, arr);
-    addIfDefined("aps", char.aps, showOptions.aps, arr);
-
+    addIfDefined(<AmsAbbr/>, char.ams, showOptions.ams, arr);
+    addIfDefined(<ApsAbbr/>, char.aps, showOptions.aps, arr);
+    addIfDefinedBmp(char.bmp, showOptions.bmp, arr);
+    addIfDefined(<IeeeAbbr/>, char.ieee, showOptions.ieee, arr);
     // todo bmp is a reference to another unicode char
-    addIfDefined(<BmpAbbr/>, char.bmp, showOptions.bmp, arr);
-
-    addIfDefined("ieee", char.ieee, showOptions.ieee, arr);
-    addIfDefined("springer", char.springer, showOptions.springer, arr);
 
     return arr;
 }
@@ -471,39 +486,73 @@ export interface UAProps {
     defaultShowOptions: ShowDetailsOptions;
 }
 
-export const AfiiAbbr: StatelessComponent<{}> = ({}) => <abbr title="Association for Font Information Interchange">
-    afii
-</abbr>;
+export const AfiiAbbr: StatelessComponent<{}> = ({}) => <span><abbr
+    title="Association for Font Information Interchange">
+    AFII
+</abbr></span>;
 
-export const AipAbbr: StatelessComponent<{}> = ({}) => <abbr title="American Institute of Physics (XML entity)">
-    aip
-</abbr>;
+export const ApsAbbr: StatelessComponent<{}> = ({}) => <span><abbr
+    title="American Physical Society">
+    APS
+</abbr></span>;
 
-export const BmpAbbr: StatelessComponent<{}> = ({}) => <abbr
+export const AipAbbr: StatelessComponent<{}> = ({}) => <span><abbr
+    title="American Institute of Physics">
+    AIP
+</abbr></span>;
+
+export const AcsAbbr: StatelessComponent<{}> = ({}) => <span><abbr
+    title="American Chemical Society">
+    ACS
+</abbr></span>;
+
+export const AmsAbbr: StatelessComponent<{}> = ({}) => <span><abbr
+    title="American Mathematical Society">
+    AMS
+</abbr>-LaTeX</span>;
+
+export const IeeeAbbr: StatelessComponent<{}> = ({}) => <span><abbr
+    title="Institute of Electrical and Electronic Engineers">
+    IEEEE
+</abbr></span>;
+
+
+export const BmpAbbr: StatelessComponent<{}> = ({}) => <span><abbr
     title={"Basic Multilingual Plane (Plane 0: \"ordinary\" Unicode)"}>
-    bmp
-</abbr>;
+    BMP
+</abbr> code</span>;
 
-export const LabelFor: StatelessComponent<{ name: string }> = ({name}) => {
+function getAbbr(name: string): ReactNode {
     switch (name) {
         case "afii":
-            return <label htmlFor={name}>
-                <AfiiAbbr/>
-            </label>;
+            return <AfiiAbbr/>;
         case "bmp":
-            return <label htmlFor={name}>
-                <BmpAbbr/>
-            </label>;
+            return <BmpAbbr/>;
         case "aip":
-            // TODO render aip al &xxx; entity!
-            return <label htmlFor={name}>
-                <AipAbbr/>
-            </label>;
+            return <AipAbbr/>;
+        case "ams":
+            return <AmsAbbr/>;
+        case "aps":
+            return <ApsAbbr/>;
+        case "acs":
+            return <AcsAbbr/>;
+        case "ieee":
+            return <IeeeAbbr/>;
+        case "springer":
+            return "LaTeX (Springer)";
+        case "latex":
+            return "LaTeX";
+        case "wolfram":
+            return "Wolfram (Mathematica)";
         default:
-            return <label htmlFor={name}>
-                {name}
-            </label>;
+            return name;
     }
+}
+
+export const LabelFor: StatelessComponent<{ name: string }> = ({name}) => {
+    return <label htmlFor={name}>
+        {getAbbr(name)}
+    </label>;
 };
 
 export class UnicodeApp extends PureComponent<UAProps, UAState> {
@@ -515,7 +564,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
             leading: false,
             trailing: true
         }
-        );
+    );
 
     setQuery(query: string) {
         this.setState({query});
