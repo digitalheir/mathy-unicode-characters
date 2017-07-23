@@ -511,10 +511,10 @@ export const AmsAbbr: StatelessComponent<{}> = ({}) => <span><abbr
     AMS
 </abbr>-LaTeX</span>;
 
-export const IeeeAbbr: StatelessComponent<{}> = ({}) => <span><abbr
+export const IeeeAbbr: StatelessComponent<{}> = ({}) => <span>LaTeX (<abbr
     title="Institute of Electrical and Electronic Engineers">
-    IEEEE
-</abbr></span>;
+    IEEE
+</abbr>)</span>;
 
 
 export const BmpAbbr: StatelessComponent<{}> = ({}) => <span><abbr

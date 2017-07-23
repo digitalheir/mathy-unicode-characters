@@ -15,6 +15,7 @@ export interface ShowDetailsOptions {
 export const defaultOptions: ShowDetailsOptions = {
     latex: true,
     ams: false,
+    ieee: false,
     springer: false,
     wolfram: true,
     acs: false,
@@ -22,7 +23,6 @@ export const defaultOptions: ShowDetailsOptions = {
     afii: false,
     aps: false,
     bmp: false,
-    ieee: false,
     ["hide characters with none of selected representations"]: true
 };
 
@@ -30,6 +30,7 @@ export function copyShowDetailsOptions(src: ShowDetailsOptions) {
     return {
         latex: src.latex,
         ams: src.ams,
+        ieee: src.ieee,
         springer: src.springer,
         wolfram: src.wolfram,
         acs: src.acs,
@@ -37,7 +38,6 @@ export function copyShowDetailsOptions(src: ShowDetailsOptions) {
         afii: src.afii,
         aps: src.aps,
         bmp: src.bmp,
-        ieee: src.ieee,
         ["hide characters with none of selected representations"]: src["hide characters with none of selected representations"]
     };
 }
