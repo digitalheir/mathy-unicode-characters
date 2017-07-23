@@ -246,207 +246,23 @@ function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetai
     addIfDefinedSurrogate(char.surrogate, arr);
 
     addIfDefined("LaTeX", char.latex, showOptions.latex, arr);
-    addIfDefined("LaTeX (Math mode)", char.mathlatex, showOptions.latex, arr);
+    addIfDefined("LaTeX (math mode)", char.mathlatex, showOptions.latex, arr);
     addIfDefined("LaTeX (variant)", char.varlatex, showOptions.latex, arr);
-    addIfDefined("LaTeX (Springer)", char.springer, showOptions.springer, arr);
+    addIfDefined("LaTeX (Springer)", char.springer, showOptions.latex, arr);
+    addIfDefined(<AmsAbbr/>, char.ams, showOptions.latex, arr);
+    addIfDefined(<IeeeAbbr/>, char.ieee, showOptions.latex, arr);
+
     addIfDefinedWolfram(char.wolfram, char.wolframId, showOptions.wolfram, arr);
     addIfDefined(<AipAbbr/>, char.aip, showOptions.aip, arr);
     addIfDefined(<AcsAbbr/>, char.acs, showOptions.acs, arr);
     addIfDefined(<AfiiAbbr/>, char.afii, showOptions.afii, arr);
-    addIfDefined(<AmsAbbr/>, char.ams, showOptions.ams, arr);
     addIfDefined(<ApsAbbr/>, char.aps, showOptions.aps, arr);
     addIfDefinedBmp(char.bmp, showOptions.bmp, arr);
-    addIfDefined(<IeeeAbbr/>, char.ieee, showOptions.ieee, arr);
     // todo bmp is a reference to another unicode char
 
     return arr;
 }
 
-function getDetailRows(options: ShowDetailsOptions,
-                       description: string,
-                       elsevierDesc: string,
-                       type: string, mode: string,
-                       latex: string,
-                       mathlatex: string,
-                       varlatex: string,
-                       wolfram: string,
-                       wolframId: string,
-                       aip: string,
-                       acs: string,
-                       afii: string,
-                       ams: string,
-                       aps: string,
-                       bmp: string,
-                       ieee: string,
-                       springer: string): ReactNode[] {
-    const rows: ReactNode[] = [];
-    // if (!!description)
-    //     rows.push(<DetailsRow
-    //             key="description"
-    //             property="description"
-    //             name="description"
-    //             keyName={"description"}
-    //             value={description}
-    //         />
-    //     );
-    // if (!!elsevierDesc)
-    //     rows.push(<DetailsRow
-    //             key="elsevierDesc"
-    //             property="description"
-    //             name="elsevierDesc"
-    //             keyName={"elsevier description"
-    //             } value={elsevierDesc
-    //         }/>
-    //     );
-    // if (!!type)
-    //     rows.push(<DetailsRow
-    //             key="type"
-    //             property="disambiguatingDescription"
-    //             name="type"
-    //             keyName={"type"}
-    //             value={type}
-    //         />
-    //     );
-    // if (!!mode)
-    //     rows.push(<DetailsRow
-    //             key="mode"
-    //             property="disambiguatingDescription"
-    //             name="mode"
-    //             keyName={"mode"}
-    //             value={mode}
-    //         />
-    //     );
-    if (!!latex)
-        rows.push(<DetailsRow
-                visible={options.latex}
-                key="latex"
-                property="identifier"
-                name="latex"
-                keyName={"latex"}
-                value={latex}
-            />
-        );
-    if (!!mathlatex)
-        rows.push(<DetailsRow
-                visible={options.latex}
-                key="mathlatex"
-                property="identifier"
-                name="mathlatex"
-                keyName={"mathlatex"}
-                value={mathlatex}
-            />
-        );
-    if (!!varlatex)
-        rows.push(<DetailsRow
-                visible={options.latex}
-                key="varlatex"
-                property="identifier"
-                name="varlatex"
-                keyName={"varlatex"}
-                value={varlatex}
-            />
-        );
-    if (!!wolfram) {
-        const wname: ReactNode[] = [
-            <span key="wolf">wolfram</span>
-        ];
-        if (!!wolframId) wname.push(
-            <span key="wolfid"> (<span property="identifier" className="wolfram-id">{wolframId}</span>)</span>
-        );
-
-        rows.push(<tr style={{display: options.wolfram ? "table-row" : "none"}}>
-            <td className="key-name">{wname}</td>
-            <td property="identifier">{wolfram}</td>
-            }
-        </tr>);
-        if (!!aip)
-            rows.push(<DetailsRow
-                    visible={options.aip}
-                    key="aip"
-                    property="identifier"
-                    name="aip"
-                    keyName={"aip"}
-                    value={aip}
-                />
-            );
-        if (!!acs)
-            rows.push(<DetailsRow
-                    visible={options.acs}
-                    key="acs"
-                    property="identifier"
-                    name="acs"
-                    keyName={"acs"}
-                    value={acs}
-                />
-            );
-        if (!!afii)
-            rows.push(<DetailsRow
-                    visible={options.afii}
-                    key="afii"
-                    property="identifier"
-                    name="afii"
-                    keyName={"afii"}
-                    value={afii}
-                />
-            );
-        if (!!ams)
-            rows.push(<DetailsRow
-                    visible={options.ams}
-                    key="ams"
-                    property="identifier"
-                    name="ams"
-                    keyName={"ams"}
-                    value={ams}
-                />
-            );
-        if (!!aps
-        )
-            rows.push(<DetailsRow
-                    visible={options.aps}
-                    key="aps"
-                    property="identifier"
-                    name="aps"
-                    keyName={"aps"}
-                    value={aps}
-                />
-            );
-        if (!!bmp
-        )
-            rows.push(<DetailsRow
-                    visible={options.bmp}
-                    key="bmp"
-                    property="identifier"
-                    name="bmp"
-                    keyName={"bmp"}
-                    value={bmp}
-                />
-            );
-        if (!!ieee
-        )
-            rows.push(<DetailsRow
-                    visible={options.ieee}
-                    key="ieee"
-                    property="identifier"
-                    name="ieee"
-                    keyName={"ieee"}
-                    value={ieee}
-                />
-            );
-        if (!!springer
-        )
-            rows.push(<DetailsRow
-                    visible={options.springer}
-                    key="springer"
-                    property="identifier"
-                    name="springer"
-                    keyName={"springer"}
-                    value={springer}
-                />
-            );
-        return rows;
-    }
-
-}
 
 // <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
 // <!--[if lt IE 8]>
@@ -693,3 +509,191 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 // <!--r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));-->
 // <!--ga('create','UA-XXXXX-X','auto');ga('send','pageview');-->
 // <!--</script>-->
+
+
+
+// function getDetailRows(options: ShowDetailsOptions,
+//                        description: string,
+//                        elsevierDesc: string,
+//                        type: string, mode: string,
+//                        latex: string,
+//                        mathlatex: string,
+//                        varlatex: string,
+//                        wolfram: string,
+//                        wolframId: string,
+//                        aip: string,
+//                        acs: string,
+//                        afii: string,
+//                        ams: string,
+//                        aps: string,
+//                        bmp: string,
+//                        ieee: string,
+//                        springer: string): ReactNode[] {
+//     const rows: ReactNode[] = [];
+//     // if (!!description)
+//     //     rows.push(<DetailsRow
+//     //             key="description"
+//     //             property="description"
+//     //             name="description"
+//     //             keyName={"description"}
+//     //             value={description}
+//     //         />
+//     //     );
+//     // if (!!elsevierDesc)
+//     //     rows.push(<DetailsRow
+//     //             key="elsevierDesc"
+//     //             property="description"
+//     //             name="elsevierDesc"
+//     //             keyName={"elsevier description"
+//     //             } value={elsevierDesc
+//     //         }/>
+//     //     );
+//     // if (!!type)
+//     //     rows.push(<DetailsRow
+//     //             key="type"
+//     //             property="disambiguatingDescription"
+//     //             name="type"
+//     //             keyName={"type"}
+//     //             value={type}
+//     //         />
+//     //     );
+//     // if (!!mode)
+//     //     rows.push(<DetailsRow
+//     //             key="mode"
+//     //             property="disambiguatingDescription"
+//     //             name="mode"
+//     //             keyName={"mode"}
+//     //             value={mode}
+//     //         />
+//     //     );
+//     if (!!latex)
+//         rows.push(<DetailsRow
+//                 visible={options.latex}
+//                 key="latex"
+//                 property="identifier"
+//                 name="latex"
+//                 keyName={"latex"}
+//                 value={latex}
+//             />
+//         );
+//     if (!!mathlatex)
+//         rows.push(<DetailsRow
+//                 visible={options.latex}
+//                 key="mathlatex"
+//                 property="identifier"
+//                 name="mathlatex"
+//                 keyName={"mathlatex"}
+//                 value={mathlatex}
+//             />
+//         );
+//     if (!!varlatex)
+//         rows.push(<DetailsRow
+//                 visible={options.latex}
+//                 key="varlatex"
+//                 property="identifier"
+//                 name="varlatex"
+//                 keyName={"varlatex"}
+//                 value={varlatex}
+//             />
+//         );
+//     if (!!wolfram) {
+//         const wname: ReactNode[] = [
+//             <span key="wolf">wolfram</span>
+//         ];
+//         if (!!wolframId) wname.push(
+//             <span key="wolfid"> (<span property="identifier" className="wolfram-id">{wolframId}</span>)</span>
+//         );
+//
+//         rows.push(<tr style={{display: options.wolfram ? "table-row" : "none"}}>
+//             <td className="key-name">{wname}</td>
+//             <td property="identifier">{wolfram}</td>
+//             }
+//         </tr>);
+//         if (!!aip)
+//             rows.push(<DetailsRow
+//                     visible={options.aip}
+//                     key="aip"
+//                     property="identifier"
+//                     name="aip"
+//                     keyName={"aip"}
+//                     value={aip}
+//                 />
+//             );
+//         if (!!acs)
+//             rows.push(<DetailsRow
+//                     visible={options.acs}
+//                     key="acs"
+//                     property="identifier"
+//                     name="acs"
+//                     keyName={"acs"}
+//                     value={acs}
+//                 />
+//             );
+//         if (!!afii)
+//             rows.push(<DetailsRow
+//                     visible={options.afii}
+//                     key="afii"
+//                     property="identifier"
+//                     name="afii"
+//                     keyName={"afii"}
+//                     value={afii}
+//                 />
+//             );
+//         if (!!ams)
+//             rows.push(<DetailsRow
+//                     visible={options.ams}
+//                     key="ams"
+//                     property="identifier"
+//                     name="ams"
+//                     keyName={"ams"}
+//                     value={ams}
+//                 />
+//             );
+//         if (!!aps
+//         )
+//             rows.push(<DetailsRow
+//                     visible={options.aps}
+//                     key="aps"
+//                     property="identifier"
+//                     name="aps"
+//                     keyName={"aps"}
+//                     value={aps}
+//                 />
+//             );
+//         if (!!bmp
+//         )
+//             rows.push(<DetailsRow
+//                     visible={options.bmp}
+//                     key="bmp"
+//                     property="identifier"
+//                     name="bmp"
+//                     keyName={"bmp"}
+//                     value={bmp}
+//                 />
+//             );
+//         if (!!ieee
+//         )
+//             rows.push(<DetailsRow
+//                     visible={options.ieee}
+//                     key="ieee"
+//                     property="identifier"
+//                     name="ieee"
+//                     keyName={"ieee"}
+//                     value={ieee}
+//                 />
+//             );
+//         if (!!springer
+//         )
+//             rows.push(<DetailsRow
+//                     visible={options.springer}
+//                     key="springer"
+//                     property="identifier"
+//                     name="springer"
+//                     keyName={"springer"}
+//                     value={springer}
+//                 />
+//             );
+//         return rows;
+//     }
+//
+// }
