@@ -14,9 +14,9 @@ export interface ShowDetailsOptions {
 
 export const defaultOptions: ShowDetailsOptions = {
     latex: true,
-    ams: false,
     ieee: false,
     springer: false,
+    ams: false,
     wolfram: true,
     acs: false,
     aip: false,
@@ -29,9 +29,9 @@ export const defaultOptions: ShowDetailsOptions = {
 export function copyShowDetailsOptions(src: ShowDetailsOptions) {
     return {
         latex: src.latex,
-        ams: src.ams,
         ieee: src.ieee,
         springer: src.springer,
+        ams: src.ams,
         wolfram: src.wolfram,
         acs: src.acs,
         aip: src.aip,
