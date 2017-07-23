@@ -429,11 +429,12 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 type="text"
                 name="q"
                 value={
-                    this.state.query.toLowerCase()
+                    this.state.query
                 }
                 onChange={(e) => {
-                    this.setQuery(e.target.value);
-                    this.setQueryFilter(e.target.value);
+                    const normalizedInput = e.target.value.toLowerCase();
+                    this.setQuery(normalizedInput);
+                    this.setQueryFilter(normalizedInput);
                 }}
 
             />
