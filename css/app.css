@@ -83,7 +83,12 @@ input.filter { /*todo class */
     font-size: small;
 }
 
+.character-details {
+    margin: 0;
+}
+
 .unicode-character-row {
+    padding: 48px 0 0 0;
     display: block;
     text-align: center;
 }

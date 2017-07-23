@@ -249,8 +249,8 @@ function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetai
     addIfDefined("LaTeX (math mode)", char.mathlatex, showOptions.latex, arr);
     addIfDefined("LaTeX (variant)", char.varlatex, showOptions.latex, arr);
     addIfDefined("LaTeX (Springer)", char.springer, showOptions.latex, arr);
-    addIfDefined(<AmsAbbr/>, char.ams, showOptions.latex, arr);
     addIfDefined(<IeeeAbbr/>, char.ieee, showOptions.latex, arr);
+    addIfDefined(<AmsAbbr/>, char.ams, showOptions.latex, arr);
 
     addIfDefinedWolfram(char.wolfram, char.wolframId, showOptions.wolfram, arr);
     addIfDefined(<AipAbbr/>, char.aip, showOptions.aip, arr);
