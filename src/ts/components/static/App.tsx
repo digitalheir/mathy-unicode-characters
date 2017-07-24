@@ -281,7 +281,9 @@ function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetai
 function isIsolatedWordIn(word: string, objectWord: string): boolean {
     const iOf = objectWord.indexOf(word);
     return iOf >= 0
-        && (iOf === 0 || iOf === (objectWord.length - 1)
+        && (
+            (iOf === 0 && (objectWord.length === 1 || objectWord.charAt(iOf + 1) === " "))
+            || (iOf === (objectWord.length - 1) && (objectWord.length === 1 || objectWord.charAt(iOf - 1) === " "))
             || (objectWord.charAt(iOf - 1) === " "
                 && objectWord.charAt(iOf + 1) === " ")
         );
