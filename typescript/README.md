@@ -1,6 +1,8 @@
-# Mathy Unicode characters
+# Unicode Characters for Math / JavaScript
 
-JavaScript / TypeScript utility to translate mathy Unicode characters to LaTeX, Mathematica or Wolfram 
+This repository exists to make it easier to map between Unicode characters and various other markup languages when typing math, most notably LaTeX and Mathematica. Also see the [top-level project description](https://github.com/digitalheir/mathy-unicode-characters).
+
+This subfolder contains the source for the JavaScript / TypeScript utility to translate the Unicode characters to LaTeX, Mathematica or Wolfram or vice versa.
 
 ## Usage
 
