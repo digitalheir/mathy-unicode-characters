@@ -269,17 +269,27 @@ function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetai
 //  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 // <![endif]-->
 
+function isIsolatedWordIn(word: string, objectWord: string): boolean {
+    const iOf = objectWord.indexOf(word);
+    return iOf >= 0
+    && (iOf === 0  || iOf === objectWord.length - 1
+    || (objectWord.charAt(iOf - 1) === " "
+    && objectWord.charAt(iOf + 1) === " ")
+        );
+}
 
-function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<string> {
+function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<string> | undefined {
     if (words.length === 0) {
-        return new Set(arr.map(c => c.char._id));
+        return undefined;
     }
 
     return new Set(arr.filter(
         obj => words.every(word =>
             obj.normalizedStrings
                 .some(
-                    (objectWord) => (objectWord.indexOf(word) >= 0)
+                    (objectWord) => word.length === 1 
+            ? (isIsolatedWordIn(word, objectWord))
+            : (objectWord.indexOf(word) >= 0)
                 )
         )
         )
