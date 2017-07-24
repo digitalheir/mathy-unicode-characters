@@ -1,11 +1,8 @@
 import * as React from "react";
 import {render} from "react-dom";
-import {} from "material-components-web";
 
 import {UnicodeApp} from "./components/static/App";
 import {defaultOptions} from "./default-options";
-import {unicodeList} from "./mathy-unicode-characters/character-lists/unicodeLists";
-import {normalizeStrings} from "./mathy-unicode-characters/UnicodeCharacter";
 
 const mountPoint = document.getElementById("mount-point");
 
@@ -39,15 +36,10 @@ if (urlParams.bmp) defaultShowOptions.bmp = urlParams.bmp !== "false";
 // if (urlParams.springer) defaultShowOptions.springer = urlParams.springer !== "false";
 
 
+
 if (mountPoint)
     render(
         <UnicodeApp defaultShowOptions={defaultShowOptions}
-                    q={urlParams.q}
-                    chars={unicodeList/*.slice(0, 50)*/.map(char => {
-                        return {
-                            normalizedStrings: normalizeStrings(char),
-                            char
-                        };
-                    })}/>,
+                    q={urlParams.q}/>,
         mountPoint
     );

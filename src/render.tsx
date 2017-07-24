@@ -1,5 +1,5 @@
 import * as React from "react";
-import {renderToStaticMarkup, renderToString} from "react-dom/server";
+import {renderToStaticMarkup} from "react-dom/server";
 import {Html} from "./ts/components/static/Html";
 
 // Client render (optional):

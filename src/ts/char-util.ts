@@ -47,10 +47,13 @@ export function getAsString(hexaDecimals: number[]): string {
 export function normalizeStrings(c: UnicodeCharacter): string[] {
     const base: string[] = [];
 
+    const id = "id";
+    const unicode = "unicode";
+    const codepoint = "codepoint";
     base.push(
-        "id",
-        "unicode",
-        "codepoint",
+        id,
+        unicode,
+        codepoint,
         c._id,
         determineHex(c, true),
         determineHex(c, false),

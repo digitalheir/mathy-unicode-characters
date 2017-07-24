@@ -2,9 +2,23 @@ import * as React from "react";
 import {PureComponent, ReactNode, StatelessComponent} from "react";
 
 import * as _ from "lodash-es";
-import {getAsString} from "../../char-util";
+import {getAsString, normalizeStrings} from "../../char-util";
 import {copyShowDetailsOptions, defaultOptions, ShowDetailsOptions} from "../../default-options";
 import {Surrogate, UnicodeCharacter} from "../../mathy-unicode-characters/UnicodeCharacter";
+import {unicodeList} from "../../mathy-unicode-characters/character-lists/unicodeLists";
+
+export interface WrappedUnicodeCharacter {
+    char: UnicodeCharacter;
+    normalizedStrings: string[];
+}
+
+const wrappedCharacters: WrappedUnicodeCharacter[] = unicodeList/*.slice(0, 50)*/.map(char => {
+    return {
+        normalizedStrings: normalizeStrings(char),
+        char
+    };
+});
+
 
 function prettyPrintCodePoints(u: UnicodeCharacter): string[] {
     return prettyPrintCodePointsFromId(u._id);
@@ -17,19 +31,12 @@ function prettyPrintCodePointsFromId(u: string): string[] {
         });
 }
 
-export interface WrappedUnicodeCharacter {
-    char: UnicodeCharacter;
-    normalizedStrings: string[];
-}
-
 export const List: StatelessComponent<{
     showOptions: ShowDetailsOptions,
-    items: WrappedUnicodeCharacter[],
     filter: string
-}> = ({showOptions, items, filter}) => {
+}> = ({showOptions, filter}) => {
     const idsVisible: Set<string> =
         filterObjects(
-            items,
             filter.split(/\s+/)
                 .map(s => s.trim())
                 .filter(s => s !== "")
@@ -37,10 +44,12 @@ export const List: StatelessComponent<{
     return <ul
         className="unicode-character-list">
         {
-            items.map(
+            wrappedCharacters.map(
                 unicodeChar => <ListRow
                     showOptions={showOptions}
-                    visible={idsVisible.has(unicodeChar.char._id)}
+                    visible={!!idsVisible
+                        ? idsVisible.has(unicodeChar.char._id)
+                        : true}
                     char={unicodeChar.char}
                     key={unicodeChar.char._id}/>
             )
@@ -272,24 +281,24 @@ function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetai
 function isIsolatedWordIn(word: string, objectWord: string): boolean {
     const iOf = objectWord.indexOf(word);
     return iOf >= 0
-    && (iOf === 0  || iOf === objectWord.length - 1
-    || (objectWord.charAt(iOf - 1) === " "
-    && objectWord.charAt(iOf + 1) === " ")
+        && (iOf === 0 || iOf === (objectWord.length - 1)
+            || (objectWord.charAt(iOf - 1) === " "
+                && objectWord.charAt(iOf + 1) === " ")
         );
 }
 
-function filterObjects(arr: WrappedUnicodeCharacter[], words: string[]): Set<string> | undefined {
+function filterObjects(words: string[]): Set<string> | undefined {
     if (words.length === 0) {
         return undefined;
     }
 
-    return new Set(arr.filter(
+    return new Set(wrappedCharacters.filter(
         obj => words.every(word =>
             obj.normalizedStrings
                 .some(
-                    (objectWord) => word.length === 1 
-            ? (isIsolatedWordIn(word, objectWord))
-            : (objectWord.indexOf(word) >= 0)
+                    (objectWord: string) => word.length === 1
+                        ? (isIsolatedWordIn(word, objectWord))
+                        : (objectWord.indexOf(word) >= 0)
                 )
         )
         )
@@ -308,7 +317,6 @@ export interface UAState {
 export interface UAProps {
     q?: string;
     staticRender?: boolean;
-    chars: WrappedUnicodeCharacter[];
     defaultShowOptions: ShowDetailsOptions;
 }
 
@@ -498,11 +506,11 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
             <span property="numberOfItems">315</span>
 
 
-            <List items={this.props.chars}
-                  showOptions={
-                      this.state.showOptions
-                  }
-                  filter={this.state.filter}
+            <List
+                showOptions={
+                    this.state.showOptions
+                }
+                filter={this.state.filter}
             />
 
         </div>;
@@ -520,7 +528,6 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 // <!--r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));-->
 // <!--ga('create','UA-XXXXX-X','auto');ga('send','pageview');-->
 // <!--</script>-->
-
 
 
 // function getDetailRows(options: ShowDetailsOptions,

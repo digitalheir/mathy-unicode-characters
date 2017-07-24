@@ -3,8 +3,6 @@ import {StatelessComponent} from "react";
 import {renderToString} from "react-dom/server";
 import {UnicodeApp} from "./App";
 import {defaultOptions} from "../../default-options";
-import {unicodeList} from "../../mathy-unicode-characters/character-lists/unicodeLists";
-import {normalizeStrings} from "../../mathy-unicode-characters/UnicodeCharacter";
 
 export const Html: StatelessComponent<{}> = () => <html lang="en">
     <head>
@@ -12,7 +10,7 @@ export const Html: StatelessComponent<{}> = () => <html lang="en">
         <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
         <title>Unicode to LaTeX / Mathematica / Elsevier / etc.</title>
         <meta name="description"
-              content="Converter tool for converting LaTeX to Unicode and Unicode to LaTex. Also supports Wolfram, aip, acs, afii, ams, aps, bmp, ieee and springer."/>
+              content="Converter tool for converting LaTeX to Unicode and Unicode to LaTex. Also supports Wolfram to Uncicode, aip, acs, afii, AMS-LaTeX, aps, bmp, ieee and springer."/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
         <link rel="stylesheet" href="css/normalize.css"/>
@@ -28,12 +26,7 @@ export const Html: StatelessComponent<{}> = () => <html lang="en">
                  <UnicodeApp
                      defaultShowOptions={defaultOptions}
                      staticRender={true}
-                     chars={unicodeList.map(char => {
-                         return {
-                             normalizedStrings: normalizeStrings(char),
-                             char
-                         };
-                     })}/>
+                 />
              )
          }}
     >
