@@ -1,3 +1,5 @@
+(You may also be interested in [`latex-to-unicode-converter`](https://github.com/digitalheir/latex-to-unicode-converter))
+
 # Unicode Characters for Math
 
 This repository exists to make it easier to map between Unicode characters and various other markup languages when typing math, most notably LaTeX and Mathematica.
