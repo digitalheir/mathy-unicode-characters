@@ -1,3 +1,7 @@
+[![npm version](https://badge.fury.io/js/mathy-unicode-characters.svg)](https://badge.fury.io/js/mathy-unicode-characters)
+![License](https://img.shields.io/npm/l/mathy-unicode-characters.svg)
+[![Code Climate](https://codeclimate.com/github/digitalheir/mathy-unicode-characters/badges/gpa.svg)](https://codeclimate.com/github/digitalheir/mathy-unicode-characters)
+
 # Unicode Characters for Math / JavaScript
 
 This repository exists to make it easier to map between Unicode characters and various other markup languages when typing math, most notably LaTeX and Mathematica. Also see the [top-level project description](https://github.com/digitalheir/mathy-unicode-characters).
