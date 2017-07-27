@@ -1,6 +1,8 @@
 (You may also be interested in [`latex-to-unicode-converter`](https://github.com/digitalheir/latex-to-unicode-converter))
 
 # Unicode Characters for Math
+[![npm version](https://badge.fury.io/js/mathy-unicode-characters.svg)](https://badge.fury.io/js/mathy-unicode-characters)
+![License](https://img.shields.io/npm/l/mathy-unicode-characters.svg)
 
 This repository exists to make it easier to map between Unicode characters and various other markup languages when typing math, most notably LaTeX and Mathematica.
 
