@@ -54,7 +54,7 @@ export function normalizeStrings(c: UnicodeCharacter): string[] {
         id,
         unicode,
         codepoint,
-        c._id,
+        c._,
         determineHex(c, true),
         determineHex(c, false),
         prettyPrintCodePoint(c),
@@ -65,13 +65,13 @@ export function normalizeStrings(c: UnicodeCharacter): string[] {
         base.push(...c.dec.map(c => c.toString()));
     }
 
-    if (!!c.description) base.push("description", c.description);
+    if (!!c.d) base.push("description", c.d);
     if (!!c.descriptionUnicodeVersion) base.push("version", c.descriptionUnicodeVersion);
     if (!!c.mode) base.push("mode", c.mode);
     if (!!c.type) base.push("type", c.type);
     if (!!c.image) base.push("image", c.image);
     if (!!c.afii) base.push("afii", c.afii);
-    if (!!c.latex) base.push("latex", c.latex);
+    if (!!c.l) base.push("latex", c.l);
     if (!!c.varlatex) base.push("varlatex", c.varlatex);
     if (!!c.mathlatex) base.push("mathlatex", c.mathlatex);
     if (!!c.ams) base.push("ams", c.ams);

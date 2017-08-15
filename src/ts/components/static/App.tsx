@@ -21,7 +21,7 @@ const wrappedCharacters: WrappedUnicodeCharacter[] = unicodeList/*.slice(0, 50)*
 
 
 function prettyPrintCodePoints(u: UnicodeCharacter): string[] {
-    return prettyPrintCodePointsFromId(u._id);
+    return prettyPrintCodePointsFromId(u._);
 }
 
 function prettyPrintCodePointsFromId(u: string): string[] {
@@ -32,26 +32,60 @@ function prettyPrintCodePointsFromId(u: string): string[] {
 }
 
 export const List: StatelessComponent<{
+    display: boolean,
     showOptions: ShowDetailsOptions,
     filter: string
-}> = ({showOptions, filter}) => {
+}> = ({showOptions, filter, display}) => {
     const idsVisible: Set<string> =
         filterObjects(
             filter.split(/\s+/)
                 .map(s => s.trim())
                 .filter(s => s !== "")
         );
+
+    // const shownChars = wrappedCharacters
+    //     .filter(
+    //         unicodeChar => idsVisible.has(unicodeChar.char._id)
+    //             &&
+    //             (unicodeChar.char.latex
+    //                 || unicodeChar.char.mathlatex
+    //                 || unicodeChar.char.varlatex
+    //             )
+    //     )
+    //     .map(
+    //         unicodeChar => {
+    //             const hexaDecimals: number[] =
+    //                 unicodeChar.char._id
+    //                     .replace(StartingU, "")
+    //                     .split("-")
+    //                     .map(x => parseInt("0x" + x, 16));
+    //             const str = getAsString(hexaDecimals);
+    //             return [
+    //                 str,
+    //                 unicodeChar.char.latex
+    //                 || unicodeChar.char.mathlatex
+    //                 || unicodeChar.char.varlatex
+    //             ];
+    //         }
+    //     );
+    // console.log(
+    //     JSON.stringify(
+    //         shownChars
+    //     )
+    // );
+
     return <ul
+        style={{display: (display ? "none" : "block")}}
         className="unicode-character-list">
         {
             wrappedCharacters.map(
                 unicodeChar => <ListRow
                     showOptions={showOptions}
                     visible={!!idsVisible
-                        ? idsVisible.has(unicodeChar.char._id)
+                        ? idsVisible.has(unicodeChar.char._)
                         : true}
                     char={unicodeChar.char}
-                    key={unicodeChar.char._id}/>
+                    key={unicodeChar.char._}/>
             )
         }
     </ul>;
@@ -69,39 +103,68 @@ function isString(x: any): x is string {
 
 const StartingU = /^U/;
 
+function asUnicodeCharacter(n: string): keyof UnicodeCharacter {
+    switch (n) {
+        case "l":
+        case "latex":
+            return "l";
+        case "wolfram":
+            return "wolfram";
+        case "aip":
+            return "aip";
+        case "acs":
+            return "acs";
+        case "afii":
+            return "afii";
+        case "ams":
+            return "ams";
+        case "aps":
+            return "aps";
+        case "bmp":
+            return "bmp";
+        case "ieee":
+            return "ieee";
+        case "springer":
+            return "springer";
+        default:
+            throw new Error(":(");
+    }
+}
+
 export const ListRow: StatelessComponent<{
     char: UnicodeCharacter,
     visible: boolean,
     showOptions: ShowDetailsOptions
 }> = ({char, showOptions, visible}) => {
-    const decimal = char.dec;
-    const latex = char.latex;
-    const aip = char.aip;
-    const acs = char.acs;
-    const afii = char.afii;
-    const ams = char.ams;
-    const aps = char.aps;
-    const bmp = char.bmp;
+    // const decimal = char.dec;
+    // const latex = char.l;
+    // const aip = char.aip;
+    // const acs = char.acs;
+    // const afii = char.afii;
+    // const ams = char.ams;
+    // const aps = char.aps;
+    // const bmp = char.bmp;
     const elsevierDesc = char.elsevierDesc;
     // TODO elsevier etc
-    const ieee = char.ieee;
+    // const ieee = char.ieee;
     const imageNone = char.image;
-    const mathlatex = char.mathlatex;
+    // const mathlatex = char.mathlatex;
     const mode = char.mode;
-    const springer = char.springer;
+    // const springer = char.springer;
     const type = char.type;
-    const varlatex = char.varlatex;
-    const wolfram = char.wolfram;
-    const wolframId = char.wolframId;
+    // const varlatex = char.varlatex;
+    // const wolfram = char.wolfram;
+    // const wolframId = char.wolframId;
 
-    const description = char.description;
-    const descriptionUnicodeVersion = char.descriptionUnicodeVersion;
+    const description = char.d;
+    // TODO
+    // const descriptionUnicodeVersion = char.descriptionUnicodeVersion;
 
     // if (imageNone !== undefined && typeof imageNone !== "string") throw new Error(imageNone);
     // if (wolfram !== undefined && typeof wolfram !== "string") throw new Error(wolfram);
 
     // TODO from util?
-    const hexaDecimals: number[] = char._id.replace(StartingU, "").split("-").map(x => parseInt("0x" + x, 16));
+    const hexaDecimals: number[] = char._.replace(StartingU, "").split("-").map(x => parseInt("0x" + x, 16));
 //     const rows = getDetailRows(
 //         showOptions,
 //         description,
@@ -138,37 +201,40 @@ export const ListRow: StatelessComponent<{
                 "springer",
             ].some(
                 n => showOptions[n as keyof ShowDetailsOptions]
-                    && char[n as keyof UnicodeCharacter] !== undefined
+                    && char[asUnicodeCharacter(n)] !== undefined
             )
         )
     );
+    const children: ReactNode[] = [];
+    children.push(<header property="name" key="header"
+                          className="unicode-character">{getAsString(hexaDecimals)}</header>);
+    children.push(<div key="show" className="unicode-character-codepoint" property="identifier">{
+        prettyPrintCodePoints(char).join(" ")
+    }</div>);
+    if (description) children.push(<div key="description" property="description"
+                                        className="description">{description}</div>);
+    if (elsevierDesc) children.push(<div property="description" key="elsevierDesc"
+                                         className="elsevier-description">{elsevierDesc}</div>);
+    if (type) children.push(<div property="disambiguatingDescription" key="type " className="type">{type}</div>);
+    if (mode) children.push(<div property="disambiguatingDescription"
+                                 key="mode"
+                                 className="mode">
+        {mode}
+    </div>);
+    children.push(<UnicodeCharacterDefinitionList key="list" char={char} showOptions={showOptions}/>);
     return <li
         typeof="Intangible"
-        key={char._id}
+        key={char._}
         style={{
             display:
                 showCharacter
                     ? "block" : "none"
         }}
         data-image={imageNone}
-        id={char._id}
+        id={char._}
         className="unicode-character-row"
     >
-        <header property="name" className="unicode-character">{getAsString(hexaDecimals)}</header>
-        <div className="unicode-character-codepoint" property="identifier">{
-            prettyPrintCodePoints(char).join(" ")
-        }</div>
-        {description ? <div property="description" className="description">{description}</div> : ""}
-        {elsevierDesc ? <div property="description" className="elsevier-description">{elsevierDesc}</div> : ""}
-        {type ? <div property="disambiguatingDescription"
-                     className="type">
-            {type}
-        </div> : ""}
-        {mode ? <div property="disambiguatingDescription"
-                     className="mode">
-            {mode}
-        </div> : ""}
-        <UnicodeCharacterDefinitionList char={char} showOptions={showOptions}/>
+        {children}
     </li>;
 };
 
@@ -222,7 +288,7 @@ function addIfDefinedSurrogate(value: Surrogate | undefined, array: ReactNode[])
         const surr: ReactNode[] = [];
         if (!!value.mathvariant) surr.push(
             <span key="mathvariant"><span property="disambiguatingDescription"
-                                          className="mathvariant">{value.mathvariant}</span> version of </span>
+                                          className="mathvariant">{value.mathvariant}</span><span> version of </span></span>
         );
         surr.push(<a href={"#" + value.ref} key="surrogate">{prettyPrintCodePointsFromId(value.ref)}</a>);
         array.push(<dt className="detail-name">surrogate</dt>);
@@ -254,7 +320,7 @@ function getDetailsAsDefinedTerms(char: UnicodeCharacter, showOptions: ShowDetai
 
     addIfDefinedSurrogate(char.surrogate, arr);
 
-    addIfDefined("LaTeX", char.latex, showOptions.latex, arr);
+    addIfDefined("LaTeX", char.l, showOptions.latex, arr);
     addIfDefined("LaTeX (math mode)", char.mathlatex, showOptions.latex, arr);
     addIfDefined("LaTeX (variant)", char.varlatex, showOptions.latex, arr);
     addIfDefined("LaTeX (Springer)", char.springer, showOptions.latex, arr);
@@ -304,12 +370,13 @@ function filterObjects(words: string[]): Set<string> | undefined {
                 )
         )
         )
-            .map(c => c.char._id)
+            .map(c => c.char._)
     )
         ;
 }
 
 export interface UAState {
+    firstRender: boolean;
     query: string;
     filter: string;
     showOptions: ShowDetailsOptions;
@@ -393,7 +460,10 @@ export const LabelFor: StatelessComponent<{ name: string }> = ({name}) => {
 
 export class UnicodeApp extends PureComponent<UAProps, UAState> {
     setQueryFilter = _.debounce((filter: string) => {
-            this.setState({filter});
+            this.setState({
+                firstRender: false,
+                filter
+            });
         },
         200,
         {
@@ -409,6 +479,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
     constructor(props: UAProps) {
         super(props);
         this.state = {
+            firstRender: true,
             query: !!props.q ? props.q : "",
             filter: !!props.q ? props.q : "",
             showOptions: props.defaultShowOptions,
@@ -416,9 +487,11 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
         };
     }
 
-
     toggleShowOptionsToggle() {
-        this.setState({showOptionsToggle: !this.state.showOptionsToggle});
+        this.setState({
+            firstRender: false,
+            showOptionsToggle: !this.state.showOptionsToggle
+        });
     }
 
     changeShowOption(name: keyof ShowDetailsOptions, checked: boolean) {
@@ -426,7 +499,10 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
         const showOptions = copyShowDetailsOptions(this.state.showOptions);
         showOptions[name] = checked;
         this.setState(
-            {showOptions}
+            {
+                firstRender: false,
+                showOptions
+            }
         );
     }
 
@@ -448,9 +524,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 }}
                 type="text"
                 name="q"
-                value={
-                    this.state.query
-                }
+                tabIndex={0}
                 onChange={(e) => {
                     const normalizedInput = e.target.value.toLowerCase();
                     this.setQuery(normalizedInput);
@@ -467,11 +541,10 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
             }}>
                 <i className={(this.state.showOptionsToggle ? "active " : "") + "mdc-icon-toggle material-icons"}
                    aria-pressed="false"
-                   aria-label="Add to favorites"
+                   aria-label="Toggle filters"
                    role="button"
-                   data-toggle-on='{"label": "Remove from favorites", "content": "favorite"}'
-                   data-toggle-off='{"label": "Add to favorites", "content": "favorite_border"}'
-                   tabIndex={0}
+                   data-toggle-on='{"label": "Show filters", "content": "filter_on"}'
+                   data-toggle-off='{"label": "Hide filters", "content": "filter_off"}'
                    onClick={() => this.toggleShowOptionsToggle()}
                 >filter_list</i>
             </div>
@@ -484,7 +557,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 top: "50px",
                 position: "fixed",
                 width: "144px",
-                background: "white"
+                background: "white",
             }}>
                 {
                     Object.keys(defaultOptions)
@@ -505,10 +578,9 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
                 }
             </div>
 
-            <span property="numberOfItems">315</span>
-
 
             <List
+                display={this.state.firstRender}
                 showOptions={
                     this.state.showOptions
                 }
@@ -517,9 +589,10 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 
         </div>;
     }
-
 }
 
+
+// <span property="numberOfItems">315</span>
 
 // <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 // <!--<script>-->

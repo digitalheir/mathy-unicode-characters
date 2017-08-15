@@ -4,13 +4,13 @@ const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin'
 const plugins = [
     new CopyWebpackPlugin([
         // {from: "bower_components", to: "bower_components"},
-        {
-            from: "node_modules/material-components-web/dist/material-components-web.css",
-            to: "css/material-components-web.css"
-        },
-        {
-            from: "src/public"
-        }
+        // {
+        //     from: "node_modules/material-components-web/dist/material-components-web.css",
+        //     to: "css/material-components-web.css"
+        // },
+        // {
+        //     from: "src/public"
+        // }
     ]),
     new StaticSiteGeneratorPlugin({
         entry: "renderStatic",
@@ -63,7 +63,7 @@ const config = {
                 loader: "awesome-typescript-loader",
                 exclude: /node_modules/,
                 options: {
-                useBabel: true,
+                useBabel: false,
                 useCache: false,
                 }
             }

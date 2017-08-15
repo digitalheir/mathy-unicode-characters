@@ -1,3 +1,29 @@
+.github-corner svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: scale(1, -1);
+    mix-blend-mode: darken;
+    color: #ffffff;
+    fill: #000000;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave .56s;
+}
+
+@keyframes octocat-wave {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    20%, 60% {
+        transform: rotate(-20deg);
+    }
+    40%, 80% {
+        transform: rotate(10deg);
+    }
+}
+
 body {
     margin: 24px 48px;
     overflow-x: hidden;

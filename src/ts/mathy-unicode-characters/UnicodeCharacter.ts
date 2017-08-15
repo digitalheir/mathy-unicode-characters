@@ -19,16 +19,16 @@ export interface Font {
 export const startingU = /^U/;
 
 export function determineHex(u: UnicodeCharacter, withPrefix = true): string {
-    return u._id.replace(startingU, withPrefix ? "0x" : "");
+    return u._.replace(startingU, withPrefix ? "0x" : "");
 }
 
 export function prettyPrintCodePoint(u: UnicodeCharacter): string {
-    return u._id.replace(startingU, "U+");
+    return u._.replace(startingU, "U+");
 }
 
 export interface UnicodeCharacter {
-    _id: string;
-    description: string;
+    _: string;
+    d: string;
     dec: [number] | [number, number] | [number, number, number];
 
     descriptionUnicodeVersion?: string;
@@ -36,7 +36,7 @@ export interface UnicodeCharacter {
     type?: string ;
     image?: string ;
     afii?: string ;
-    latex?: string ;
+    l?: string ;
     varlatex?: string ;
     mathlatex?: string ;
     ams?: string ;
@@ -68,7 +68,7 @@ export function normalizeStrings(c: UnicodeCharacter): string[] {
         "id",
         "unicode",
         "codepoint",
-        c._id,
+        c._,
         determineHex(c, true),
         determineHex(c, false),
         prettyPrintCodePoint(c),
@@ -79,13 +79,13 @@ export function normalizeStrings(c: UnicodeCharacter): string[] {
         base.push(...c.dec.map(c => c.toString()));
     }
 
-    if (!!c.description) base.push("description", c.description);
+    if (!!c.d) base.push("description", c.d);
     if (!!c.descriptionUnicodeVersion) base.push("version", c.descriptionUnicodeVersion);
     if (!!c.mode) base.push("mode", c.mode);
     if (!!c.type) base.push("type", c.type);
     if (!!c.image) base.push("image", c.image);
     if (!!c.afii) base.push("afii", c.afii);
-    if (!!c.latex) base.push("latex", c.latex);
+    if (!!c.l) base.push("latex", c.l);
     if (!!c.varlatex) base.push("varlatex", c.varlatex);
     if (!!c.mathlatex) base.push("mathlatex", c.mathlatex);
     if (!!c.ams) base.push("ams", c.ams);
@@ -131,7 +131,7 @@ export function getAsStringFromHexadecimals(...hexaDecimals: number[]): string {
 }
 
 export function getAsString(char: UnicodeCharacter): string {
-    const hexaDecimals: number[] = char._id.split("-")
+    const hexaDecimals: number[] = char._.split("-")
         .map(s => s.replace(startingU, "0x"))
         .map(x => parseInt(x, 16))
     ;
