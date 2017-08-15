@@ -37,10 +37,6 @@ if (urlParams.bmp) defaultShowOptions.bmp = urlParams.bmp !== "false";
 
 
 if (mountPoint) {
-    if (urlParams.q) {
-        const input = document.getElementById("filter-query") as HTMLInputElement;
-        if (input) input.value = urlParams.q;
-    }
     render(
         <UnicodeApp defaultShowOptions={defaultShowOptions}
                     q={urlParams.q}/>,

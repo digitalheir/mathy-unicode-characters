@@ -472,6 +472,13 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
         }
     );
 
+    componentDidMount() {
+        if (this.props.q) {
+            const input = document.getElementById("filter-query") as HTMLInputElement;
+            if (input) input.value = this.props.q;
+        }
+    }
+
     setQuery(query: string) {
         this.setState({query});
     }
@@ -479,7 +486,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
     constructor(props: UAProps) {
         super(props);
         this.state = {
-            firstRender: true,
+            firstRender: !props.q,
             query: !!props.q ? props.q : "",
             filter: !!props.q ? props.q : "",
             showOptions: props.defaultShowOptions,
