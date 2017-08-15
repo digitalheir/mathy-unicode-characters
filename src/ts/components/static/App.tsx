@@ -514,6 +514,7 @@ export class UnicodeApp extends PureComponent<UAProps, UAState> {
 
             <input
                 className="filter"
+                id="filter-query"
                 placeholder={"filter by search term, LaTeX command, etc" + (staticRender ? " (loading)" : "")}
                 disabled={staticRender}
                 style={{

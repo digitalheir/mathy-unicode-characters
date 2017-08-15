@@ -36,10 +36,14 @@ if (urlParams.bmp) defaultShowOptions.bmp = urlParams.bmp !== "false";
 // if (urlParams.springer) defaultShowOptions.springer = urlParams.springer !== "false";
 
 
-
-if (mountPoint)
+if (mountPoint) {
+    if (urlParams.q) {
+        const input = document.getElementById("filter-query") as HTMLInputElement;
+        if (input) input.value = urlParams.q;
+    }
     render(
         <UnicodeApp defaultShowOptions={defaultShowOptions}
                     q={urlParams.q}/>,
         mountPoint
     );
+}
