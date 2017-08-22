@@ -12,11 +12,10 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collector;
@@ -38,11 +37,12 @@ public class ConvertToJson {
 
             XMLInputFactory xif = XMLInputFactory.newFactory();
             xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
-            XMLStreamReader xsr = xif.createXMLStreamReader(
-                    ConvertToJson.class.getClassLoader().getResourceAsStream(
-                            "unicode.xml"
-                    )
+
+            InputStream unicodeStream = ConvertToJson.class.getClassLoader().getResourceAsStream(
+                    "unicode.xml"
             );
+
+            XMLStreamReader xsr = xif.createXMLStreamReader(unicodeStream);
 
             Unmarshaller unmarshaller = jc.createUnmarshaller();
             Charlist parsedObject = (Charlist) unmarshaller.unmarshal(xsr);
@@ -69,25 +69,18 @@ public class ConvertToJson {
             writeGsonFilesForSurrogate(characters);
             writeGsonFilesForBmp(characters);
 
-            mapAndWriteGsonFiles(
-                    characters,
-                    "elsevierDesc",
-                    entry -> nonNull(entry.getElsevier()) && nonNull(entry.getElsevier().getDesc()),
-                    entry -> entry.getElsevier().getDesc()
-            );
+            // combines latex, varlatex, mathlatex and ams codes
+            mapManyAndWriteGsonFiles(characters, "latex", Character::getLatexCodes);
 
-            mapAndWriteGsonFiles(characters, "ams", entry -> nonNull(entry.getAMS()), Character::getAMS);
-            mapAndWriteGsonFiles(characters, "aps", entry -> nonNull(entry.getAPS()), Character::getAPS);
-            mapAndWriteGsonFiles(characters, "acs", entry -> nonNull(entry.getACS()), Character::getACS);
-            mapAndWriteGsonFiles(characters, "aip", entry -> nonNull(entry.getAIP()), Character::getAIP);
-            mapAndWriteGsonFiles(characters, "ieee", entry -> nonNull(entry.getIEEE()), Character::getIEEE);
-            mapAndWriteGsonFiles(characters, "afii", entry -> nonNull(entry.getAfii()), Character::getAfii);
-            mapAndWriteGsonFiles(characters, "mode", entry -> nonNull(entry.getMode()), Character::getMode);
-            mapAndWriteGsonFiles(characters, "type", entry -> nonNull(entry.getType()), Character::getType);
-            mapAndWriteGsonFiles(characters, "latex", entry -> nonNull(entry.getLatex()), Character::getLatex);
-            mapAndWriteGsonFiles(characters, "varlatex", entry -> nonNull(entry.getVarlatex()), Character::getVarlatex);
-            mapAndWriteGsonFiles(characters, "mathlatex", entry -> nonNull(entry.getMathlatex()), Character::getMathlatex);
-            mapAndWriteGsonFiles(characters, "springer", entry -> nonNull(entry.getSpringer()), Character::getSpringer);
+            mapAndWriteGsonFiles(characters, "elsevierDesc", Character::getElsevierDesc);
+            mapAndWriteGsonFiles(characters, "aps", Character::getAPS);
+            mapAndWriteGsonFiles(characters, "acs", Character::getACS);
+            mapAndWriteGsonFiles(characters, "aip", Character::getAIP);
+            mapAndWriteGsonFiles(characters, "ieee", Character::getIEEE);
+            mapAndWriteGsonFiles(characters, "afii", Character::getAfii);
+            mapAndWriteGsonFiles(characters, "mode", Character::getMode);
+            mapAndWriteGsonFiles(characters, "type", Character::getType);
+            mapAndWriteGsonFiles(characters, "springer", Character::getSpringer);
 
 
         } catch (JAXBException | XMLStreamException | IOException je) {
@@ -117,19 +110,23 @@ public class ConvertToJson {
                 json.getBytes()
         );
 
+        /*
         Files.write(
                 Paths.get("../ts/" + filename + ".ts"),
                 ("export const " + filename + " = " + json + ";\n\nexport type " + java.lang.Character.toUpperCase(filename.charAt(0))
                         + filename.substring(1) + " = keyof typeof " + filename).getBytes()
         );
+        */
     }
 
     private static void writeGsonFilesForWolfram(List<Character> characters) throws IOException {
-        writeGsonFiles("wolfram2unicode", mapXtoOneOrMoreYs(
+        writeGsonFile("wolfram2unicode", mapOneToMany(
                 characters, entry -> nonNull(entry.getWolfram()),
                 key -> key.getWolfram().getvalue(),
                 mapping(Character::getId, toSet())
-        ), "unicode2wolfram", mapXtoOneOrMoreYs(
+        ));
+
+        writeGsonFile("unicode2wolfram", mapOneToMany(
                 characters,
                 entry -> nonNull(entry.getWolfram()),
                 Character::getId,
@@ -172,7 +169,7 @@ public class ConvertToJson {
 
         writeGsonFile(
                 "description2unicode",
-                mapXtoOneOrMoreYs(
+                mapOneToMany(
                         characters,
                         c -> !c.getDescription().getvalue().trim().isEmpty() || c.getDescription().getUnicode() != null,
                         c -> c.getDescription().getvalue(),
@@ -238,27 +235,25 @@ public class ConvertToJson {
         );
     }
 
-    private static void writeGsonFiles(String filename, Object object, String filename2, Object object2) throws IOException {
-        writeGsonFile(filename, object);
-        writeGsonFile(filename2, object2);
-    }
-
-    private static void mapAndWriteGsonFiles(List<Character> characters, String string, Predicate<Character> filter, Function<Character, String> getValue) throws IOException {
-        writeGsonFiles("unicode2" + string + "",
-                mapXtoOneOrMoreYs(
+    private static void mapAndWriteGsonFiles(List<Character> characters, String string, Function<Character, String> getValue) throws IOException {
+        writeGsonFile("unicode2" + string + "",
+                mapOneToMany(
                         characters,
-                        filter,
+                        entry -> nonNull(getValue.apply(entry)),
                         Character::getId,
                         mapping(getValue, toSet())
-                ), string + "2unicode", mapXtoOneOrMoreYs(
-                        characters,
-                        filter,
-                        getValue,
-                        mapping(Character::getId, toSet())
                 ));
+
+        writeGsonFile(string + "2unicode", mapOneToMany(
+                characters,
+                entry -> nonNull(getValue.apply(entry)),
+                getValue,
+                mapping(Character::getId, toSet())
+        ));
     }
 
-    private static Map<String, Object> mapXtoOneOrMoreYs(
+
+    private static Map<String, Object> mapOneToMany(
             List<Character> characters, Predicate<Character> filter,
             Function<Character, String> keyMap,
             Collector<Character, ?, Set<Object>> valueMap
@@ -280,8 +275,47 @@ public class ConvertToJson {
                                         ? s.getValue().iterator().next()
                                         : s.getValue()
                         )
+                );
+    }
+
+    private static void mapManyAndWriteGsonFiles(List<Character> characters, String string, Function<Character, String[]> getValue) throws IOException {
+        writeGsonFile("unicode2" + string + "",
+                mapOneToMany(
+                        characters,
+                        entry -> nonNull(getValue.apply(entry)),
+                        Character::getId,
+                        mapping(getValue, toSet())
+                ));
+
+        writeGsonFile(string + "2unicode", mapManyToMany(
+                characters,
+                getValue,
+                Character::getId
+        ));
+    }
+
+    private static Map<String, Object> mapManyToMany(
+            List<Character> characters,
+            Function<Character, String[]> keyMap,
+            Function<Character, Object> valueMap
+    ) {
+        return characters.stream()
+                .flatMap(item -> Arrays.stream(keyMap.apply(item)).map(key -> new AbstractMap.SimpleEntry<>(key, valueMap.apply(item))))
+                .collect(
+                        groupingBy(
+                                Map.Entry::getKey,
+                                mapping(Map.Entry::getValue, toSet())
+                        )
                 )
-                ;
+                .entrySet().stream()
+                .collect(
+                        toMap(
+                                Map.Entry::getKey,
+                                s -> s.getValue().size() == 1
+                                        ? s.getValue().iterator().next()
+                                        : s.getValue()
+                        )
+                );
     }
 
     private static void countdoubleids(Charlist customer) {
