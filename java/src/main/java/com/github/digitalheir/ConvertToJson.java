@@ -16,10 +16,12 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.function.BiConsumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.lang.Boolean.FALSE;
 import static java.util.Objects.nonNull;
@@ -278,13 +280,25 @@ public class ConvertToJson {
                 );
     }
 
+    public static <T, U, A, R>
+    Collector<T, ?, R> flatMapping(Function<? super T, U[]> mapper,
+                                   Collector<? super U, A, R> downstream) {
+        BiConsumer<A, ? super U> downstreamAccumulator = downstream.accumulator();
+        return Collector.of(downstream.supplier(),
+                (r, t) -> Arrays.stream(mapper.apply(t)).sequential().forEach(u -> downstreamAccumulator.accept(r, u)),
+                downstream.combiner(),
+                downstream.finisher(),
+                downstream.characteristics().stream().toArray(Collector.Characteristics[]::new));
+    }
+
+
     private static void mapManyAndWriteGsonFiles(List<Character> characters, String string, Function<Character, String[]> getValue) throws IOException {
         writeGsonFile("unicode2" + string + "",
                 mapOneToMany(
                         characters,
-                        entry -> nonNull(getValue.apply(entry)),
+                        entry -> getValue.apply(entry).length > 0,
                         Character::getId,
-                        mapping(getValue, toSet())
+                        flatMapping(getValue, toSet())
                 ));
 
         writeGsonFile(string + "2unicode", mapManyToMany(
