@@ -8,6 +8,7 @@
 
 package com.github.digitalheir.unicode;
 
+import com.github.digitalheir.LatexCommand;
 import com.github.digitalheir.simple.SimpleSurrogate;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -223,6 +224,15 @@ public class Character {
 
     return Arrays.stream(codes)
             .filter(x -> x != null && x.length() > 0)
+            .distinct()
+            .toArray(String[]::new);
+  }
+
+  public String[] getProperLatexCodes() {
+    String[] codes = new String[] { getLatex(), getAMS(), getVarlatex(), getMathlatex() };
+
+    return Arrays.stream(codes)
+            .filter(x -> x != null && x.length() > 0 && LatexCommand.isLatexCommand(x))
             .distinct()
             .toArray(String[]::new);
   }

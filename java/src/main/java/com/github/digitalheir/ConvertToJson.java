@@ -4,6 +4,7 @@ import com.github.digitalheir.simple.CharacterInformation;
 import com.github.digitalheir.unicode.Character;
 import com.github.digitalheir.unicode.Charlist;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -41,7 +42,7 @@ public class ConvertToJson {
             xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
 
             InputStream unicodeStream = ConvertToJson.class.getClassLoader().getResourceAsStream(
-                    "unicode.xml"
+                    "unicode.latex.xml"
             );
 
             XMLStreamReader xsr = xif.createXMLStreamReader(unicodeStream);
@@ -72,7 +73,7 @@ public class ConvertToJson {
             writeGsonFilesForBmp(characters);
 
             // combines latex, varlatex, mathlatex and ams codes
-            mapManyAndWriteGsonFiles(characters, "latex", Character::getLatexCodes);
+            mapAndWriteLatex(characters);
 
             mapAndWriteGsonFiles(characters, "elsevierDesc", Character::getElsevierDesc);
             mapAndWriteGsonFiles(characters, "aps", Character::getAPS);
@@ -83,7 +84,6 @@ public class ConvertToJson {
             mapAndWriteGsonFiles(characters, "mode", Character::getMode);
             mapAndWriteGsonFiles(characters, "type", Character::getType);
             mapAndWriteGsonFiles(characters, "springer", Character::getSpringer);
-
 
         } catch (JAXBException | XMLStreamException | IOException je) {
             je.printStackTrace();
@@ -106,7 +106,9 @@ public class ConvertToJson {
     }
 
     private static void writeGsonFile(String filename, Object object) throws IOException {
-        final String json = new Gson().toJson(object);
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        final String json = gson.toJson(object);
+
         Files.write(
                 Paths.get("../json/" + filename + ".json"),
                 json.getBytes()
@@ -292,20 +294,21 @@ public class ConvertToJson {
     }
 
 
-    private static void mapManyAndWriteGsonFiles(List<Character> characters, String string, Function<Character, String[]> getValue) throws IOException {
-        writeGsonFile("unicode2" + string + "",
+    private static void mapAndWriteLatex(List<Character> characters) throws IOException {
+        writeGsonFile("unicode2latex",
                 mapOneToMany(
                         characters,
-                        entry -> getValue.apply(entry).length > 0,
+                        entry -> entry.getLatexCodes().length > 0,
                         Character::getId,
-                        flatMapping(getValue, toSet())
+                        flatMapping(Character::getLatexCodes, toSet())
                 ));
 
-        writeGsonFile(string + "2unicode", mapManyToMany(
-                characters,
-                getValue,
-                Character::getId
-        ));
+        writeGsonFile("latex2unicode",
+                mapManyToMany(
+                        characters,
+                        Character::getProperLatexCodes,
+                        Character::getId
+                ));
     }
 
     private static Map<String, Object> mapManyToMany(
