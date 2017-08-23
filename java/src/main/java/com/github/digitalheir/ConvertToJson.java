@@ -42,7 +42,7 @@ public class ConvertToJson {
             xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
 
             InputStream unicodeStream = ConvertToJson.class.getClassLoader().getResourceAsStream(
-                    "unicode.latex.xml"
+                    "unicode.xml"
             );
 
             XMLStreamReader xsr = xif.createXMLStreamReader(unicodeStream);
