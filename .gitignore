@@ -6,4 +6,3 @@ java/target/
 ts-compiled/
 *.log
 /ts/
-typescript/package-lock.json
