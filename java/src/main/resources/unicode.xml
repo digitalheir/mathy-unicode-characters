@@ -14239,7 +14239,7 @@ for borrowings from their work
 
 <character id="U0219C" dec="8604" mode="math" type="relation">
  <afii>D8B6</afii>
- <latex>\arrowwaveright </latex>
+ <latex>\arrowwaveleft </latex>
  <AMS>\leftsquigarrow</AMS>
  <font name="hlcra" pos="143"/>
  <description>LEFTWARDS WAVE ARROW</description>
