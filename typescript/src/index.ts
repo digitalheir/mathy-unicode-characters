@@ -46,5 +46,5 @@ export * from "./character-lists/unicodeLists";
 export * from "./mathvariants";
 export * from "./charlist";
 export * from "./groups";
-export * from "./character";
+//export * from "./character";
 export * from "./UnicodeCharacter";

@@ -380,7 +380,6 @@ for borrowings from their work
 
 <character id="U0002A" dec="42" mode="math" type="other">
  <afii>002A</afii>
- <latex>\ast </latex>
  <Elsevier grid="bl8" ent="">
   <desc>pseudo-superscript asterisk (ASCII *)</desc>
   <elsrender>*</elsrender>
@@ -1607,7 +1606,6 @@ for borrowings from their work
 
 <character id="U000B7" dec="183" mode="math" type="binaryop">
  <afii>00B7</afii>
- <latex>\cdot </latex>
  <Elsevier grid="bo0" ent="z.rad">
   <desc>radical dot</desc>
  </Elsevier>
@@ -1817,7 +1815,6 @@ for borrowings from their work
 </character>
 
 <character id="U000C5" dec="197" mode="text" type="other">
- <latex>\AA </latex>
  <Wolfram>CapitalARing</Wolfram>
  <entity id="Aring" set="html4-lat1">
   <desc>latin capital letter A with ring above = latin capital letter A ring</desc>
@@ -4406,7 +4403,7 @@ for borrowings from their work
 </character>
 
 <character id="U001AA" dec="426" mode="math" type="other">
- <latex>\eth </latex>
+ <latex>\eth</latex>
  <Elsevier grid="ped" ent="eth">
   <desc>eth  (phonetic symbol)</desc>
  </Elsevier>
@@ -5162,7 +5159,6 @@ for borrowings from their work
 
 <character id="U0025B" dec="603" mode="math" type="other">
  <afii>2666</afii>
- <latex>\varepsilon </latex>
  <description>LATIN SMALL LETTER OPEN E</description>
 </character>
 
@@ -5873,7 +5869,6 @@ for borrowings from their work
 <character id="U002D8" dec="728" mode="mixed" type="other">
  <afii>00C6</afii>
  <latex>\textasciibreve </latex>
- <mathlatex>\u</mathlatex>
  <entity id="breve" set="ISODIA">
   <desc>breve</desc>
  </entity>
@@ -7419,7 +7414,6 @@ for borrowings from their work
 
 <character id="U003A5" dec="933" mode="math" type="alphabetic">
  <afii>2659</afii>
- <latex>\Upsilon </latex>
  <Wolfram>CapitalUpsilon</Wolfram>
  <entity id="Ugr" set="ISOGRK1">
   <desc>capital Upsilon, Greek</desc>
@@ -7746,7 +7740,7 @@ for borrowings from their work
 
 <character id="U003B5" dec="949" mode="math" type="alphabetic">
  <afii>2666</afii>
- <latex>\epsilon </latex>
+ <latex>\varepsilon</latex>
  <Elsevier grid="cd3" ent="epsiv">
   <desc>epsilon (cursive)  -- Greek --</desc>
  </Elsevier>
@@ -11430,8 +11424,7 @@ for borrowings from their work
 
 <character id="U02022" dec="8226" mode="mixed" type="binaryop">
  <afii>EB6E</afii>
- <latex>\textbullet </latex>
- <mathlatex>\bullet</mathlatex>
+ <latex>\textbullet</latex>
  <APS>bull</APS>
  <ACS>bbull</ACS>
  <Wolfram>Bullet</Wolfram>
@@ -13096,7 +13089,6 @@ for borrowings from their work
 
 <character id="U02126" dec="8486" mode="math" type="normal">
  <afii>00E0</afii>
- <latex>\Omega </latex>
  <entity id="ohm" set="8879-isonum">
   <desc>=ohm sign</desc>
  </entity>
@@ -14239,7 +14231,7 @@ for borrowings from their work
 
 <character id="U0219C" dec="8604" mode="math" type="relation">
  <afii>D8B6</afii>
- <latex>\arrowwaveright </latex>
+ <latex>\arrowwaveleft</latex>
  <AMS>\leftsquigarrow</AMS>
  <font name="hlcra" pos="143"/>
  <description>LEFTWARDS WAVE ARROW</description>
@@ -14247,8 +14239,7 @@ for borrowings from their work
 
 <character id="U0219D" dec="8605" mode="math" type="relation">
  <afii>EF53</afii>
- <latex>\arrowwaveright </latex>
- <AMS>\rightsquigarrow</AMS>
+ <latex>\arrowwaveright</latex>
  <APS>rarrw</APS>
  <entity id="rarrw" set="8879-isoamsa">
   <desc>/squigarrowright A: rt arrow-wavy </desc>
@@ -14792,7 +14783,7 @@ for borrowings from their work
  <Elsevier grid="bch" ent="uharr">
   <desc>up harpoon right</desc>
  </Elsevier>
- <AMS>\upharpoonleft</AMS>
+ <AMS>\upharpoonright</AMS>
  <APS>uharr</APS>
  <AIP>uharr</AIP>
  <Wolfram>RightUpVector</Wolfram>
@@ -14818,7 +14809,7 @@ for borrowings from their work
  <Elsevier grid="bcg" ent="uharl">
   <desc>up harpoon left</desc>
  </Elsevier>
- <AMS>\upharpoonright</AMS>
+ <AMS>\upharpoonleft</AMS>
  <APS>uharl</APS>
  <AIP>uharl</AIP>
  <Wolfram>LeftUpVector</Wolfram>
@@ -15204,7 +15195,7 @@ for borrowings from their work
  <Elsevier grid="bbs" ent="nhArr">
   <desc>not left-right dbl arrow; negation of mut. implies</desc>
  </Elsevier>
- <AMS>\nleftrightarrow</AMS>
+ <AMS>\nLeftrightarrow</AMS>
  <APS>nhArr</APS>
  <entity id="nhArr" set="8879-isoamsa">
   <desc>/nLeftrightarrow A: not l&amp;r dbl arr </desc>
@@ -15757,7 +15748,7 @@ for borrowings from their work
 
 <character id="U02202" dec="8706" mode="math" type="normal">
  <afii>EFBA</afii>
- <latex>\partial </latex>
+ <latex>\partial</latex>
  <Elsevier grid="cd6" ent="part">
   <desc>curly d; differential -- Greek --</desc>
  </Elsevier>
@@ -15979,7 +15970,6 @@ for borrowings from their work
 
 <character id="U0220A" dec="8714" mode="math" type="relation">
  <afii>EF4A</afii>
- <AMS>\in</AMS>
  <description>SMALL ELEMENT OF</description>
 </character>
 
@@ -16251,7 +16241,6 @@ for borrowings from their work
 
 <character id="U02217" dec="8727" mode="math" type="binaryop">
  <afii>EE7D</afii>
- <latex>{_\ast}</latex>
  <Elsevier grid="bk8" ent="ast">
   <desc>mid asterisk</desc>
  </Elsevier>
@@ -16296,7 +16285,7 @@ for borrowings from their work
 </character>
 
 <character id="U02219" dec="8729" mode="math" type="other">
- <latex>\bullet </latex>
+ <latex>\bullet</latex>
  <Elsevier grid="bl9" ent="z.ccirf">
   <desc>centered small circle, filled</desc>
  </Elsevier>
@@ -18182,13 +18171,12 @@ for borrowings from their work
 
 <character id="U02268" dec="8808" mode="math" type="relation">
  <afii>21F2</afii>
- <latex>\lneqq </latex>
- <varlatex>\lneq</varlatex>
+ <latex>\lneqq</latex>
  <Elsevier grid="ble" ent="lnE">
   <desc>less than but not (double) equal to</desc>
  </Elsevier>
  <AMS>\lneqq</AMS>
- <APS>lnE</APS>
+ <APS>lnE</APS>succapprox
  <Wolfram>NotLessFullEqual</Wolfram>
  <entity id="lnE" set="8879-isoamsn">
   <desc>/lneqq N: less, not double equals</desc>
@@ -18204,7 +18192,7 @@ for borrowings from their work
 
 <character id="U02268-0FE00" dec="8808-65024" mode="math" type="relation">
  <afii>21F4</afii>
- <latex>\lvertneqq </latex>
+ <latex>\lvertneqq</latex>
  <AMS>\lvertneqq</AMS>
  <APS>lvertnE</APS>
  <entity id="lvnE" set="8879-isoamsn">
@@ -18222,8 +18210,7 @@ for borrowings from their work
 
 <character id="U02269" dec="8809" mode="math" type="relation">
  <afii>21F3</afii>
- <latex>\gneqq </latex>
- <varlatex>\gneq</varlatex>
+ <latex>\gneqq</latex>
  <Elsevier grid="bne" ent="gnE">
   <desc>greater than but not (double) equal to</desc>
  </Elsevier>
@@ -18803,7 +18790,6 @@ for borrowings from their work
 <character id="U0227D" dec="8829" mode="math" type="relation">
  <afii>2153</afii>
  <latex>\succcurlyeq </latex>
- <varlatex>\succeq</varlatex>
  <Elsevier grid="bmu" ent="sccue">
   <desc>succ. ,curly eq; has rank higher than or equal to</desc>
  </Elsevier>
@@ -18828,8 +18814,7 @@ for borrowings from their work
 
 <character id="U0227E" dec="8830" mode="math" type="relation">
  <afii>21A1</afii>
- <latex>\precapprox </latex>
- <varlatex>\precsim</varlatex>
+ <latex>\precsim</latex>
  <Elsevier grid="bkr" ent="prsim">
   <desc>precedes, similar; dominance; contained in, equiv.</desc>
  </Elsevier>
@@ -18863,8 +18848,7 @@ for borrowings from their work
 
 <character id="U0227F" dec="8831" mode="math" type="relation">
  <afii>21A2</afii>
- <latex>\succapprox </latex>
- <varlatex>\succsim</varlatex>
+ <latex>\succsim</latex>
  <Elsevier grid="bmr" ent="scsim">
   <desc>succeeds, similar</desc>
  </Elsevier>
@@ -19098,8 +19082,7 @@ for borrowings from their work
 
 <character id="U02286" dec="8838" mode="math" type="relation">
  <afii>EF59</afii>
- <latex>\subseteq </latex>
- <varlatex>\subseteqq</varlatex>
+ <latex>\subseteq</latex>
  <Elsevier grid="bod" ent="sube">
   <desc>subset, equals; identity or inclusion in set</desc>
  </Elsevier>
@@ -19133,8 +19116,7 @@ for borrowings from their work
 
 <character id="U02287" dec="8839" mode="math" type="relation">
  <afii>EF58</afii>
- <latex>\supseteq </latex>
- <varlatex>\supseteqq</varlatex>
+ <latex>\supseteq</latex>
  <Elsevier grid="bqd" ent="supe">
   <desc>superset, equals; ident.with or contains as subset</desc>
  </Elsevier>
@@ -19168,8 +19150,7 @@ for borrowings from their work
 
 <character id="U02288" dec="8840" mode="math" type="relation">
  <afii>EF5D</afii>
- <latex>\not\subseteq </latex>
- <varlatex>\nsubseteqq</varlatex>
+ <latex>\not\subseteq</latex>
  <Elsevier grid="bpf" ent="nsube">
   <desc>not subset, equals; not contained in or not eql to</desc>
  </Elsevier>
@@ -19195,8 +19176,7 @@ for borrowings from their work
 
 <character id="U02289" dec="8841" mode="math" type="relation">
  <afii>EF5C</afii>
- <latex>\not\supseteq </latex>
- <varlatex>\nsupseteqq</varlatex>
+ <latex>\not\supseteq</latex>
  <Elsevier grid="brf" ent="nsupe">
   <desc>not superset, equals; does not contain as subset</desc>
  </Elsevier>
@@ -19222,8 +19202,7 @@ for borrowings from their work
 
 <character id="U0228A" dec="8842" mode="math" type="relation">
  <afii>21C5</afii>
- <latex>\subsetneq </latex>
- <varlatex>\subsetneqq</varlatex>
+ <latex>\subsetneq</latex>
  <Elsevier grid="bpd" ent="subne">
   <desc>subset, not equals</desc>
  </Elsevier>
@@ -19264,8 +19243,7 @@ for borrowings from their work
 
 <character id="U0228B" dec="8843" mode="math" type="relation">
  <afii>21C6</afii>
- <latex>\supsetneq </latex>
- <varlatex>\supsetneqq</varlatex>
+ <latex>\supsetneq</latex>
  <Elsevier grid="brd" ent="supne">
   <desc>superset, not equals</desc>
  </Elsevier>
@@ -20957,8 +20935,7 @@ for borrowings from their work
 
 <character id="U022DA" dec="8922" mode="math" type="relation">
  <afii>214E</afii>
- <latex>\lesseqgtr </latex>
- <varlatex>\lesseqqgtr</varlatex>
+ <latex>\lesseqgtr</latex>
  <Elsevier grid="bkj" ent="leg">
   <desc>less, equal, or greater</desc>
  </Elsevier>
@@ -20995,8 +20972,7 @@ for borrowings from their work
 
 <character id="U022DB" dec="8923" mode="math" type="relation">
  <afii>214F</afii>
- <latex>\gtreqless </latex>
- <varlatex>\gtreqqless</varlatex>
+ <latex>\gtreqless</latex>
  <Elsevier grid="bmj" ent="gel">
   <desc>greater, equal, or less</desc>
  </Elsevier>
@@ -21219,8 +21195,7 @@ for borrowings from their work
 
 <character id="U022E9" dec="8937" mode="math" type="relation">
  <afii>21B2</afii>
- <latex>\succnsim </latex>
- <varlatex>\succnapprox</varlatex>
+ <latex>\succnsim</latex>
  <Elsevier grid="bnr" ent="scnsim">
   <desc>succeeds, not similar</desc>
  </Elsevier>
@@ -21599,11 +21574,10 @@ for borrowings from their work
 
 <character id="U02306" dec="8966" mode="math" type="binaryop">
  <afii>EEDA</afii>
- <latex>\perspcorrespond </latex>
  <Elsevier grid="biz" ent="Barwed">
   <desc>double bar wedge B: log and, dbl bar</desc>
  </Elsevier>
- <AMS>\doublebarwedge ?</AMS>
+ <AMS>\doublebarwedge</AMS>
  <APS>Barwed</APS>
  <entity id="Barwed" set="8879-isoamsb">
   <desc>/doublebarwedge B: log and, dbl bar</desc>
@@ -25140,7 +25114,6 @@ for borrowings from their work
 
 <character id="U025AA" dec="9642" mode="math" type="other">
  <afii>2223</afii>
- <latex>\blacksquare </latex>
  <APS>squf</APS>
  <Wolfram>FilledVerySmallSquare</Wolfram>
  <entity id="squf" set="ISOPUB">
@@ -26393,7 +26366,6 @@ for borrowings from their work
 
 <character id="U02662" dec="9826" mode="math" type="normal">
  <afii>EFCD</afii>
- <latex>\diamond </latex>
  <Elsevier grid="bfg" ent="diam">
   <desc>diamond</desc>
  </Elsevier>
@@ -26409,7 +26381,6 @@ for borrowings from their work
 
 <character id="U02663" dec="9827" mode="text" type="normal">
  <afii>EFCE</afii>
- <latex>\ding{168}</latex>
  <Elsevier grid="bfk" ent="clubs">
   <desc>clubsuit; club, filled</desc>
  </Elsevier>
@@ -26436,7 +26407,6 @@ for borrowings from their work
 
 <character id="U02665" dec="9829" mode="text" type="normal">
  <afii>EECC</afii>
- <latex>\ding{170}</latex>
  <Elsevier grid="bfi" ent="hearts">
   <desc>heartsuit; heart, filled</desc>
  </Elsevier>
@@ -26455,7 +26425,6 @@ for borrowings from their work
 
 <character id="U02666" dec="9830" mode="text" type="normal">
  <afii>EECD</afii>
- <latex>\ding{169}</latex>
  <Elsevier grid="bfh" ent="diams">
   <desc>diamondsuit; diamond, filled</desc>
  </Elsevier>
@@ -32364,7 +32333,7 @@ for borrowings from their work
 
 <character id="U02A7E-00338" dec="10878-824" mode="math" type="relation">
  <afii>21E1</afii>
- <latex>\ngeqslant </latex>
+ <latex>\ngeqslant</latex>
  <varlatex>\ngeqq</varlatex>
  <Elsevier grid="bnb" ent="nges">
   <desc>neither greater than nor equal to, slanted</desc>
@@ -32616,7 +32585,7 @@ for borrowings from their work
 
 <character id="U02A8C" dec="10892" mode="math" type="relation">
  <afii>2175</afii>
- <latex>\gtreqqless </latex>
+ <latex>\gtreqqless</latex>
  <Elsevier grid="bmk" ent="gEl">
   <desc>greater, (double) equal, or less</desc>
  </Elsevier>
@@ -33276,7 +33245,7 @@ for borrowings from their work
 
 <character id="U02AB7" dec="10935" mode="math" type="relation">
  <afii>21A3</afii>
- <latex>\precapprox </latex>
+ <latex>\precapprox</latex>
  <Elsevier grid="bks" ent="prap">
   <desc>precedes, approximate</desc>
  </Elsevier>
@@ -33300,7 +33269,7 @@ for borrowings from their work
 
 <character id="U02AB8" dec="10936" mode="math" type="relation">
  <afii>21A4</afii>
- <latex>\succapprox </latex>
+ <latex>\succapprox</latex>
  <Elsevier grid="bms" ent="scap">
   <desc>succeeds, approximate</desc>
  </Elsevier>
@@ -42505,13 +42474,11 @@ for borrowings from their work
 </character>
 
 <character id="U1D6DB" dec="120539" mode="math" type="normal">
- <latex>\partial </latex>
- <surrogate mathvariant="bold" ref="U02202"/>
+  <surrogate mathvariant="bold" ref="U02202"/>
  <description unicode="3.1">MATHEMATICAL BOLD PARTIAL DIFFERENTIAL</description>
 </character>
 
 <character id="U1D6DC" dec="120540" mode="math" type="relation">
- <latex>\in</latex>
  <entity id="b.epsiv" set="9573-13-isogrk4">
   <desc>variant epsilon</desc>
  </entity>
@@ -42889,13 +42856,11 @@ for borrowings from their work
 </character>
 
 <character id="U1D715" dec="120597" mode="math" type="normal">
- <latex>\partial </latex>
- <surrogate mathvariant="italic" ref="U02202"/>
+  <surrogate mathvariant="italic" ref="U02202"/>
  <description unicode="3.1">MATHEMATICAL ITALIC PARTIAL DIFFERENTIAL</description>
 </character>
 
 <character id="U1D716" dec="120598" mode="math" type="relation">
- <latex>\in</latex>
  <surrogate mathvariant="italic" ref="U0220A"/>
  <description unicode="3.1">MATHEMATICAL ITALIC EPSILON SYMBOL</description>
 </character>
@@ -43237,13 +43202,11 @@ for borrowings from their work
 </character>
 
 <character id="U1D74F" dec="120655" mode="math" type="normal">
- <latex>\partial </latex>
- <surrogate mathvariant="bold-italic" ref="U02202"/>
+  <surrogate mathvariant="bold-italic" ref="U02202"/>
  <description unicode="3.1">MATHEMATICAL BOLD ITALIC PARTIAL DIFFERENTIAL</description>
 </character>
 
 <character id="U1D750" dec="120656" mode="math" type="relation">
- <latex>\in</latex>
  <surrogate mathvariant="bold-italic" ref="U0220A"/>
  <description unicode="3.1">MATHEMATICAL BOLD ITALIC EPSILON SYMBOL</description>
 </character>
@@ -43585,13 +43548,11 @@ for borrowings from their work
 </character>
 
 <character id="U1D789" dec="120713" mode="math" type="normal">
- <latex>\partial </latex>
- <surrogate mathvariant="bold-sans-serif" ref="U02202"/>
+  <surrogate mathvariant="bold-sans-serif" ref="U02202"/>
  <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD PARTIAL DIFFERENTIAL</description>
 </character>
 
 <character id="U1D78A" dec="120714" mode="math" type="relation">
- <latex>\in</latex>
  <surrogate mathvariant="bold-sans-serif" ref="U0220A"/>
  <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD EPSILON SYMBOL</description>
 </character>
@@ -43933,13 +43894,11 @@ for borrowings from their work
 </character>
 
 <character id="U1D7C3" dec="120771" mode="math" type="normal">
- <latex>\partial </latex>
  <surrogate mathvariant="sans-serif-bold-italic" ref="U02202"/>
  <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC PARTIAL DIFFERENTIAL</description>
 </character>
 
 <character id="U1D7C4" dec="120772" mode="math" type="relation">
- <latex>\in</latex>
  <surrogate mathvariant="sans-serif-bold-italic" ref="U0220A"/>
  <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC EPSILON SYMBOL</description>
 </character>

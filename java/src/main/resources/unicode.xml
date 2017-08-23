@@ -14792,7 +14792,7 @@ for borrowings from their work
  <Elsevier grid="bch" ent="uharr">
   <desc>up harpoon right</desc>
  </Elsevier>
- <AMS>\upharpoonleft</AMS>
+ <AMS>\upharpoonright</AMS>
  <APS>uharr</APS>
  <AIP>uharr</AIP>
  <Wolfram>RightUpVector</Wolfram>
@@ -14818,7 +14818,7 @@ for borrowings from their work
  <Elsevier grid="bcg" ent="uharl">
   <desc>up harpoon left</desc>
  </Elsevier>
- <AMS>\upharpoonright</AMS>
+ <AMS>\upharpoonleft</AMS>
  <APS>uharl</APS>
  <AIP>uharl</AIP>
  <Wolfram>LeftUpVector</Wolfram>
