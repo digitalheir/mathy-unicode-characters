@@ -15,7 +15,10 @@
   "\\dagger": "U02020",
   "\\textturnk": "U0029E",
   "\\rightthreetimes": "U022CC",
-  "\\nsubseteqq": "U02AC5-00338",
+  "\\nsubseteqq": [
+    "U02AC5-00338",
+    "U02288"
+  ],
   "\\setminus": "U02216",
   "\\textonehalf": "U000BD",
   "\\Elzpgamma": "U00263",
@@ -31,7 +34,10 @@
   "\\wp": "U02118",
   "\\NotLeftTriangleBar": "U029CF-00338",
   "\\wr": "U02240",
-  "\\rightsquigarrow": "U021DD",
+  "\\rightsquigarrow": [
+    "U0219D",
+    "U021DD"
+  ],
   "\\sum": "U02211",
   "\\circlearrowleft": [
     "U02940",
@@ -75,7 +81,10 @@
   "\\nleftarrow": "U0219A",
   "\\textsection": "U000A7",
   "\\Elzclomeg": "U00277",
-  "\\bullet": "U02219",
+  "\\bullet": [
+    "U02219",
+    "U02022"
+  ],
   "\\Equal": "U02A75",
   "\\sigma": "U003C3",
   "\\textdollar": "U00024",
@@ -125,15 +134,24 @@
   "\\oiiint": "U02230",
   "\\Beta": "U00392",
   "\\Elzverti": "U002CC",
-  "\\lneq": "U02A87",
+  "\\lneq": [
+    "U02A87",
+    "U02268"
+  ],
   "\\Elzverts": "U002C8",
+  "\\succapprox": [
+    "U02AB8",
+    "U0227F"
+  ],
   "\\vdots": "U022EE",
-  "\\succapprox": "U02AB8",
   "\\ddddot": "U020DC",
   "\\texttrademark": "U02122",
   "\\textquotedblright": "U0201D",
   "\\geq": "U02265",
-  "\\supseteqq": "U02AC6",
+  "\\supseteqq": [
+    "U02AC6",
+    "U02287"
+  ],
   "\\Digamma": "U003DC",
   "\\Elzrarrx": "U02947",
   "\\Mapsto": "U02907",
@@ -146,7 +164,10 @@
   "\\kernelcontraction": "U0223B",
   "\\trianglelefteq": "U022B4",
   "\\ddots": "U022F1",
-  "\\AA": "U0212B",
+  "\\AA": [
+    "U000C5",
+    "U0212B"
+  ],
   "\\Elztrnmlr": "U00270",
   "\\ggg": "U022D9",
   "\\AE": "U000C6",
@@ -156,7 +177,10 @@
   "\\lazysinv": "U0223E",
   "\\Elzsqspne": "U022E5",
   "\\vee": "U02228",
-  "\\subsetneqq": "U02ACB",
+  "\\subsetneqq": [
+    "U02ACB",
+    "U0228A"
+  ],
   "\\odot": "U02299",
   "\\bigsqcap": "U02A05",
   "\\nvdash": "U022AC",
@@ -225,7 +249,10 @@
   "\\ddagger": "U02021",
   "\\curlyeqprec": "U022DE",
   "\\hkswarow": "U02926",
-  "\\precapprox": "U02AB7",
+  "\\precapprox": [
+    "U02AB7",
+    "U0227E"
+  ],
   "\\lnsim": "U022E6",
   "\\ElzCint": "U02A0D",
   "\\colon": "U0003A",
@@ -292,7 +319,10 @@
   "\\ell": "U02113",
   "\\ntrianglerighteq": "U022ED",
   "\\chi": "U003C7",
-  "\\epsilon": "U003F5",
+  "\\epsilon": [
+    "U003B5",
+    "U003F5"
+  ],
   "\\Sigma": "U003A3",
   "\\rceil": "U02309",
   "\\ulcorner": "U0231C",
@@ -329,7 +359,10 @@
   "\\rho": "U003C1",
   "\\surd": "U0221A",
   "\\upint": "U02A1B",
-  "\\nsupseteqq": "U02AC6-00338",
+  "\\nsupseteqq": [
+    "U02AC6-00338",
+    "U02289"
+  ],
   "\\dddot": "U020DB",
   "\\\"": "U00308",
   "\\#": "U00023",
@@ -354,7 +387,10 @@
   "\\leftrightarrowtria*": "U021FF",
   "\\simeq": "U02243",
   "\\H": "U0030B",
-  "\\gneq": "U02A88",
+  "\\gneq": [
+    "U02A88",
+    "U02269"
+  ],
   "\\L": "U00141",
   "\\O": "U000D8",
   "\\disjquant": "U02A08",
@@ -380,7 +416,10 @@
   "\\l": "U00142",
   "\\aquarius": "U02652",
   "\\o": "U000F8",
-  "\\supsetneqq": "U02ACC",
+  "\\supsetneqq": [
+    "U0228B",
+    "U02ACC"
+  ],
   "\\vartriangleright": "U022B3",
   "\\eth": [
     "U000F0",
@@ -389,7 +428,10 @@
   "\\Elztrnsa": "U00252",
   "\\r": "U0030A",
   "\\equiv": "U02261",
-  "\\u": "U00306",
+  "\\u": [
+    "U00306",
+    "U002D8"
+  ],
   "\\dots": "U02026",
   "\\v": "U0030C",
   "\\spadesuit": "U02660",
@@ -423,7 +465,10 @@
   "\\clockoint": "U02A0F",
   "\\Elzsbrhr": "U002D2",
   "\\preccurlyeq": "U0227C",
-  "\\gtreqqless": "U02A8C",
+  "\\gtreqqless": [
+    "U02A8C",
+    "U022DB"
+  ],
   "\\clwintegral": "U02231",
   "\\Elzinvv": "U0028C",
   "\\Elzinvw": "U0028D",
@@ -444,7 +489,14 @@
   "\\parallel": "U02225",
   "\\pisces": "U02653",
   "\\gimel": "U02137",
-  "\\partial": "U02202",
+  "\\partial": [
+    "U1D7C3",
+    "U1D6DB",
+    "U02202",
+    "U1D715",
+    "U1D789",
+    "U1D74F"
+  ],
   "\\Elzhlmrk": "U002D1",
   "\\leo": "U0264C",
   "\\not \u003d": "U02260",
@@ -468,7 +520,10 @@
   "\\Elzrtll": "U0026D",
   "\\Elzrtlr": "U0027D",
   "\\theta": "U003B8",
-  "\\succeq": "U02AB0",
+  "\\succeq": [
+    "U02AB0",
+    "U0227D"
+  ],
   "\\Elzpalh": "U00321",
   "\\Delta": "U00394",
   "\\Uparrow": "U021D1",
@@ -483,14 +538,20 @@
   "\\rightarrowtail": "U021A3",
   "\\NotGreaterGreater": "U0226B-00338",
   "\\RightUpDownVector": "U0294F",
-  "\\Upsilon": "U003D2",
+  "\\Upsilon": [
+    "U003A5",
+    "U003D2"
+  ],
   "\\zeta": "U003B6",
   "\\leftharpoonup": "U021BC",
   "\\vartriangle": "U025B5",
   "\\upuparrows": "U021C8",
   "\\precnapprox": "U02AB9",
+  "\\ast": [
+    "U02217",
+    "U0002A"
+  ],
   "\\check": "U0030C",
-  "\\ast": "U02217",
   "\\UpArrowBar": "U02912",
   "\\Elztdcol": "U02AF6",
   "\\hat": "U00302",
@@ -560,7 +621,10 @@
   "\\nsim": "U02241",
   "\\openbracketleft": "U0301A",
   "\\forksnot": "U02ADD",
-  "\\cdot": "U022C5",
+  "\\cdot": [
+    "U000B7",
+    "U022C5"
+  ],
   "\\NotHumpDownHump": "U0224E-00338",
   "\\kappa": "U003BA",
   "\\sqsubset": "U0228F",
@@ -569,7 +633,10 @@
   "\\bigstar": "U02605",
   "\\beth": "U02136",
   "\\beta": "U003B2",
-  "\\lesseqqgtr": "U02A8B",
+  "\\lesseqqgtr": [
+    "U02A8B",
+    "U022DA"
+  ],
   "\\ntriangleleft": "U022EA",
   "\\Elzcirfr": "U025D1",
   "\\aa": "U000E5",
@@ -607,7 +674,10 @@
   "\\omega": "U003C9",
   "\\succnsim": "U022E9",
   "\\Elztrnr": "U00279",
-  "\\perspcorrespond": "U02A5E",
+  "\\perspcorrespond": [
+    "U02A5E",
+    "U02306"
+  ],
   "\\Elzxrat": "U0211E",
   "\\leftarrow": "U02190",
   "\\gemini": "U0264A",
@@ -637,17 +707,22 @@
   "\\RightTriangleBar": "U029D0",
   "\\Longleftarrow": "U027F8",
   "\\textonequarter": "U000BC",
-  "\\doublebarwedge": "U02306",
   "\\curlywedge": "U022CF",
   "\\bar": "U00304",
   "\\gamma": "U003B3",
   "\\leftrightsquigarrow": "U021AD",
-  "\\succnapprox": "U02ABA",
+  "\\succnapprox": [
+    "U02ABA",
+    "U022E9"
+  ],
   "\\lowint": "U02A1C",
   "\\breve": "U00306",
   "\\RuleDelayed": "U029F4",
+  "\\subseteqq": [
+    "U02AC5",
+    "U02286"
+  ],
   "\\nsucceq": "U02AB0-00338",
-  "\\subseteqq": "U02AC5",
   "\\ge": "U02265",
   "\\gg": "U0226B",
   "\\homothetic": "U0223B",
@@ -667,11 +742,20 @@
   "\\Theta": "U00398",
   "\\subsetneq": "U0228A",
   "\\Elzltln": "U00272",
+  "\\doublebarwedge ?": "U02306",
   "\\delta": "U003B4",
   "\\BbbPi": "U0213F",
   "\\forcesextra": "U022A8",
   "\\Stigma": "U003DA",
-  "\\in": "U02208",
+  "\\in": [
+    "U1D6DC",
+    "U02208",
+    "U1D750",
+    "U1D78A",
+    "U1D716",
+    "U0220A",
+    "U1D7C4"
+  ],
   "\\nsubset": "U02284",
   "\\triangleleft": "U025C3",
   "\\rbrack": "U0005D",
@@ -720,7 +804,10 @@
   "\\quad": "U02003",
   "\\lrcorner": "U0231F",
   "\\hookrightarrow": "U021AA",
-  "\\diamond": "U022C4",
+  "\\diamond": [
+    "U022C4",
+    "U02662"
+  ],
   "\\imath": "U00131",
   "\\cdotp": "U000B7",
   "\\risingdotseq": "U02253",
@@ -731,11 +818,17 @@
   "\\mp": "U02213",
   "\\textvartheta": "U003D1",
   "\\hookleftarrow": "U021A9",
-  "\\nleftrightarrow": "U021AE",
+  "\\nleftrightarrow": [
+    "U021AE",
+    "U021CE"
+  ],
   "\\jupiter": "U02643",
   "\\Kappa": "U0039A",
   "\\mu": "U003BC",
-  "\\varepsilon": "U003B5",
+  "\\varepsilon": [
+    "U003B5",
+    "U0025B"
+  ],
   "\\varnothing": "U02205",
   "\\nsubseteq": "U02288",
   "\\btimes": "U02A32",
@@ -770,7 +863,10 @@
   "\\boxplus": "U0229E",
   "\\twoheadrightarrowtail": "U02916",
   "\\dot": "U00307",
-  "\\blacksquare": "U025A0",
+  "\\blacksquare": [
+    "U025AA",
+    "U025A0"
+  ],
   "\\biguplus": "U02A04",
   "\\triangleq": "U0225C",
   "\\Elzpscrv": "U0028B",
@@ -840,7 +936,10 @@
   "\\tilde": "U00303",
   "\\longmapsto": "U027FC",
   "\\boxbslash": "U029C5",
-  "\\Omega": "U003A9",
+  "\\Omega": [
+    "U003A9",
+    "U02126"
+  ],
   "\\Epsilon": "U00395",
   "\\nprec": "U02280",
   "\\Elzltlmr": "U00271",

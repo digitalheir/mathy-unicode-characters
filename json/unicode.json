@@ -769,6 +769,7 @@
       "mode": "math",
       "type": "other",
       "afii": "002A",
+      "latex": "\\ast ",
       "elsevier": {
         "grid": "bl8",
         "ent": "",
@@ -3191,6 +3192,7 @@
       "mode": "math",
       "type": "binaryop",
       "afii": "00B7",
+      "latex": "\\cdot ",
       "elsevier": {
         "grid": "bo0",
         "ent": "z.rad",
@@ -3604,6 +3606,7 @@
       "dec": "197",
       "mode": "text",
       "type": "other",
+      "latex": "\\AA ",
       "wolfram": {
         "value": "CapitalARing"
       },
@@ -8664,7 +8667,7 @@
       "dec": "426",
       "mode": "math",
       "type": "other",
-      "latex": "\\eth",
+      "latex": "\\eth ",
       "elsevier": {
         "grid": "ped",
         "ent": "eth",
@@ -10393,6 +10396,7 @@
       "mode": "math",
       "type": "other",
       "afii": "2666",
+      "latex": "\\varepsilon ",
       "description": {
         "value": "LATIN SMALL LETTER OPEN E"
       }
@@ -11848,6 +11852,7 @@
       "type": "other",
       "afii": "00C6",
       "latex": "\\textasciibreve ",
+      "mathlatex": "\\u",
       "entity": [
         {
           "id": "breve",
@@ -15022,6 +15027,7 @@
       "mode": "math",
       "type": "alphabetic",
       "afii": "2659",
+      "latex": "\\Upsilon ",
       "wolfram": {
         "value": "CapitalUpsilon"
       },
@@ -15641,7 +15647,7 @@
       "mode": "math",
       "type": "alphabetic",
       "afii": "2666",
-      "latex": "\\varepsilon",
+      "latex": "\\epsilon ",
       "elsevier": {
         "grid": "cd3",
         "ent": "epsiv",
@@ -22986,7 +22992,8 @@
       "mode": "mixed",
       "type": "binaryop",
       "afii": "EB6E",
-      "latex": "\\textbullet",
+      "latex": "\\textbullet ",
+      "mathlatex": "\\bullet",
       "aps": "bull",
       "acs": "bbull",
       "wolfram": {
@@ -26706,6 +26713,7 @@
       "mode": "math",
       "type": "normal",
       "afii": "00E0",
+      "latex": "\\Omega ",
       "entity": [
         {
           "id": "ohm",
@@ -29079,7 +29087,7 @@
       "mode": "math",
       "type": "relation",
       "afii": "D8B6",
-      "latex": "\\arrowwaveleft",
+      "latex": "\\arrowwaveleft ",
       "ams": "\\leftsquigarrow",
       "font": [
         {
@@ -29097,7 +29105,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "EF53",
-      "latex": "\\arrowwaveright",
+      "latex": "\\arrowwaveright ",
+      "ams": "\\rightsquigarrow",
       "aps": "rarrw",
       "entity": [
         {
@@ -30969,7 +30978,7 @@
         "ent": "nhArr",
         "desc": "not left-right dbl arrow; negation of mut. implies"
       },
-      "ams": "\\nLeftrightarrow",
+      "ams": "\\nleftrightarrow",
       "aps": "nhArr",
       "entity": [
         {
@@ -32096,7 +32105,7 @@
       "mode": "math",
       "type": "normal",
       "afii": "EFBA",
-      "latex": "\\partial",
+      "latex": "\\partial ",
       "elsevier": {
         "grid": "cd6",
         "ent": "part",
@@ -32508,6 +32517,7 @@
       "mode": "math",
       "type": "relation",
       "afii": "EF4A",
+      "ams": "\\in",
       "description": {
         "value": "SMALL ELEMENT OF"
       }
@@ -33022,6 +33032,7 @@
       "mode": "math",
       "type": "binaryop",
       "afii": "EE7D",
+      "latex": "{_\\ast}",
       "elsevier": {
         "grid": "bk8",
         "ent": "ast",
@@ -33103,7 +33114,7 @@
       "dec": "8729",
       "mode": "math",
       "type": "other",
-      "latex": "\\bullet",
+      "latex": "\\bullet ",
       "elsevier": {
         "grid": "bl9",
         "ent": "z.ccirf",
@@ -36736,7 +36747,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "21F2",
-      "latex": "\\lneqq",
+      "latex": "\\lneqq ",
+      "varlatex": "\\lneq",
       "elsevier": {
         "grid": "ble",
         "ent": "lnE",
@@ -36774,7 +36786,7 @@
       "mode": "math",
       "type": "relation",
       "afii": "21F4",
-      "latex": "\\lvertneqq",
+      "latex": "\\lvertneqq ",
       "ams": "\\lvertneqq",
       "aps": "lvertnE",
       "entity": [
@@ -36810,7 +36822,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "21F3",
-      "latex": "\\gneqq",
+      "latex": "\\gneqq ",
+      "varlatex": "\\gneq",
       "elsevier": {
         "grid": "bne",
         "ent": "gnE",
@@ -37941,6 +37954,7 @@
       "type": "relation",
       "afii": "2153",
       "latex": "\\succcurlyeq ",
+      "varlatex": "\\succeq",
       "elsevier": {
         "grid": "bmu",
         "ent": "sccue",
@@ -37989,7 +38003,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "21A1",
-      "latex": "\\precsim",
+      "latex": "\\precapprox ",
+      "varlatex": "\\precsim",
       "elsevier": {
         "grid": "bkr",
         "ent": "prsim",
@@ -38056,7 +38071,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "21A2",
-      "latex": "\\succsim",
+      "latex": "\\succapprox ",
+      "varlatex": "\\succsim",
       "elsevier": {
         "grid": "bmr",
         "ent": "scsim",
@@ -38510,7 +38526,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "EF59",
-      "latex": "\\subseteq",
+      "latex": "\\subseteq ",
+      "varlatex": "\\subseteqq",
       "elsevier": {
         "grid": "bod",
         "ent": "sube",
@@ -38575,7 +38592,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "EF58",
-      "latex": "\\supseteq",
+      "latex": "\\supseteq ",
+      "varlatex": "\\supseteqq",
       "elsevier": {
         "grid": "bqd",
         "ent": "supe",
@@ -38640,7 +38658,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "EF5D",
-      "latex": "\\not\\subseteq",
+      "latex": "\\not\\subseteq ",
+      "varlatex": "\\nsubseteqq",
       "elsevier": {
         "grid": "bpf",
         "ent": "nsube",
@@ -38685,7 +38704,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "EF5C",
-      "latex": "\\not\\supseteq",
+      "latex": "\\not\\supseteq ",
+      "varlatex": "\\nsupseteqq",
       "elsevier": {
         "grid": "brf",
         "ent": "nsupe",
@@ -38730,7 +38750,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "21C5",
-      "latex": "\\subsetneq",
+      "latex": "\\subsetneq ",
+      "varlatex": "\\subsetneqq",
       "elsevier": {
         "grid": "bpd",
         "ent": "subne",
@@ -38811,7 +38832,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "21C6",
-      "latex": "\\supsetneq",
+      "latex": "\\supsetneq ",
+      "varlatex": "\\supsetneqq",
       "elsevier": {
         "grid": "brd",
         "ent": "supne",
@@ -42146,7 +42168,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "214E",
-      "latex": "\\lesseqgtr",
+      "latex": "\\lesseqgtr ",
+      "varlatex": "\\lesseqqgtr",
       "elsevier": {
         "grid": "bkj",
         "ent": "leg",
@@ -42218,7 +42241,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "214F",
-      "latex": "\\gtreqless",
+      "latex": "\\gtreqless ",
+      "varlatex": "\\gtreqqless",
       "elsevier": {
         "grid": "bmj",
         "ent": "gel",
@@ -42669,7 +42693,8 @@
       "mode": "math",
       "type": "relation",
       "afii": "21B2",
-      "latex": "\\succnsim",
+      "latex": "\\succnsim ",
+      "varlatex": "\\succnapprox",
       "elsevier": {
         "grid": "bnr",
         "ent": "scnsim",
@@ -43435,12 +43460,13 @@
       "mode": "math",
       "type": "binaryop",
       "afii": "EEDA",
+      "latex": "\\perspcorrespond ",
       "elsevier": {
         "grid": "biz",
         "ent": "Barwed",
         "desc": "double bar wedge B: log and, dbl bar"
       },
-      "ams": "\\doublebarwedge",
+      "ams": "\\doublebarwedge ?",
       "aps": "Barwed",
       "entity": [
         {
@@ -50621,6 +50647,7 @@
       "mode": "math",
       "type": "other",
       "afii": "2223",
+      "latex": "\\blacksquare ",
       "aps": "squf",
       "wolfram": {
         "value": "FilledVerySmallSquare"
@@ -53033,6 +53060,7 @@
       "mode": "math",
       "type": "normal",
       "afii": "EFCD",
+      "latex": "\\diamond ",
       "elsevier": {
         "grid": "bfg",
         "ent": "diam",
@@ -53062,6 +53090,7 @@
       "mode": "text",
       "type": "normal",
       "afii": "EFCE",
+      "latex": "\\ding{168}",
       "elsevier": {
         "grid": "bfk",
         "ent": "clubs",
@@ -53108,6 +53137,7 @@
       "mode": "text",
       "type": "normal",
       "afii": "EECC",
+      "latex": "\\ding{170}",
       "elsevier": {
         "grid": "bfi",
         "ent": "hearts",
@@ -53141,6 +53171,7 @@
       "mode": "text",
       "type": "normal",
       "afii": "EECD",
+      "latex": "\\ding{169}",
       "elsevier": {
         "grid": "bfh",
         "ent": "diams",
@@ -65788,7 +65819,7 @@
       "mode": "math",
       "type": "relation",
       "afii": "2175",
-      "latex": "\\gtreqqless",
+      "latex": "\\gtreqqless ",
       "elsevier": {
         "grid": "bmk",
         "ent": "gEl",
@@ -67087,7 +67118,7 @@
       "mode": "math",
       "type": "relation",
       "afii": "21A3",
-      "latex": "\\precapprox",
+      "latex": "\\precapprox ",
       "elsevier": {
         "grid": "bks",
         "ent": "prap",
@@ -67128,7 +67159,7 @@
       "mode": "math",
       "type": "relation",
       "afii": "21A4",
-      "latex": "\\succapprox",
+      "latex": "\\succapprox ",
       "elsevier": {
         "grid": "bms",
         "ent": "scap",
@@ -94842,6 +94873,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2659",
+          "latex": "\\Upsilon ",
           "wolfram": {
             "value": "CapitalUpsilon"
           },
@@ -95583,7 +95615,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2666",
-          "latex": "\\varepsilon",
+          "latex": "\\epsilon ",
           "elsevier": {
             "grid": "cd3",
             "ent": "epsiv",
@@ -97256,6 +97288,7 @@
       "dec": "120539",
       "mode": "math",
       "type": "normal",
+      "latex": "\\partial ",
       "surrogate": {
         "mathvariant": "bold",
         "ref": {
@@ -97264,7 +97297,7 @@
           "mode": "math",
           "type": "normal",
           "afii": "EFBA",
-          "latex": "\\partial",
+          "latex": "\\partial ",
           "elsevier": {
             "grid": "cd6",
             "ent": "part",
@@ -97319,6 +97352,7 @@
       "dec": "120540",
       "mode": "math",
       "type": "relation",
+      "latex": "\\in",
       "entity": [
         {
           "id": "b.epsiv",
@@ -97339,6 +97373,7 @@
           "mode": "math",
           "type": "relation",
           "afii": "EF4A",
+          "ams": "\\in",
           "description": {
             "value": "SMALL ELEMENT OF"
           }
@@ -98851,6 +98886,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2659",
+          "latex": "\\Upsilon ",
           "wolfram": {
             "value": "CapitalUpsilon"
           },
@@ -99496,7 +99532,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2666",
-          "latex": "\\varepsilon",
+          "latex": "\\epsilon ",
           "elsevier": {
             "grid": "cd3",
             "ent": "epsiv",
@@ -100941,6 +100977,7 @@
       "dec": "120597",
       "mode": "math",
       "type": "normal",
+      "latex": "\\partial ",
       "surrogate": {
         "mathvariant": "italic",
         "ref": {
@@ -100949,7 +100986,7 @@
           "mode": "math",
           "type": "normal",
           "afii": "EFBA",
-          "latex": "\\partial",
+          "latex": "\\partial ",
           "elsevier": {
             "grid": "cd6",
             "ent": "part",
@@ -101004,6 +101041,7 @@
       "dec": "120598",
       "mode": "math",
       "type": "relation",
+      "latex": "\\in",
       "surrogate": {
         "mathvariant": "italic",
         "ref": {
@@ -101012,6 +101050,7 @@
           "mode": "math",
           "type": "relation",
           "afii": "EF4A",
+          "ams": "\\in",
           "description": {
             "value": "SMALL ELEMENT OF"
           }
@@ -102464,6 +102503,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2659",
+          "latex": "\\Upsilon ",
           "wolfram": {
             "value": "CapitalUpsilon"
           },
@@ -103109,7 +103149,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2666",
-          "latex": "\\varepsilon",
+          "latex": "\\epsilon ",
           "elsevier": {
             "grid": "cd3",
             "ent": "epsiv",
@@ -104554,6 +104594,7 @@
       "dec": "120655",
       "mode": "math",
       "type": "normal",
+      "latex": "\\partial ",
       "surrogate": {
         "mathvariant": "bold-italic",
         "ref": {
@@ -104562,7 +104603,7 @@
           "mode": "math",
           "type": "normal",
           "afii": "EFBA",
-          "latex": "\\partial",
+          "latex": "\\partial ",
           "elsevier": {
             "grid": "cd6",
             "ent": "part",
@@ -104617,6 +104658,7 @@
       "dec": "120656",
       "mode": "math",
       "type": "relation",
+      "latex": "\\in",
       "surrogate": {
         "mathvariant": "bold-italic",
         "ref": {
@@ -104625,6 +104667,7 @@
           "mode": "math",
           "type": "relation",
           "afii": "EF4A",
+          "ams": "\\in",
           "description": {
             "value": "SMALL ELEMENT OF"
           }
@@ -106077,6 +106120,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2659",
+          "latex": "\\Upsilon ",
           "wolfram": {
             "value": "CapitalUpsilon"
           },
@@ -106722,7 +106766,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2666",
-          "latex": "\\varepsilon",
+          "latex": "\\epsilon ",
           "elsevier": {
             "grid": "cd3",
             "ent": "epsiv",
@@ -108167,6 +108211,7 @@
       "dec": "120713",
       "mode": "math",
       "type": "normal",
+      "latex": "\\partial ",
       "surrogate": {
         "mathvariant": "bold-sans-serif",
         "ref": {
@@ -108175,7 +108220,7 @@
           "mode": "math",
           "type": "normal",
           "afii": "EFBA",
-          "latex": "\\partial",
+          "latex": "\\partial ",
           "elsevier": {
             "grid": "cd6",
             "ent": "part",
@@ -108230,6 +108275,7 @@
       "dec": "120714",
       "mode": "math",
       "type": "relation",
+      "latex": "\\in",
       "surrogate": {
         "mathvariant": "bold-sans-serif",
         "ref": {
@@ -108238,6 +108284,7 @@
           "mode": "math",
           "type": "relation",
           "afii": "EF4A",
+          "ams": "\\in",
           "description": {
             "value": "SMALL ELEMENT OF"
           }
@@ -109690,6 +109737,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2659",
+          "latex": "\\Upsilon ",
           "wolfram": {
             "value": "CapitalUpsilon"
           },
@@ -110335,7 +110383,7 @@
           "mode": "math",
           "type": "alphabetic",
           "afii": "2666",
-          "latex": "\\varepsilon",
+          "latex": "\\epsilon ",
           "elsevier": {
             "grid": "cd3",
             "ent": "epsiv",
@@ -111780,6 +111828,7 @@
       "dec": "120771",
       "mode": "math",
       "type": "normal",
+      "latex": "\\partial ",
       "surrogate": {
         "mathvariant": "sans-serif-bold-italic",
         "ref": {
@@ -111788,7 +111837,7 @@
           "mode": "math",
           "type": "normal",
           "afii": "EFBA",
-          "latex": "\\partial",
+          "latex": "\\partial ",
           "elsevier": {
             "grid": "cd6",
             "ent": "part",
@@ -111843,6 +111892,7 @@
       "dec": "120772",
       "mode": "math",
       "type": "relation",
+      "latex": "\\in",
       "surrogate": {
         "mathvariant": "sans-serif-bold-italic",
         "ref": {
@@ -111851,6 +111901,7 @@
           "mode": "math",
           "type": "relation",
           "afii": "EF4A",
+          "ams": "\\in",
           "description": {
             "value": "SMALL ELEMENT OF"
           }

@@ -2,7 +2,10 @@
   "U1D59F": "\\mathslbb{z}",
   "U1D59D": "\\mathslbb{x}",
   "U1D59E": "\\mathslbb{y}",
-  "U022E9": "\\succnsim",
+  "U022E9": [
+    "\\succnapprox",
+    "\\succnsim"
+  ],
   "U1D59B": "\\mathslbb{v}",
   "U022E8": [
     "\\precnsim",
@@ -216,12 +219,18 @@
     "\\ddot{u}",
     "\\\"{u}"
   ],
-  "U022DB": "\\gtreqless",
+  "U022DB": [
+    "\\gtreqqless",
+    "\\gtreqless"
+  ],
   "U000FD": [
     "\\\u0027{y}",
     "\\acute{y}"
   ],
-  "U022DA": "\\lesseqgtr",
+  "U022DA": [
+    "\\lesseqqgtr",
+    "\\lesseqgtr"
+  ],
   "U1D55F": "\\mathbb{n}",
   "U1D55D": "\\mathbb{l}",
   "U1D55E": "\\mathbb{m}",
@@ -243,6 +252,7 @@
     "\\ddot{A}"
   ],
   "U022A3": "\\dashv",
+  "U000C5": "\\AA",
   "U022A2": "\\vdash",
   "U000C2": [
     "\\^{A}",
@@ -489,7 +499,10 @@
   "U000B9": "{^1}",
   "U1D541": "\\mathbb{J}",
   "U1D542": "\\mathbb{K}",
-  "U000B7": "\\cdotp",
+  "U000B7": [
+    "\\cdot",
+    "\\cdotp"
+  ],
   "U000B8": [
     "\\c{}",
     "\\mbox{\\c{}}"
@@ -553,8 +566,14 @@
   "U1D502": "\\mathmit{y}",
   "U1D500": "\\mathmit{w}",
   "U0228D": "\\cupdot",
-  "U0228B": "\\supsetneq",
-  "U0228A": "\\subsetneq",
+  "U0228B": [
+    "\\supsetneq",
+    "\\supsetneqq"
+  ],
+  "U0228A": [
+    "\\subsetneqq",
+    "\\subsetneq"
+  ],
   "U004BE": "\\cyrchar\\CYRABHCHDSC",
   "U004BF": "\\cyrchar\\cyrabhchdsc",
   "U004BC": "\\cyrchar\\CYRABHCH",
@@ -643,9 +662,18 @@
   "U004B1": "\\cyrchar\\cyryhcrs",
   "U004B2": "\\cyrchar\\CYRHDSC",
   "U004B0": "\\cyrchar\\CYRYHCRS",
-  "U0227F": "\\succsim",
-  "U0227E": "\\precsim",
-  "U0227D": "\\succcurlyeq",
+  "U0227F": [
+    "\\succsim",
+    "\\succapprox"
+  ],
+  "U0227E": [
+    "\\precsim",
+    "\\precapprox"
+  ],
+  "U0227D": [
+    "\\succcurlyeq",
+    "\\succeq"
+  ],
   "U004B9": "\\cyrchar\\cyrchvcrs",
   "U02284": [
     "\\nsubset",
@@ -671,14 +699,22 @@
   "U004BB": "\\cyrchar\\cyrshha",
   "U02289": [
     "\\not\\supseteq",
-    "\\nsupseteq"
+    "\\nsupseteq",
+    "\\nsupseteqq"
   ],
   "U02288": [
     "\\not\\subseteq",
+    "\\nsubseteqq",
     "\\nsubseteq"
   ],
-  "U02287": "\\supseteq",
-  "U02286": "\\subseteq",
+  "U02287": [
+    "\\supseteq",
+    "\\supseteqq"
+  ],
+  "U02286": [
+    "\\subseteqq",
+    "\\subseteq"
+  ],
   "U02285": [
     "\\not\\supset",
     "\\nsupset"
@@ -755,8 +791,14 @@
     "\\ne",
     "\\not \u003d"
   ],
-  "U02269": "\\gneqq",
-  "U02268": "\\lneqq",
+  "U02269": [
+    "\\gneqq",
+    "\\gneq"
+  ],
+  "U02268": [
+    "\\lneqq",
+    "\\lneq"
+  ],
   "U02267": "\\geqq",
   "U02266": "\\leqq",
   "U02265": [
@@ -921,6 +963,8 @@
   "U0002C": ",",
   "U0220B": "\\ni",
   "U0002D": "-",
+  "U0220A": "\\in",
+  "U0002A": "\\ast",
   "U0002B": "+",
   "U1D4CE": "\\mathscr{y}",
   "U1D4CF": "\\mathscr{z}",
@@ -957,7 +1001,10 @@
   "U02218": "\\circ",
   "U1D4E4": "\\mathmit{U}",
   "U00038": "8",
-  "U02217": "\\ast",
+  "U02217": [
+    "{_\\ast}",
+    "\\ast"
+  ],
   "U1D4E1": "\\mathmit{R}",
   "U00039": "9",
   "U02216": "\\setminus",
@@ -1123,9 +1170,17 @@
   "U0047C": "\\cyrchar\\CYROMEGATITLO",
   "U0047A": "\\cyrchar\\CYROMEGARND",
   "U00480": "\\cyrchar\\CYRKOPPA",
+  "U02666": "\\ding{169}",
   "U00488": "\\cyrchar\\cyrhundredthousands",
-  "U02663": "\\clubsuit",
-  "U02662": "\\diamondsuit",
+  "U02665": "\\ding{170}",
+  "U02663": [
+    "\\clubsuit",
+    "\\ding{168}"
+  ],
+  "U02662": [
+    "\\diamond",
+    "\\diamondsuit"
+  ],
   "U02661": "\\heartsuit",
   "U00481": "\\cyrchar\\cyrkoppa",
   "U02660": [
@@ -1735,7 +1790,10 @@
     "\\~{\\i}",
     "\\tilde{\\imath}"
   ],
-  "U02306": "\\doublebarwedge",
+  "U02306": [
+    "\\doublebarwedge ?",
+    "\\perspcorrespond"
+  ],
   "U1D5D2": "\\mathsf{y}",
   "U00126": "{\\fontencoding{LELA}\\selectfont\\char40}",
   "U02305": "\\barwedge",
@@ -2303,7 +2361,9 @@
   "U1D78F": "\\mathsfbf{\\varpi}",
   "U1D78C": "\\mathsfbf{\\varkappa}",
   "U1D78D": "\\mathsfbf{\\phi}",
+  "U1D78A": "\\in",
   "U1D78B": "\\mathsfbf{\\vartheta}",
+  "U1D789": "\\partial",
   "U1D787": "\\mathsfbf{\\Psi}",
   "U1D788": "\\mathsfbf{\\Omega}",
   "U1D785": "\\mathsfbf{\\Phi}",
@@ -2327,10 +2387,12 @@
   "U1D752": "\\mathbit{\\varkappa}",
   "U1D753": "\\mathbit{\\phi}",
   "U002C8": "\\Elzverts",
+  "U1D750": "\\in",
   "U1D751": "\\mathbit{\\vartheta}",
   "U002C7": "\\textasciicaron",
   "U002CC": "\\Elzverti",
   "U1D74E": "\\mathbit{\\Omega}",
+  "U1D74F": "\\partial",
   "U1D76E": "\\mathsfbf{\\Omega}",
   "U1D76F": "\\mathsfbf{\\nabla}",
   "U1D76C": "\\mathsfbf{\\Chi}",
@@ -2357,7 +2419,10 @@
   ],
   "U1D761": "M",
   "U1D762": "N",
-  "U002D8": "\\textasciibreve",
+  "U002D8": [
+    "\\textasciibreve",
+    "\\u"
+  ],
   "U1D760": "\\mathsfbf{\\Lambda}",
   "U002DC": "\\texttildelow",
   "U002DD": [
@@ -2429,8 +2494,10 @@
   "U1D71A": "\\mathsl{\\varrho}",
   "U1D718": "\\mathsl{\\varkappa}",
   "U1D719": "\\mathsl{\\phi}",
+  "U1D716": "\\in",
   "U1D717": "\\mathsl{\\vartheta}",
   "U1D714": "\\mathsl{\\Omega}",
+  "U1D715": "\\partial",
   "U1D712": "\\mathsl{\\Chi}",
   "U02A63": "\\ElsevierGlyph{225A}",
   "U1D713": "\\mathsl{\\Psi}",
@@ -2561,7 +2628,10 @@
   ],
   "U02025": "..",
   "U02024": ".",
-  "U02022": "\\textbullet",
+  "U02022": [
+    "\\bullet",
+    "\\textbullet"
+  ],
   "U02021": [
     "\\textdaggerdbl",
     "\\ddag ",
@@ -2684,6 +2754,7 @@
   "U1D6E8": "\\mathsl{\\Eta}",
   "U00258": "{\\fontencoding{LEIP}\\selectfont\\char61}",
   "U00259": "\\Elzschwa",
+  "U0025B": "\\varepsilon",
   "U1D6FF": "\\mathsl{\\Delta}",
   "U1D6FD": "\\mathsl{\\Beta}",
   "U1D6FE": "\\mathsl{\\Gamma}",
@@ -2727,6 +2798,8 @@
   "U1D6DF": "\\mathbf{\\phi}",
   "U1D6DD": "\\mathbf{\\vartheta}",
   "U1D6DE": "\\mathbf{\\varkappa}",
+  "U1D6DB": "\\partial",
+  "U1D6DC": "\\in",
   "U1D6DA": "\\mathbf{\\Omega}",
   "U02423": "\\textvisiblespace",
   "U1D6D8": "\\mathbf{\\Chi}",
@@ -2797,7 +2870,10 @@
   "U1D471": "\\mathbit{J}",
   "U1D472": "\\mathbit{K}",
   "U021CF": "\\nRightarrow",
-  "U021CE": "\\nLeftrightarrow",
+  "U021CE": [
+    "\\nleftrightarrow",
+    "\\nLeftrightarrow"
+  ],
   "U1D470": "\\mathbit{I}",
   "U021CD": "\\nLeftarrow",
   "U021CC": "\\rightleftharpoons",
@@ -3015,13 +3091,17 @@
     "\\acute{o}"
   ],
   "U003CD": "\\acute{\\upsilon}",
+  "U025AA": "\\blacksquare",
   "U003CA": "\\ddot{\\iota}",
   "U003CB": "\\ddot{\\upsilon}",
   "U02199": "\\swarrow",
   "U02198": "\\searrow",
   "U02197": "\\nearrow",
   "U0219E": "\\twoheadleftarrow",
-  "U0219D": "\\arrowwaveright",
+  "U0219D": [
+    "\\arrowwaveright",
+    "\\rightsquigarrow"
+  ],
   "U0219C": [
     "\\arrowwaveleft",
     "\\leftsquigarrow"
@@ -3059,6 +3139,7 @@
   "U003A9": "\\Omega",
   "U003A7": "\\Chi",
   "U003A8": "\\Psi",
+  "U003A5": "\\Upsilon",
   "U003A6": "\\Phi",
   "U003A3": "\\Sigma",
   "U003A4": "\\Tau",
@@ -3084,7 +3165,10 @@
   "U003B6": "\\zeta",
   "U003B7": "\\eta",
   "U003B4": "\\delta",
-  "U003B5": "\\varepsilon",
+  "U003B5": [
+    "\\varepsilon",
+    "\\epsilon"
+  ],
   "U003BB": "\\lambda",
   "U003BC": "\\mu",
   "U003BA": "\\kappa",
@@ -3169,6 +3253,7 @@
   "U029B6": "\\ElsevierGlyph{E61B}",
   "U029B5": "\\ElsevierGlyph{E260}",
   "U02127": "\\mho",
+  "U02126": "\\Omega",
   "U02124": "\\mathbb{Z}",
   "U02122": "\\texttrademark",
   "U029B8": "\\obslash",
@@ -3261,6 +3346,7 @@
   "U1D7C9": "\\mathsfbfsl{\\varpi}",
   "U1D7C6": "\\mathsfbfsl{\\varkappa}",
   "U1D7C7": "\\mathsfbfsl{\\phi}",
+  "U1D7C4": "\\in",
   "U1D7C5": "\\mathsfbfsl{\\vartheta}",
   "U1D7E4": "\\mathsf{2}",
   "U02519": "\\Elzsqfnw",
@@ -3348,6 +3434,7 @@
   "U1D7A3": "\\mathsfbfsl{\\Tau}",
   "U00319": "{\\fontencoding{LECO}\\selectfont\\char185}",
   "U1D7C2": "\\mathsfbfsl{\\Omega}",
+  "U1D7C3": "\\partial",
   "U1D7C0": "\\mathsfbfsl{\\Chi}",
   "U00318": "{\\fontencoding{LECO}\\selectfont\\char184}",
   "U1D7C1": "\\mathsfbfsl{\\Psi}",
