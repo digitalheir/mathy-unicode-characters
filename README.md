@@ -6,7 +6,7 @@
 
 This repository exists to make it easier to map between Unicode characters and various other markup languages when typing math, most notably LaTeX and Mathematica.
 
-It is based on an XML file [published by W3C](https://www.w3.org/TR/unicode-xml/). The document has been withdrawn since 2016 but is still tremendously useful. (Slightly revised XML file is mirrored [here](https://github.com/digitalheir/mathy-unicode-characters/blob/master/java/src/main/resources/unicode.xml).)
+It is based on an XML file [published by W3C](https://www.w3.org/TR/unicode-xml/). The document has been withdrawn since 2016 but is still tremendously useful. (XML file is mirrored [here](https://github.com/digitalheir/mathy-unicode-characters/blob/master/java/src/main/resources/unicode.xml), slightly revised to [fix errors](https://github.com/digitalheir/mathy-unicode-characters/issues?q=label%3Abug).)
 
 ## Website
 The full list of Unicode characters and their conversions is searchable on [a related website](https://digitalheir.github.io/mathy-unicode-characters/).
