@@ -7742,7 +7742,7 @@ for borrowings from their work
 
 <character id="U003B5" dec="949" mode="math" type="alphabetic">
  <afii>2666</afii>
- <latex>\epsilon</latex>
+ <latex>\varepsilon</latex>
  <Elsevier grid="cd3" ent="epsiv">
   <desc>epsilon (cursive)  -- Greek --</desc>
  </Elsevier>
@@ -8790,6 +8790,7 @@ for borrowings from their work
 
 <character id="U003F5" dec="1013" mode="unknown" type="alphabetic">
  <afii>FD5B</afii>
+ <latex>\epsilon</latex>
  <Elsevier grid="cde" ent="epsi">
   <desc>epsilon (Porson)  -- Greek --</desc>
  </Elsevier>
