@@ -4,6 +4,7 @@
    entity*,font*,comment?,surrogate?,bmp?,description) >
 <!ATTLIST character 
          id ID #REQUIRED
+         normalForm IDREF
          dec CDATA "0"
          mode (math|text|mixed|unknown) "unknown"
          type
