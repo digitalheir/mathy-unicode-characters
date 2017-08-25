@@ -8512,11 +8512,10 @@ for borrowings from their work
 
     <character id="U003D2" dec="978" mode="math" type="alphabetic">
         <afii>2659</afii>
-        <latex>\Upsilon</latex>
+        <latex priority="1">\Upsilon</latex>
         <Elsevier grid="ceu" ent="Upsi">
             <desc>upsilon (capital) -- Greek --</desc>
         </Elsevier>
-        <AMS>\Upsilon</AMS>
         <APS>Upsi</APS>
         <AIP>Ugr</AIP>
         <IEEE>\Upsilon</IEEE>
