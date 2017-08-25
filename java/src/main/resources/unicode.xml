@@ -1607,7 +1607,7 @@ for borrowings from their work
 
 <character id="U000B7" dec="183" mode="math" type="binaryop">
  <afii>00B7</afii>
- <latex>\cdot </latex>
+ <latex>\cdotp</latex>
  <Elsevier grid="bo0" ent="z.rad">
   <desc>radical dot</desc>
  </Elsevier>
@@ -20508,7 +20508,7 @@ for borrowings from their work
 
 <character id="U022C5" dec="8901" mode="math" type="binaryop">
  <afii>EEB4</afii>
- <latex>\cdot </latex>
+ <latex>\cdot</latex>
  <Elsevier grid="bsc" ent="middot">
   <desc>center dot</desc>
  </Elsevier>
