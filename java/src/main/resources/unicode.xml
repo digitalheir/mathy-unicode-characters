@@ -7557,11 +7557,10 @@ for borrowings from their work
 
     <character id="U003A9" dec="937" mode="math" type="alphabetic">
         <afii>265D</afii>
-        <latex>\Omega</latex>
+        <latex priority="1">\Omega</latex>
         <Elsevier grid="cew" ent="Omega">
             <desc>omega (capital) -- Greek --</desc>
         </Elsevier>
-        <AMS>\Omega</AMS>
         <APS>Omega</APS>
         <AIP>OHgr</AIP>
         <IEEE>\Omega</IEEE>
