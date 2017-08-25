@@ -380,7 +380,7 @@ for borrowings from their work
 
 <character id="U0002A" dec="42" mode="math" type="other">
  <afii>002A</afii>
- <latex>\ast </latex>
+ <latex>*</latex>
  <Elsevier grid="bl8" ent="">
   <desc>pseudo-superscript asterisk (ASCII *)</desc>
   <elsrender>*</elsrender>
@@ -16251,7 +16251,7 @@ for borrowings from their work
 
 <character id="U02217" dec="8727" mode="math" type="binaryop">
  <afii>EE7D</afii>
- <latex>{_\ast}</latex>
+ <latex>\ast</latex>
  <Elsevier grid="bk8" ent="ast">
   <desc>mid asterisk</desc>
  </Elsevier>
