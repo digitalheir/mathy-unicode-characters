@@ -13,6 +13,8 @@
 >
 
 <!ELEMENT latex     (#PCDATA) ><!-- LaTeX code to produce glyph-->
+<!ATTLIST latex package CDATA>
+
 <!ELEMENT varlatex  (#PCDATA) ><!-- alternative LaTeX code to produce glyph-->
 <!ELEMENT mathlatex  (#PCDATA) ><!-- LaTeX code math mode code -->
 <!ELEMENT font       EMPTY ><!--possible font name and position -->
