@@ -1,9 +1,10 @@
 <!ELEMENT charlist (entitygroups?,mathvariants?,character*)>
-<!ELEMENT character (afii?,latex?,varlatex?,mathlatex?,
+<!ELEMENT character (afii?,latex*,varlatex?,mathlatex?,
    Elsevier?,AMS?,APS?,ACS?,AIP?,IEEE?,Wolfram?,Springer?,
    entity*,font*,comment?,surrogate?,bmp?,description) >
 <!ATTLIST character 
          id ID #REQUIRED
+         normalForm IDREF
          dec CDATA "0"
          mode (math|text|mixed|unknown) "unknown"
          type
@@ -12,6 +13,11 @@
 >
 
 <!ELEMENT latex     (#PCDATA) ><!-- LaTeX code to produce glyph-->
+<!ATTLIST latex
+		package CDATA
+		priority CDATA "0" <!-- Indicates the priority of this latex to unicode mapping -->
+>
+
 <!ELEMENT varlatex  (#PCDATA) ><!-- alternative LaTeX code to produce glyph-->
 <!ELEMENT mathlatex  (#PCDATA) ><!-- LaTeX code math mode code -->
 <!ELEMENT font       EMPTY ><!--possible font name and position -->

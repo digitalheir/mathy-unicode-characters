@@ -63,7 +63,7 @@ public class ConvertToJson {
 
             writeGsonFile("unicode", parsedObject);
 
-            writeGsonFileForExtraInformation(characters);
+//            writeGsonFileForExtraInformation(characters);
 
             writeGsonFilesForWolfram(characters);
             writeGsonFilesForImage(characters);
@@ -90,20 +90,20 @@ public class ConvertToJson {
         }
     }
 
-    private static void writeGsonFileForExtraInformation(List<Character> characters) throws IOException {
-        Map<String, CharacterInformation> idToChar = characters.stream()
-                .collect(
-                        Collectors.toMap(
-                                Character::getId,
-                                CharacterInformation::new
-                        )
-                );
-
-        writeGsonFile(
-                "unicodeIdentification",
-                idToChar
-        );
-    }
+//    private static void writeGsonFileForExtraInformation(List<Character> characters) throws IOException {
+//        Map<String, CharacterInformation> idToChar = characters.stream()
+//                .collect(
+//                        Collectors.toMap(
+//                                Character::getId,
+//                                CharacterInformation::new
+//                        )
+//                );
+//
+//        writeGsonFile(
+//                "unicodeIdentification",
+//                idToChar
+//        );
+//    }
 
     private static void writeGsonFile(String filename, Object object) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();

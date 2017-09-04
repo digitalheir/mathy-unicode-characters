@@ -10,20 +10,14 @@ package com.github.digitalheir.unicode;
 
 import com.github.digitalheir.LatexCommand;
 import com.github.digitalheir.simple.SimpleSurrogate;
+import com.google.gson.annotations.JsonAdapter;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlID;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.NormalizedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 
 import static java.util.Objects.isNull;
@@ -61,6 +55,10 @@ public class Character {
   @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
   @XmlID
   public String id;
+  @XmlAttribute(name = "normalForm")
+  @JsonAdapter(CharacterReferenceSerializer.class)
+  @XmlIDREF
+  public Character normalForm;
   @XmlAttribute(name = "dec")
   @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
   public String dec;
@@ -74,7 +72,8 @@ public class Character {
   @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
   public String image;
   public String afii;
-  public String latex;
+  @JsonAdapter(LatexSerializer.class)
+  public Latex latex;
   public String varlatex;
   public String mathlatex;
   @XmlElement(name = "Elsevier")
@@ -100,8 +99,6 @@ public class Character {
   public Bmp bmp;
   @XmlElement(required = true)
   public Description description;
-
-
 
   /**
    * Gets the value of the id property.
@@ -183,7 +180,7 @@ public class Character {
    */
   public String getLatex() {
     if(latex != null)
-      return latex.trim();
+      return latex.value.trim();
     else
       return null;
   }
@@ -421,6 +418,7 @@ public class Character {
 
   public Object getNormalizedWolfram() {
     return isNull(wolfram.getId()) ? wolfram.getvalue() : wolfram;
+
   }
 
   public Object getNormalizedDec() {

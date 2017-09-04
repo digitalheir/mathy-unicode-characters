@@ -547,11 +547,8 @@
   "\\vartriangle": "U025B5",
   "\\upuparrows": "U021C8",
   "\\precnapprox": "U02AB9",
-  "\\ast": [
-    "U02217",
-    "U0002A"
-  ],
   "\\check": "U0030C",
+  "\\ast": "U02217",
   "\\UpArrowBar": "U02912",
   "\\Elztdcol": "U02AF6",
   "\\hat": "U00302",
@@ -621,10 +618,7 @@
   "\\nsim": "U02241",
   "\\openbracketleft": "U0301A",
   "\\forksnot": "U02ADD",
-  "\\cdot": [
-    "U000B7",
-    "U022C5"
-  ],
+  "\\cdot": "U022C5",
   "\\NotHumpDownHump": "U0224E-00338",
   "\\kappa": "U003BA",
   "\\sqsubset": "U0228F",
