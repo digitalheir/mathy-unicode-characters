@@ -72,7 +72,8 @@ public class Character {
   @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
   public String image;
   public String afii;
-  public String latex;
+  @JsonAdapter(LatexSerializer.class)
+  public Latex latex;
   public String varlatex;
   public String mathlatex;
   @XmlElement(name = "Elsevier")
@@ -179,7 +180,7 @@ public class Character {
    */
   public String getLatex() {
     if(latex != null)
-      return latex.trim();
+      return latex.value.trim();
     else
       return null;
   }

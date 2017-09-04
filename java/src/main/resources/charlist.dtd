@@ -1,5 +1,5 @@
 <!ELEMENT charlist (entitygroups?,mathvariants?,character*)>
-<!ELEMENT character (afii?,latex?,varlatex?,mathlatex?,
+<!ELEMENT character (afii?,latex*,varlatex?,mathlatex?,
    Elsevier?,AMS?,APS?,ACS?,AIP?,IEEE?,Wolfram?,Springer?,
    entity*,font*,comment?,surrogate?,bmp?,description) >
 <!ATTLIST character 

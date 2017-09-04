@@ -14409,8 +14409,8 @@ for borrowings from their work
 
     <character id="U0219D" dec="8605" mode="math" type="relation">
         <afii>EF53</afii>
-        <latex>\arrowwaveright</latex>
-        <AMS>\rightsquigarrow</AMS>
+        <latex package="fdsymbol">\rightwavearrow</latex>
+        <latex package="fdsymbol">\rightsquigarrow</latex>
         <APS>rarrw</APS>
         <entity id="rarrw" set="8879-isoamsa">
             <desc>/squigarrowright A: rt arrow-wavy</desc>
@@ -15669,7 +15669,7 @@ for borrowings from their work
 
     <character id="U021DD" dec="8669" mode="math" type="relation">
         <afii>EBCB</afii>
-        <latex>\rightsquigarrow</latex>
+        <latex priority="1">\rightsquigarrow</latex>
         <Elsevier grid="baj" ent="rarrw">
             <desc>right arrow-wavy; functional relationship</desc>
         </Elsevier>

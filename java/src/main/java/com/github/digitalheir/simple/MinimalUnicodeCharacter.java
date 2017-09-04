@@ -93,7 +93,7 @@ public class MinimalUnicodeCharacter {
                 c.type,
                 c.image,
                 c.afii,
-                c.latex,
+                c.latex.value,
                 c.varlatex,
                 c.mathlatex,
                 c.elsevier,
