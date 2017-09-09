@@ -38013,194 +38013,194 @@ for borrowings from their work
     </character>
 
     <character id="U1D434" dec="119860" mode="math" type="alphabetic">
-        <latex>\mathsl{A}</latex>
+        <latex>\mathit{A}</latex>
         <surrogate mathvariant="italic" ref="U00041"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL A</description>
     </character>
 
     <character id="U1D435" dec="119861" mode="math" type="alphabetic">
-        <latex>\mathsl{B}</latex>
+        <latex>\mathit{B}</latex>
         <surrogate mathvariant="italic" ref="U00042"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL B</description>
     </character>
 
     <character id="U1D436" dec="119862" mode="math" type="alphabetic">
-        <latex>\mathsl{C}</latex>
+        <latex>\mathit{C}</latex>
         <surrogate mathvariant="italic" ref="U00043"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL C</description>
     </character>
 
     <character id="U1D437" dec="119863" mode="math" type="alphabetic">
-        <latex>\mathsl{D}</latex>
+        <latex>\mathit{D}</latex>
         <surrogate mathvariant="italic" ref="U00044"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL D</description>
     </character>
 
     <character id="U1D438" dec="119864" mode="math" type="alphabetic">
-        <latex>\mathsl{E}</latex>
+        <latex>\mathit{E}</latex>
         <surrogate mathvariant="italic" ref="U00045"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL E</description>
     </character>
 
     <character id="U1D439" dec="119865" mode="math" type="alphabetic">
-        <latex>\mathsl{F}</latex>
+        <latex>\mathit{F}</latex>
         <surrogate mathvariant="italic" ref="U00046"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL F</description>
     </character>
 
     <character id="U1D43A" dec="119866" mode="math" type="alphabetic">
-        <latex>\mathsl{G}</latex>
+        <latex>\mathit{G}</latex>
         <surrogate mathvariant="italic" ref="U00047"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL G</description>
     </character>
 
     <character id="U1D43B" dec="119867" mode="math" type="alphabetic">
-        <latex>\mathsl{H}</latex>
+        <latex>\mathit{H}</latex>
         <surrogate mathvariant="italic" ref="U00048"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL H</description>
     </character>
 
     <character id="U1D43C" dec="119868" mode="math" type="alphabetic">
-        <latex>\mathsl{I}</latex>
+        <latex>\mathit{I}</latex>
         <surrogate mathvariant="italic" ref="U00049"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL I</description>
     </character>
 
     <character id="U1D43D" dec="119869" mode="math" type="alphabetic">
-        <latex>\mathsl{J}</latex>
+        <latex>\mathit{J}</latex>
         <surrogate mathvariant="italic" ref="U0004A"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL J</description>
     </character>
 
     <character id="U1D43E" dec="119870" mode="math" type="alphabetic">
-        <latex>\mathsl{K}</latex>
+        <latex>\mathit{K}</latex>
         <surrogate mathvariant="italic" ref="U0004B"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL K</description>
     </character>
 
     <character id="U1D43F" dec="119871" mode="math" type="alphabetic">
-        <latex>\mathsl{L}</latex>
+        <latex>\mathit{L}</latex>
         <surrogate mathvariant="italic" ref="U0004C"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL L</description>
     </character>
 
     <character id="U1D440" dec="119872" mode="math" type="alphabetic">
-        <latex>\mathsl{M}</latex>
+        <latex>\mathit{M}</latex>
         <surrogate mathvariant="italic" ref="U0004D"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL M</description>
     </character>
 
     <character id="U1D441" dec="119873" mode="math" type="alphabetic">
-        <latex>\mathsl{N}</latex>
+        <latex>\mathit{N}</latex>
         <surrogate mathvariant="italic" ref="U0004E"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL N</description>
     </character>
 
     <character id="U1D442" dec="119874" mode="math" type="alphabetic">
-        <latex>\mathsl{O}</latex>
+        <latex>\mathit{O}</latex>
         <surrogate mathvariant="italic" ref="U0004F"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL O</description>
     </character>
 
     <character id="U1D443" dec="119875" mode="math" type="alphabetic">
-        <latex>\mathsl{P}</latex>
+        <latex>\mathit{P}</latex>
         <surrogate mathvariant="italic" ref="U00050"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL P</description>
     </character>
 
     <character id="U1D444" dec="119876" mode="math" type="alphabetic">
-        <latex>\mathsl{Q}</latex>
+        <latex>\mathit{Q}</latex>
         <surrogate mathvariant="italic" ref="U00051"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL Q</description>
     </character>
 
     <character id="U1D445" dec="119877" mode="math" type="alphabetic">
-        <latex>\mathsl{R}</latex>
+        <latex>\mathit{R}</latex>
         <surrogate mathvariant="italic" ref="U00052"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL R</description>
     </character>
 
     <character id="U1D446" dec="119878" mode="math" type="alphabetic">
-        <latex>\mathsl{S}</latex>
+        <latex>\mathit{S}</latex>
         <surrogate mathvariant="italic" ref="U00053"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL S</description>
     </character>
 
     <character id="U1D447" dec="119879" mode="math" type="alphabetic">
-        <latex>\mathsl{T}</latex>
+        <latex>\mathit{T}</latex>
         <surrogate mathvariant="italic" ref="U00054"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL T</description>
     </character>
 
     <character id="U1D448" dec="119880" mode="math" type="alphabetic">
-        <latex>\mathsl{U}</latex>
+        <latex>\mathit{U}</latex>
         <surrogate mathvariant="italic" ref="U00055"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL U</description>
     </character>
 
     <character id="U1D449" dec="119881" mode="math" type="alphabetic">
-        <latex>\mathsl{V}</latex>
+        <latex>\mathit{V}</latex>
         <surrogate mathvariant="italic" ref="U00056"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL V</description>
     </character>
 
     <character id="U1D44A" dec="119882" mode="math" type="alphabetic">
-        <latex>\mathsl{W}</latex>
+        <latex>\mathit{W}</latex>
         <surrogate mathvariant="italic" ref="U00057"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL W</description>
     </character>
 
     <character id="U1D44B" dec="119883" mode="math" type="alphabetic">
-        <latex>\mathsl{X}</latex>
+        <latex>\mathit{X}</latex>
         <surrogate mathvariant="italic" ref="U00058"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL X</description>
     </character>
 
     <character id="U1D44C" dec="119884" mode="math" type="alphabetic">
-        <latex>\mathsl{Y}</latex>
+        <latex>\mathit{Y}</latex>
         <surrogate mathvariant="italic" ref="U00059"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL Y</description>
     </character>
 
     <character id="U1D44D" dec="119885" mode="math" type="alphabetic">
-        <latex>\mathsl{Z}</latex>
+        <latex>\mathit{Z}</latex>
         <surrogate mathvariant="italic" ref="U0005A"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL Z</description>
     </character>
 
     <character id="U1D44E" dec="119886" mode="math" type="alphabetic">
-        <latex>\mathsl{a}</latex>
+        <latex>\mathit{a}</latex>
         <surrogate mathvariant="italic" ref="U00061"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL A</description>
     </character>
 
     <character id="U1D44F" dec="119887" mode="math" type="alphabetic">
-        <latex>\mathsl{b}</latex>
+        <latex>\mathit{b}</latex>
         <surrogate mathvariant="italic" ref="U00062"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL B</description>
     </character>
 
     <character id="U1D450" dec="119888" mode="math" type="alphabetic">
-        <latex>\mathsl{c}</latex>
+        <latex>\mathit{c}</latex>
         <surrogate mathvariant="italic" ref="U00063"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL C</description>
     </character>
 
     <character id="U1D451" dec="119889" mode="math" type="alphabetic">
-        <latex>\mathsl{d}</latex>
+        <latex>\mathit{d}</latex>
         <surrogate mathvariant="italic" ref="U00064"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL D</description>
     </character>
 
     <character id="U1D452" dec="119890" mode="math" type="alphabetic">
-        <latex>\mathsl{e}</latex>
+        <latex>\mathit{e}</latex>
         <surrogate mathvariant="italic" ref="U00065"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL E</description>
     </character>
 
     <character id="U1D453" dec="119891" mode="math" type="alphabetic">
         <afii>EE54</afii>
-        <latex>\mathsl{f}</latex>
+        <latex>\mathit{f}</latex>
         <APS>fnof</APS>
         <entity id="fnof" set="STIX">
         </entity>
@@ -38209,7 +38209,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D454" dec="119892" mode="math" type="alphabetic">
-        <latex>\mathsl{g}</latex>
+        <latex>\mathit{g}</latex>
         <surrogate mathvariant="italic" ref="U00067"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL G</description>
     </character>
@@ -38222,472 +38222,472 @@ for borrowings from their work
     </character>
 
     <character id="U1D456" dec="119894" mode="math" type="alphabetic">
-        <latex>\mathsl{i}</latex>
+        <latex>\mathit{i}</latex>
         <surrogate mathvariant="italic" ref="U00069"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL I</description>
     </character>
 
     <character id="U1D457" dec="119895" mode="math" type="alphabetic">
-        <latex>\mathsl{j}</latex>
+        <latex>\mathit{j}</latex>
         <surrogate mathvariant="italic" ref="U0006A"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL J</description>
     </character>
 
     <character id="U1D458" dec="119896" mode="math" type="alphabetic">
-        <latex>\mathsl{k}</latex>
+        <latex>\mathit{k}</latex>
         <surrogate mathvariant="italic" ref="U0006B"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL K</description>
     </character>
 
     <character id="U1D459" dec="119897" mode="math" type="alphabetic">
-        <latex>\mathsl{l}</latex>
+        <latex>\mathit{l}</latex>
         <surrogate mathvariant="italic" ref="U0006C"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL L</description>
     </character>
 
     <character id="U1D45A" dec="119898" mode="math" type="alphabetic">
-        <latex>\mathsl{m}</latex>
+        <latex>\mathit{m}</latex>
         <surrogate mathvariant="italic" ref="U0006D"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL M</description>
     </character>
 
     <character id="U1D45B" dec="119899" mode="math" type="alphabetic">
-        <latex>\mathsl{n}</latex>
+        <latex>\mathit{n}</latex>
         <surrogate mathvariant="italic" ref="U0006E"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL N</description>
     </character>
 
     <character id="U1D45C" dec="119900" mode="math" type="alphabetic">
-        <latex>\mathsl{o}</latex>
+        <latex>\mathit{o}</latex>
         <surrogate mathvariant="italic" ref="U0006F"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL O</description>
     </character>
 
     <character id="U1D45D" dec="119901" mode="math" type="alphabetic">
-        <latex>\mathsl{p}</latex>
+        <latex>\mathit{p}</latex>
         <surrogate mathvariant="italic" ref="U00070"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL P</description>
     </character>
 
     <character id="U1D45E" dec="119902" mode="math" type="alphabetic">
-        <latex>\mathsl{q}</latex>
+        <latex>\mathit{q}</latex>
         <surrogate mathvariant="italic" ref="U00071"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL Q</description>
     </character>
 
     <character id="U1D45F" dec="119903" mode="math" type="alphabetic">
-        <latex>\mathsl{r}</latex>
+        <latex>\mathit{r}</latex>
         <surrogate mathvariant="italic" ref="U00072"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL R</description>
     </character>
 
     <character id="U1D460" dec="119904" mode="math" type="alphabetic">
-        <latex>\mathsl{s}</latex>
+        <latex>\mathit{s}</latex>
         <surrogate mathvariant="italic" ref="U00073"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL S</description>
     </character>
 
     <character id="U1D461" dec="119905" mode="math" type="alphabetic">
-        <latex>\mathsl{t}</latex>
+        <latex>\mathit{t}</latex>
         <surrogate mathvariant="italic" ref="U00074"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL T</description>
     </character>
 
     <character id="U1D462" dec="119906" mode="math" type="alphabetic">
-        <latex>\mathsl{u}</latex>
+        <latex>\mathit{u}</latex>
         <surrogate mathvariant="italic" ref="U00075"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL U</description>
     </character>
 
     <character id="U1D463" dec="119907" mode="math" type="alphabetic">
-        <latex>\mathsl{v}</latex>
+        <latex>\mathit{v}</latex>
         <surrogate mathvariant="italic" ref="U00076"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL V</description>
     </character>
 
     <character id="U1D464" dec="119908" mode="math" type="alphabetic">
-        <latex>\mathsl{w}</latex>
+        <latex>\mathit{w}</latex>
         <surrogate mathvariant="italic" ref="U00077"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL W</description>
     </character>
 
     <character id="U1D465" dec="119909" mode="math" type="alphabetic">
-        <latex>\mathsl{x}</latex>
+        <latex>\mathit{x}</latex>
         <surrogate mathvariant="italic" ref="U00078"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL X</description>
     </character>
 
     <character id="U1D466" dec="119910" mode="math" type="alphabetic">
-        <latex>\mathsl{y}</latex>
+        <latex>\mathit{y}</latex>
         <surrogate mathvariant="italic" ref="U00079"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL Y</description>
     </character>
 
     <character id="U1D467" dec="119911" mode="math" type="alphabetic">
-        <latex>\mathsl{z}</latex>
+        <latex>\mathit{z}</latex>
         <surrogate mathvariant="italic" ref="U0007A"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL Z</description>
     </character>
 
     <character id="U1D468" dec="119912" mode="math" type="alphabetic">
-        <latex>\mathbit{A}</latex>
+        <latex>\mathbfit{A}</latex>
         <surrogate mathvariant="bold-italic" ref="U00041"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL A
         </description>
     </character>
 
     <character id="U1D469" dec="119913" mode="math" type="alphabetic">
-        <latex>\mathbit{B}</latex>
+        <latex>\mathbfit{B}</latex>
         <surrogate mathvariant="bold-italic" ref="U00042"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL B
         </description>
     </character>
 
     <character id="U1D46A" dec="119914" mode="math" type="alphabetic">
-        <latex>\mathbit{C}</latex>
+        <latex>\mathbfit{C}</latex>
         <surrogate mathvariant="bold-italic" ref="U00043"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL C
         </description>
     </character>
 
     <character id="U1D46B" dec="119915" mode="math" type="alphabetic">
-        <latex>\mathbit{D}</latex>
+        <latex>\mathbfit{D}</latex>
         <surrogate mathvariant="bold-italic" ref="U00044"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL D
         </description>
     </character>
 
     <character id="U1D46C" dec="119916" mode="math" type="alphabetic">
-        <latex>\mathbit{E}</latex>
+        <latex>\mathbfit{E}</latex>
         <surrogate mathvariant="bold-italic" ref="U00045"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL E
         </description>
     </character>
 
     <character id="U1D46D" dec="119917" mode="math" type="alphabetic">
-        <latex>\mathbit{F}</latex>
+        <latex>\mathbfit{F}</latex>
         <surrogate mathvariant="bold-italic" ref="U00046"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL F
         </description>
     </character>
 
     <character id="U1D46E" dec="119918" mode="math" type="alphabetic">
-        <latex>\mathbit{G}</latex>
+        <latex>\mathbfit{G}</latex>
         <surrogate mathvariant="bold-italic" ref="U00047"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL G
         </description>
     </character>
 
     <character id="U1D46F" dec="119919" mode="math" type="alphabetic">
-        <latex>\mathbit{H}</latex>
+        <latex>\mathbfit{H}</latex>
         <surrogate mathvariant="bold-italic" ref="U00048"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL H
         </description>
     </character>
 
     <character id="U1D470" dec="119920" mode="math" type="alphabetic">
-        <latex>\mathbit{I}</latex>
+        <latex>\mathbfit{I}</latex>
         <surrogate mathvariant="bold-italic" ref="U00049"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL I
         </description>
     </character>
 
     <character id="U1D471" dec="119921" mode="math" type="alphabetic">
-        <latex>\mathbit{J}</latex>
+        <latex>\mathbfit{J}</latex>
         <surrogate mathvariant="bold-italic" ref="U0004A"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL J
         </description>
     </character>
 
     <character id="U1D472" dec="119922" mode="math" type="alphabetic">
-        <latex>\mathbit{K}</latex>
+        <latex>\mathbfit{K}</latex>
         <surrogate mathvariant="bold-italic" ref="U0004B"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL K
         </description>
     </character>
 
     <character id="U1D473" dec="119923" mode="math" type="alphabetic">
-        <latex>\mathbit{L}</latex>
+        <latex>\mathbfit{L}</latex>
         <surrogate mathvariant="bold-italic" ref="U0004C"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL L
         </description>
     </character>
 
     <character id="U1D474" dec="119924" mode="math" type="alphabetic">
-        <latex>\mathbit{M}</latex>
+        <latex>\mathbfit{M}</latex>
         <surrogate mathvariant="bold-italic" ref="U0004D"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL M
         </description>
     </character>
 
     <character id="U1D475" dec="119925" mode="math" type="alphabetic">
-        <latex>\mathbit{N}</latex>
+        <latex>\mathbfit{N}</latex>
         <surrogate mathvariant="bold-italic" ref="U0004E"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL N
         </description>
     </character>
 
     <character id="U1D476" dec="119926" mode="math" type="alphabetic">
-        <latex>\mathbit{O}</latex>
+        <latex>\mathbfit{O}</latex>
         <surrogate mathvariant="bold-italic" ref="U0004F"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL O
         </description>
     </character>
 
     <character id="U1D477" dec="119927" mode="math" type="alphabetic">
-        <latex>\mathbit{P}</latex>
+        <latex>\mathbfit{P}</latex>
         <surrogate mathvariant="bold-italic" ref="U00050"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL P
         </description>
     </character>
 
     <character id="U1D478" dec="119928" mode="math" type="alphabetic">
-        <latex>\mathbit{Q}</latex>
+        <latex>\mathbfit{Q}</latex>
         <surrogate mathvariant="bold-italic" ref="U00051"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL Q
         </description>
     </character>
 
     <character id="U1D479" dec="119929" mode="math" type="alphabetic">
-        <latex>\mathbit{R}</latex>
+        <latex>\mathbfit{R}</latex>
         <surrogate mathvariant="bold-italic" ref="U00052"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL R
         </description>
     </character>
 
     <character id="U1D47A" dec="119930" mode="math" type="alphabetic">
-        <latex>\mathbit{S}</latex>
+        <latex>\mathbfit{S}</latex>
         <surrogate mathvariant="bold-italic" ref="U00053"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL S
         </description>
     </character>
 
     <character id="U1D47B" dec="119931" mode="math" type="alphabetic">
-        <latex>\mathbit{T}</latex>
+        <latex>\mathbfit{T}</latex>
         <surrogate mathvariant="bold-italic" ref="U00054"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL T
         </description>
     </character>
 
     <character id="U1D47C" dec="119932" mode="math" type="alphabetic">
-        <latex>\mathbit{U}</latex>
+        <latex>\mathbfit{U}</latex>
         <surrogate mathvariant="bold-italic" ref="U00055"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL U
         </description>
     </character>
 
     <character id="U1D47D" dec="119933" mode="math" type="alphabetic">
-        <latex>\mathbit{V}</latex>
+        <latex>\mathbfit{V}</latex>
         <surrogate mathvariant="bold-italic" ref="U00056"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL V
         </description>
     </character>
 
     <character id="U1D47E" dec="119934" mode="math" type="alphabetic">
-        <latex>\mathbit{W}</latex>
+        <latex>\mathbfit{W}</latex>
         <surrogate mathvariant="bold-italic" ref="U00057"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL W
         </description>
     </character>
 
     <character id="U1D47F" dec="119935" mode="math" type="alphabetic">
-        <latex>\mathbit{X}</latex>
+        <latex>\mathbfit{X}</latex>
         <surrogate mathvariant="bold-italic" ref="U00058"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL X
         </description>
     </character>
 
     <character id="U1D480" dec="119936" mode="math" type="alphabetic">
-        <latex>\mathbit{Y}</latex>
+        <latex>\mathbfit{Y}</latex>
         <surrogate mathvariant="bold-italic" ref="U00059"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL Y
         </description>
     </character>
 
     <character id="U1D481" dec="119937" mode="math" type="alphabetic">
-        <latex>\mathbit{Z}</latex>
+        <latex>\mathbfit{Z}</latex>
         <surrogate mathvariant="bold-italic" ref="U0005A"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL Z
         </description>
     </character>
 
     <character id="U1D482" dec="119938" mode="math" type="alphabetic">
-        <latex>\mathbit{a}</latex>
+        <latex>\mathbfit{a}</latex>
         <surrogate mathvariant="bold-italic" ref="U00061"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL A
         </description>
     </character>
 
     <character id="U1D483" dec="119939" mode="math" type="alphabetic">
-        <latex>\mathbit{b}</latex>
+        <latex>\mathbfit{b}</latex>
         <surrogate mathvariant="bold-italic" ref="U00062"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL B
         </description>
     </character>
 
     <character id="U1D484" dec="119940" mode="math" type="alphabetic">
-        <latex>\mathbit{c}</latex>
+        <latex>\mathbfit{c}</latex>
         <surrogate mathvariant="bold-italic" ref="U00063"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL C
         </description>
     </character>
 
     <character id="U1D485" dec="119941" mode="math" type="alphabetic">
-        <latex>\mathbit{d}</latex>
+        <latex>\mathbfit{d}</latex>
         <surrogate mathvariant="bold-italic" ref="U00064"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL D
         </description>
     </character>
 
     <character id="U1D486" dec="119942" mode="math" type="alphabetic">
-        <latex>\mathbit{e}</latex>
+        <latex>\mathbfit{e}</latex>
         <surrogate mathvariant="bold-italic" ref="U00065"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL E
         </description>
     </character>
 
     <character id="U1D487" dec="119943" mode="math" type="alphabetic">
-        <latex>\mathbit{f}</latex>
+        <latex>\mathbfit{f}</latex>
         <surrogate mathvariant="bold-italic" ref="U00066"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL F
         </description>
     </character>
 
     <character id="U1D488" dec="119944" mode="math" type="alphabetic">
-        <latex>\mathbit{g}</latex>
+        <latex>\mathbfit{g}</latex>
         <surrogate mathvariant="bold-italic" ref="U00067"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL G
         </description>
     </character>
 
     <character id="U1D489" dec="119945" mode="math" type="alphabetic">
-        <latex>\mathbit{h}</latex>
+        <latex>\mathbfit{h}</latex>
         <surrogate mathvariant="bold-italic" ref="U00068"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL H
         </description>
     </character>
 
     <character id="U1D48A" dec="119946" mode="math" type="alphabetic">
-        <latex>\mathbit{i}</latex>
+        <latex>\mathbfit{i}</latex>
         <surrogate mathvariant="bold-italic" ref="U00069"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL I
         </description>
     </character>
 
     <character id="U1D48B" dec="119947" mode="math" type="alphabetic">
-        <latex>\mathbit{j}</latex>
+        <latex>\mathbfit{j}</latex>
         <surrogate mathvariant="bold-italic" ref="U0006A"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL J
         </description>
     </character>
 
     <character id="U1D48C" dec="119948" mode="math" type="alphabetic">
-        <latex>\mathbit{k}</latex>
+        <latex>\mathbfit{k}</latex>
         <surrogate mathvariant="bold-italic" ref="U0006B"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL K
         </description>
     </character>
 
     <character id="U1D48D" dec="119949" mode="math" type="alphabetic">
-        <latex>\mathbit{l}</latex>
+        <latex>\mathbfit{l}</latex>
         <surrogate mathvariant="bold-italic" ref="U0006C"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL L
         </description>
     </character>
 
     <character id="U1D48E" dec="119950" mode="math" type="alphabetic">
-        <latex>\mathbit{m}</latex>
+        <latex>\mathbfit{m}</latex>
         <surrogate mathvariant="bold-italic" ref="U0006D"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL M
         </description>
     </character>
 
     <character id="U1D48F" dec="119951" mode="math" type="alphabetic">
-        <latex>\mathbit{n}</latex>
+        <latex>\mathbfit{n}</latex>
         <surrogate mathvariant="bold-italic" ref="U0006E"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL N
         </description>
     </character>
 
     <character id="U1D490" dec="119952" mode="math" type="alphabetic">
-        <latex>\mathbit{o}</latex>
+        <latex>\mathbfit{o}</latex>
         <surrogate mathvariant="bold-italic" ref="U0006F"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL O
         </description>
     </character>
 
     <character id="U1D491" dec="119953" mode="math" type="alphabetic">
-        <latex>\mathbit{p}</latex>
+        <latex>\mathbfit{p}</latex>
         <surrogate mathvariant="bold-italic" ref="U00070"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL P
         </description>
     </character>
 
     <character id="U1D492" dec="119954" mode="math" type="alphabetic">
-        <latex>\mathbit{q}</latex>
+        <latex>\mathbfit{q}</latex>
         <surrogate mathvariant="bold-italic" ref="U00071"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL Q
         </description>
     </character>
 
     <character id="U1D493" dec="119955" mode="math" type="alphabetic">
-        <latex>\mathbit{r}</latex>
+        <latex>\mathbfit{r}</latex>
         <surrogate mathvariant="bold-italic" ref="U00072"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL R
         </description>
     </character>
 
     <character id="U1D494" dec="119956" mode="math" type="alphabetic">
-        <latex>\mathbit{s}</latex>
+        <latex>\mathbfit{s}</latex>
         <surrogate mathvariant="bold-italic" ref="U00073"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL S
         </description>
     </character>
 
     <character id="U1D495" dec="119957" mode="math" type="alphabetic">
-        <latex>\mathbit{t}</latex>
+        <latex>\mathbfit{t}</latex>
         <surrogate mathvariant="bold-italic" ref="U00074"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL T
         </description>
     </character>
 
     <character id="U1D496" dec="119958" mode="math" type="alphabetic">
-        <latex>\mathbit{u}</latex>
+        <latex>\mathbfit{u}</latex>
         <surrogate mathvariant="bold-italic" ref="U00075"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL U
         </description>
     </character>
 
     <character id="U1D497" dec="119959" mode="math" type="alphabetic">
-        <latex>\mathbit{v}</latex>
+        <latex>\mathbfit{v}</latex>
         <surrogate mathvariant="bold-italic" ref="U00076"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL V
         </description>
     </character>
 
     <character id="U1D498" dec="119960" mode="math" type="alphabetic">
-        <latex>\mathbit{w}</latex>
+        <latex>\mathbfit{w}</latex>
         <surrogate mathvariant="bold-italic" ref="U00077"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL W
         </description>
     </character>
 
     <character id="U1D499" dec="119961" mode="math" type="alphabetic">
-        <latex>\mathbit{x}</latex>
+        <latex>\mathbfit{x}</latex>
         <surrogate mathvariant="bold-italic" ref="U00078"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL X
         </description>
     </character>
 
     <character id="U1D49A" dec="119962" mode="math" type="alphabetic">
-        <latex>\mathbit{y}</latex>
+        <latex>\mathbfit{y}</latex>
         <surrogate mathvariant="bold-italic" ref="U00079"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL Y
         </description>
     </character>
 
     <character id="U1D49B" dec="119963" mode="math" type="alphabetic">
-        <latex>\mathbit{z}</latex>
+        <latex>\mathbfit{z}</latex>
         <surrogate mathvariant="bold-italic" ref="U0007A"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL Z
         </description>
@@ -39313,364 +39313,364 @@ for borrowings from their work
     </character>
 
     <character id="U1D4D0" dec="120016" mode="math" type="alphabetic">
-        <latex>\mathmit{A}</latex>
+        <latex>\mathbfscr{A}</latex>
         <surrogate mathvariant="bold-script" ref="U00041"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL A
         </description>
     </character>
 
     <character id="U1D4D1" dec="120017" mode="math" type="alphabetic">
-        <latex>\mathmit{B}</latex>
+        <latex>\mathbfscr{B}</latex>
         <surrogate mathvariant="bold-script" ref="U00042"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL B
         </description>
     </character>
 
     <character id="U1D4D2" dec="120018" mode="math" type="alphabetic">
-        <latex>\mathmit{C}</latex>
+        <latex>\mathbfscr{C}</latex>
         <surrogate mathvariant="bold-script" ref="U00043"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL C
         </description>
     </character>
 
     <character id="U1D4D3" dec="120019" mode="math" type="alphabetic">
-        <latex>\mathmit{D}</latex>
+        <latex>\mathbfscr{D}</latex>
         <surrogate mathvariant="bold-script" ref="U00044"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL D
         </description>
     </character>
 
     <character id="U1D4D4" dec="120020" mode="math" type="alphabetic">
-        <latex>\mathmit{E}</latex>
+        <latex>\mathbfscr{E}</latex>
         <surrogate mathvariant="bold-script" ref="U00045"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL E
         </description>
     </character>
 
     <character id="U1D4D5" dec="120021" mode="math" type="alphabetic">
-        <latex>\mathmit{F}</latex>
+        <latex>\mathbfscr{F}</latex>
         <surrogate mathvariant="bold-script" ref="U00046"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL F
         </description>
     </character>
 
     <character id="U1D4D6" dec="120022" mode="math" type="alphabetic">
-        <latex>\mathmit{G}</latex>
+        <latex>\mathbfscr{G}</latex>
         <surrogate mathvariant="bold-script" ref="U00047"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL G
         </description>
     </character>
 
     <character id="U1D4D7" dec="120023" mode="math" type="alphabetic">
-        <latex>\mathmit{H}</latex>
+        <latex>\mathbfscr{H}</latex>
         <surrogate mathvariant="bold-script" ref="U00048"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL H
         </description>
     </character>
 
     <character id="U1D4D8" dec="120024" mode="math" type="alphabetic">
-        <latex>\mathmit{I}</latex>
+        <latex>\mathbfscr{I}</latex>
         <surrogate mathvariant="bold-script" ref="U00049"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL I
         </description>
     </character>
 
     <character id="U1D4D9" dec="120025" mode="math" type="alphabetic">
-        <latex>\mathmit{J}</latex>
+        <latex>\mathbfscr{J}</latex>
         <surrogate mathvariant="bold-script" ref="U0004A"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL J
         </description>
     </character>
 
     <character id="U1D4DA" dec="120026" mode="math" type="alphabetic">
-        <latex>\mathmit{K}</latex>
+        <latex>\mathbfscr{K}</latex>
         <surrogate mathvariant="bold-script" ref="U0004B"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL K
         </description>
     </character>
 
     <character id="U1D4DB" dec="120027" mode="math" type="alphabetic">
-        <latex>\mathmit{L}</latex>
+        <latex>\mathbfscr{L}</latex>
         <surrogate mathvariant="bold-script" ref="U0004C"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL L
         </description>
     </character>
 
     <character id="U1D4DC" dec="120028" mode="math" type="alphabetic">
-        <latex>\mathmit{M}</latex>
+        <latex>\mathbfscr{M}</latex>
         <surrogate mathvariant="bold-script" ref="U0004D"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL M
         </description>
     </character>
 
     <character id="U1D4DD" dec="120029" mode="math" type="alphabetic">
-        <latex>\mathmit{N}</latex>
+        <latex>\mathbfscr{N}</latex>
         <surrogate mathvariant="bold-script" ref="U0004E"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL N
         </description>
     </character>
 
     <character id="U1D4DE" dec="120030" mode="math" type="alphabetic">
-        <latex>\mathmit{O}</latex>
+        <latex>\mathbfscr{O}</latex>
         <surrogate mathvariant="bold-script" ref="U0004F"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL O
         </description>
     </character>
 
     <character id="U1D4DF" dec="120031" mode="math" type="alphabetic">
-        <latex>\mathmit{P}</latex>
+        <latex>\mathbfscr{P}</latex>
         <surrogate mathvariant="bold-script" ref="U00050"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL P
         </description>
     </character>
 
     <character id="U1D4E0" dec="120032" mode="math" type="alphabetic">
-        <latex>\mathmit{Q}</latex>
+        <latex>\mathbfscr{Q}</latex>
         <surrogate mathvariant="bold-script" ref="U00051"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL Q
         </description>
     </character>
 
     <character id="U1D4E1" dec="120033" mode="math" type="alphabetic">
-        <latex>\mathmit{R}</latex>
+        <latex>\mathbfscr{R}</latex>
         <surrogate mathvariant="bold-script" ref="U00052"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL R
         </description>
     </character>
 
     <character id="U1D4E2" dec="120034" mode="math" type="alphabetic">
-        <latex>\mathmit{S}</latex>
+        <latex>\mathbfscr{S}</latex>
         <surrogate mathvariant="bold-script" ref="U00053"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL S
         </description>
     </character>
 
     <character id="U1D4E3" dec="120035" mode="math" type="alphabetic">
-        <latex>\mathmit{T}</latex>
+        <latex>\mathbfscr{T}</latex>
         <surrogate mathvariant="bold-script" ref="U00054"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL T
         </description>
     </character>
 
     <character id="U1D4E4" dec="120036" mode="math" type="alphabetic">
-        <latex>\mathmit{U}</latex>
+        <latex>\mathbfscr{U}</latex>
         <surrogate mathvariant="bold-script" ref="U00055"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL U
         </description>
     </character>
 
     <character id="U1D4E5" dec="120037" mode="math" type="alphabetic">
-        <latex>\mathmit{V}</latex>
+        <latex>\mathbfscr{V}</latex>
         <surrogate mathvariant="bold-script" ref="U00056"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL V
         </description>
     </character>
 
     <character id="U1D4E6" dec="120038" mode="math" type="alphabetic">
-        <latex>\mathmit{W}</latex>
+        <latex>\mathbfscr{W}</latex>
         <surrogate mathvariant="bold-script" ref="U00057"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL W
         </description>
     </character>
 
     <character id="U1D4E7" dec="120039" mode="math" type="alphabetic">
-        <latex>\mathmit{X}</latex>
+        <latex>\mathbfscr{X}</latex>
         <surrogate mathvariant="bold-script" ref="U00058"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL X
         </description>
     </character>
 
     <character id="U1D4E8" dec="120040" mode="math" type="alphabetic">
-        <latex>\mathmit{Y}</latex>
+        <latex>\mathbfscr{Y}</latex>
         <surrogate mathvariant="bold-script" ref="U00059"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL Y
         </description>
     </character>
 
     <character id="U1D4E9" dec="120041" mode="math" type="alphabetic">
-        <latex>\mathmit{Z}</latex>
+        <latex>\mathbfscr{Z}</latex>
         <surrogate mathvariant="bold-script" ref="U0005A"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT CAPITAL Z
         </description>
     </character>
 
     <character id="U1D4EA" dec="120042" mode="math" type="alphabetic">
-        <latex>\mathmit{a}</latex>
+        <latex>\mathbfscr{a}</latex>
         <surrogate mathvariant="bold-script" ref="U00061"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL A
         </description>
     </character>
 
     <character id="U1D4EB" dec="120043" mode="math" type="alphabetic">
-        <latex>\mathmit{b}</latex>
+        <latex>\mathbfscr{b}</latex>
         <surrogate mathvariant="bold-script" ref="U00062"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL B
         </description>
     </character>
 
     <character id="U1D4EC" dec="120044" mode="math" type="alphabetic">
-        <latex>\mathmit{c}</latex>
+        <latex>\mathbfscr{c}</latex>
         <surrogate mathvariant="bold-script" ref="U00063"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL C
         </description>
     </character>
 
     <character id="U1D4ED" dec="120045" mode="math" type="alphabetic">
-        <latex>\mathmit{d}</latex>
+        <latex>\mathbfscr{d}</latex>
         <surrogate mathvariant="bold-script" ref="U00064"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL D
         </description>
     </character>
 
     <character id="U1D4EE" dec="120046" mode="math" type="alphabetic">
-        <latex>\mathmit{e}</latex>
+        <latex>\mathbfscr{e}</latex>
         <surrogate mathvariant="bold-script" ref="U00065"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL E
         </description>
     </character>
 
     <character id="U1D4EF" dec="120047" mode="math" type="alphabetic">
-        <latex>\mathmit{f}</latex>
+        <latex>\mathbfscr{f}</latex>
         <surrogate mathvariant="bold-script" ref="U00066"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL F
         </description>
     </character>
 
     <character id="U1D4F0" dec="120048" mode="math" type="alphabetic">
-        <latex>\mathmit{g}</latex>
+        <latex>\mathbfscr{g}</latex>
         <surrogate mathvariant="bold-script" ref="U00067"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL G
         </description>
     </character>
 
     <character id="U1D4F1" dec="120049" mode="math" type="alphabetic">
-        <latex>\mathmit{h}</latex>
+        <latex>\mathbfscr{h}</latex>
         <surrogate mathvariant="bold-script" ref="U00068"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL H
         </description>
     </character>
 
     <character id="U1D4F2" dec="120050" mode="math" type="alphabetic">
-        <latex>\mathmit{i}</latex>
+        <latex>\mathbfscr{i}</latex>
         <surrogate mathvariant="bold-script" ref="U00069"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL I
         </description>
     </character>
 
     <character id="U1D4F3" dec="120051" mode="math" type="alphabetic">
-        <latex>\mathmit{j}</latex>
+        <latex>\mathbfscr{j}</latex>
         <surrogate mathvariant="bold-script" ref="U0006A"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL J
         </description>
     </character>
 
     <character id="U1D4F4" dec="120052" mode="math" type="alphabetic">
-        <latex>\mathmit{k}</latex>
+        <latex>\mathbfscr{k}</latex>
         <surrogate mathvariant="bold-script" ref="U0006B"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL K
         </description>
     </character>
 
     <character id="U1D4F5" dec="120053" mode="math" type="alphabetic">
-        <latex>\mathmit{l}</latex>
+        <latex>\mathbfscr{l}</latex>
         <surrogate mathvariant="bold-script" ref="U0006C"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL L
         </description>
     </character>
 
     <character id="U1D4F6" dec="120054" mode="math" type="alphabetic">
-        <latex>\mathmit{m}</latex>
+        <latex>\mathbfscr{m}</latex>
         <surrogate mathvariant="bold-script" ref="U0006D"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL M
         </description>
     </character>
 
     <character id="U1D4F7" dec="120055" mode="math" type="alphabetic">
-        <latex>\mathmit{n}</latex>
+        <latex>\mathbfscr{n}</latex>
         <surrogate mathvariant="bold-script" ref="U0006E"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL N
         </description>
     </character>
 
     <character id="U1D4F8" dec="120056" mode="math" type="alphabetic">
-        <latex>\mathmit{o}</latex>
+        <latex>\mathbfscr{o}</latex>
         <surrogate mathvariant="bold-script" ref="U0006F"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL O
         </description>
     </character>
 
     <character id="U1D4F9" dec="120057" mode="math" type="alphabetic">
-        <latex>\mathmit{p}</latex>
+        <latex>\mathbfscr{p}</latex>
         <surrogate mathvariant="bold-script" ref="U00070"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL P
         </description>
     </character>
 
     <character id="U1D4FA" dec="120058" mode="math" type="alphabetic">
-        <latex>\mathmit{q}</latex>
+        <latex>\mathbfscr{q}</latex>
         <surrogate mathvariant="bold-script" ref="U00071"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL Q
         </description>
     </character>
 
     <character id="U1D4FB" dec="120059" mode="math" type="alphabetic">
-        <latex>\mathmit{r}</latex>
+        <latex>\mathbfscr{r}</latex>
         <surrogate mathvariant="bold-script" ref="U00072"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL R
         </description>
     </character>
 
     <character id="U1D4FC" dec="120060" mode="math" type="alphabetic">
-        <latex>\mathmit{s}</latex>
+        <latex>\mathbfscr{s}</latex>
         <surrogate mathvariant="bold-script" ref="U00073"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL S
         </description>
     </character>
 
     <character id="U1D4FD" dec="120061" mode="math" type="alphabetic">
-        <latex>\mathmit{t}</latex>
+        <latex>\mathbfscr{t}</latex>
         <surrogate mathvariant="bold-script" ref="U00074"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL T
         </description>
     </character>
 
     <character id="U1D4FE" dec="120062" mode="math" type="alphabetic">
-        <latex>\mathmit{u}</latex>
+        <latex>\mathbfscr{u}</latex>
         <surrogate mathvariant="bold-script" ref="U00075"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL U
         </description>
     </character>
 
     <character id="U1D4FF" dec="120063" mode="math" type="alphabetic">
-        <latex>\mathmit{v}</latex>
+        <latex>\mathbfscr{v}</latex>
         <surrogate mathvariant="bold-script" ref="U00076"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL V
         </description>
     </character>
 
     <character id="U1D500" dec="120064" mode="math" type="alphabetic">
-        <latex>\mathmit{w}</latex>
+        <latex>\mathbfscr{w}</latex>
         <surrogate mathvariant="bold-script" ref="U00077"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL W
         </description>
     </character>
 
     <character id="U1D501" dec="120065" mode="math" type="alphabetic">
-        <latex>\mathmit{x}</latex>
+        <latex>\mathbfscr{x}</latex>
         <surrogate mathvariant="bold-script" ref="U00078"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL X
         </description>
     </character>
 
     <character id="U1D502" dec="120066" mode="math" type="alphabetic">
-        <latex>\mathmit{y}</latex>
+        <latex>\mathbfscr{y}</latex>
         <surrogate mathvariant="bold-script" ref="U00079"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL Y
         </description>
     </character>
 
     <character id="U1D503" dec="120067" mode="math" type="alphabetic">
-        <latex>\mathmit{z}</latex>
+        <latex>\mathbfscr{z}</latex>
         <surrogate mathvariant="bold-script" ref="U0007A"/>
         <description unicode="3.1">MATHEMATICAL BOLD SCRIPT SMALL Z
         </description>
@@ -41011,364 +41011,364 @@ for borrowings from their work
     </character>
 
     <character id="U1D56C" dec="120172" mode="math" type="alphabetic">
-        <latex>\mathslbb{A}</latex>
+        <latex>\mathbffrak{A}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00041"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL A
         </description>
     </character>
 
     <character id="U1D56D" dec="120173" mode="math" type="alphabetic">
-        <latex>\mathslbb{B}</latex>
+        <latex>\mathbffrak{B}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00042"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL B
         </description>
     </character>
 
     <character id="U1D56E" dec="120174" mode="math" type="alphabetic">
-        <latex>\mathslbb{C}</latex>
+        <latex>\mathbffrak{C}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00043"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL C
         </description>
     </character>
 
     <character id="U1D56F" dec="120175" mode="math" type="alphabetic">
-        <latex>\mathslbb{D}</latex>
+        <latex>\mathbffrak{D}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00044"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL D
         </description>
     </character>
 
     <character id="U1D570" dec="120176" mode="math" type="alphabetic">
-        <latex>\mathslbb{E}</latex>
+        <latex>\mathbffrak{E}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00045"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL E
         </description>
     </character>
 
     <character id="U1D571" dec="120177" mode="math" type="alphabetic">
-        <latex>\mathslbb{F}</latex>
+        <latex>\mathbffrak{F}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00046"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL F
         </description>
     </character>
 
     <character id="U1D572" dec="120178" mode="math" type="alphabetic">
-        <latex>\mathslbb{G}</latex>
+        <latex>\mathbffrak{G}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00047"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL G
         </description>
     </character>
 
     <character id="U1D573" dec="120179" mode="math" type="alphabetic">
-        <latex>\mathslbb{H}</latex>
+        <latex>\mathbffrak{H}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00048"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL H
         </description>
     </character>
 
     <character id="U1D574" dec="120180" mode="math" type="alphabetic">
-        <latex>\mathslbb{I}</latex>
+        <latex>\mathbffrak{I}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00049"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL I
         </description>
     </character>
 
     <character id="U1D575" dec="120181" mode="math" type="alphabetic">
-        <latex>\mathslbb{J}</latex>
+        <latex>\mathbffrak{J}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0004A"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL J
         </description>
     </character>
 
     <character id="U1D576" dec="120182" mode="math" type="alphabetic">
-        <latex>\mathslbb{K}</latex>
+        <latex>\mathbffrak{K}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0004B"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL K
         </description>
     </character>
 
     <character id="U1D577" dec="120183" mode="math" type="alphabetic">
-        <latex>\mathslbb{L}</latex>
+        <latex>\mathbffrak{L}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0004C"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL L
         </description>
     </character>
 
     <character id="U1D578" dec="120184" mode="math" type="alphabetic">
-        <latex>\mathslbb{M}</latex>
+        <latex>\mathbffrak{M}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0004D"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL M
         </description>
     </character>
 
     <character id="U1D579" dec="120185" mode="math" type="alphabetic">
-        <latex>\mathslbb{N}</latex>
+        <latex>\mathbffrak{N}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0004E"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL N
         </description>
     </character>
 
     <character id="U1D57A" dec="120186" mode="math" type="alphabetic">
-        <latex>\mathslbb{O}</latex>
+        <latex>\mathbffrak{O}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0004F"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL O
         </description>
     </character>
 
     <character id="U1D57B" dec="120187" mode="math" type="alphabetic">
-        <latex>\mathslbb{P}</latex>
+        <latex>\mathbffrak{P}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00050"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL P
         </description>
     </character>
 
     <character id="U1D57C" dec="120188" mode="math" type="alphabetic">
-        <latex>\mathslbb{Q}</latex>
+        <latex>\mathbffrak{Q}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00051"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL Q
         </description>
     </character>
 
     <character id="U1D57D" dec="120189" mode="math" type="alphabetic">
-        <latex>\mathslbb{R}</latex>
+        <latex>\mathbffrak{R}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00052"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL R
         </description>
     </character>
 
     <character id="U1D57E" dec="120190" mode="math" type="alphabetic">
-        <latex>\mathslbb{S}</latex>
+        <latex>\mathbffrak{S}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00053"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL S
         </description>
     </character>
 
     <character id="U1D57F" dec="120191" mode="math" type="alphabetic">
-        <latex>\mathslbb{T}</latex>
+        <latex>\mathbffrak{T}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00054"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL T
         </description>
     </character>
 
     <character id="U1D580" dec="120192" mode="math" type="alphabetic">
-        <latex>\mathslbb{U}</latex>
+        <latex>\mathbffrak{U}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00055"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL U
         </description>
     </character>
 
     <character id="U1D581" dec="120193" mode="math" type="alphabetic">
-        <latex>\mathslbb{V}</latex>
+        <latex>\mathbffrak{V}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00056"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL V
         </description>
     </character>
 
     <character id="U1D582" dec="120194" mode="math" type="alphabetic">
-        <latex>\mathslbb{W}</latex>
+        <latex>\mathbffrak{W}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00057"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL W
         </description>
     </character>
 
     <character id="U1D583" dec="120195" mode="math" type="alphabetic">
-        <latex>\mathslbb{X}</latex>
+        <latex>\mathbffrak{X}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00058"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL X
         </description>
     </character>
 
     <character id="U1D584" dec="120196" mode="math" type="alphabetic">
-        <latex>\mathslbb{Y}</latex>
+        <latex>\mathbffrak{Y}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00059"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL Y
         </description>
     </character>
 
     <character id="U1D585" dec="120197" mode="math" type="alphabetic">
-        <latex>\mathslbb{Z}</latex>
+        <latex>\mathbffrak{Z}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0005A"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR CAPITAL Z
         </description>
     </character>
 
     <character id="U1D586" dec="120198" mode="math" type="alphabetic">
-        <latex>\mathslbb{a}</latex>
+        <latex>\mathbffrak{a}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00061"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL A
         </description>
     </character>
 
     <character id="U1D587" dec="120199" mode="math" type="alphabetic">
-        <latex>\mathslbb{b}</latex>
+        <latex>\mathbffrak{b}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00062"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL B
         </description>
     </character>
 
     <character id="U1D588" dec="120200" mode="math" type="alphabetic">
-        <latex>\mathslbb{c}</latex>
+        <latex>\mathbffrak{c}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00063"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL C
         </description>
     </character>
 
     <character id="U1D589" dec="120201" mode="math" type="alphabetic">
-        <latex>\mathslbb{d}</latex>
+        <latex>\mathbffrak{d}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00064"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL D
         </description>
     </character>
 
     <character id="U1D58A" dec="120202" mode="math" type="alphabetic">
-        <latex>\mathslbb{e}</latex>
+        <latex>\mathbffrak{e}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00065"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL E
         </description>
     </character>
 
     <character id="U1D58B" dec="120203" mode="math" type="alphabetic">
-        <latex>\mathslbb{f}</latex>
+        <latex>\mathbffrak{f}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00066"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL F
         </description>
     </character>
 
     <character id="U1D58C" dec="120204" mode="math" type="alphabetic">
-        <latex>\mathslbb{g}</latex>
+        <latex>\mathbffrak{g}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00067"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL G
         </description>
     </character>
 
     <character id="U1D58D" dec="120205" mode="math" type="alphabetic">
-        <latex>\mathslbb{h}</latex>
+        <latex>\mathbffrak{h}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00068"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL H
         </description>
     </character>
 
     <character id="U1D58E" dec="120206" mode="math" type="alphabetic">
-        <latex>\mathslbb{i}</latex>
+        <latex>\mathbffrak{i}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00069"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL I
         </description>
     </character>
 
     <character id="U1D58F" dec="120207" mode="math" type="alphabetic">
-        <latex>\mathslbb{j}</latex>
+        <latex>\mathbffrak{j}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0006A"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL J
         </description>
     </character>
 
     <character id="U1D590" dec="120208" mode="math" type="alphabetic">
-        <latex>\mathslbb{k}</latex>
+        <latex>\mathbffrak{k}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0006B"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL K
         </description>
     </character>
 
     <character id="U1D591" dec="120209" mode="math" type="alphabetic">
-        <latex>\mathslbb{l}</latex>
+        <latex>\mathbffrak{l}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0006C"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL L
         </description>
     </character>
 
     <character id="U1D592" dec="120210" mode="math" type="alphabetic">
-        <latex>\mathslbb{m}</latex>
+        <latex>\mathbffrak{m}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0006D"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL M
         </description>
     </character>
 
     <character id="U1D593" dec="120211" mode="math" type="alphabetic">
-        <latex>\mathslbb{n}</latex>
+        <latex>\mathbffrak{n}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0006E"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL N
         </description>
     </character>
 
     <character id="U1D594" dec="120212" mode="math" type="alphabetic">
-        <latex>\mathslbb{o}</latex>
+        <latex>\mathbffrak{o}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0006F"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL O
         </description>
     </character>
 
     <character id="U1D595" dec="120213" mode="math" type="alphabetic">
-        <latex>\mathslbb{p}</latex>
+        <latex>\mathbffrak{p}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00070"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL P
         </description>
     </character>
 
     <character id="U1D596" dec="120214" mode="math" type="alphabetic">
-        <latex>\mathslbb{q}</latex>
+        <latex>\mathbffrak{q}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00071"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL Q
         </description>
     </character>
 
     <character id="U1D597" dec="120215" mode="math" type="alphabetic">
-        <latex>\mathslbb{r}</latex>
+        <latex>\mathbffrak{r}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00072"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL R
         </description>
     </character>
 
     <character id="U1D598" dec="120216" mode="math" type="alphabetic">
-        <latex>\mathslbb{s}</latex>
+        <latex>\mathbffrak{s}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00073"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL S
         </description>
     </character>
 
     <character id="U1D599" dec="120217" mode="math" type="alphabetic">
-        <latex>\mathslbb{t}</latex>
+        <latex>\mathbffrak{t}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00074"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL T
         </description>
     </character>
 
     <character id="U1D59A" dec="120218" mode="math" type="alphabetic">
-        <latex>\mathslbb{u}</latex>
+        <latex>\mathbffrak{u}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00075"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL U
         </description>
     </character>
 
     <character id="U1D59B" dec="120219" mode="math" type="alphabetic">
-        <latex>\mathslbb{v}</latex>
+        <latex>\mathbffrak{v}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00076"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL V
         </description>
     </character>
 
     <character id="U1D59C" dec="120220" mode="math" type="alphabetic">
-        <latex>\mathslbb{w}</latex>
+        <latex>\mathbffrak{w}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00077"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL W
         </description>
     </character>
 
     <character id="U1D59D" dec="120221" mode="math" type="alphabetic">
-        <latex>\mathslbb{x}</latex>
+        <latex>\mathbffrak{x}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00078"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL X
         </description>
     </character>
 
     <character id="U1D59E" dec="120222" mode="math" type="alphabetic">
-        <latex>\mathslbb{y}</latex>
+        <latex>\mathbffrak{y}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U00079"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL Y
         </description>
     </character>
 
     <character id="U1D59F" dec="120223" mode="math" type="alphabetic">
-        <latex>\mathslbb{z}</latex>
+        <latex>\mathbffrak{z}</latex>
         <surrogate mathvariant="bold-fraktur" ref="U0007A"/>
         <description unicode="3.1">MATHEMATICAL BOLD FRAKTUR SMALL Z
         </description>
@@ -42085,371 +42085,371 @@ for borrowings from their work
     </character>
 
     <character id="U1D608" dec="120328" mode="math" type="alphabetic">
-        <latex>\mathsfsl{A}</latex>
+        <latex>\mathsfit{A}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00041"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL A
         </description>
     </character>
 
     <character id="U1D609" dec="120329" mode="math" type="alphabetic">
-        <latex>\mathsfsl{B}</latex>
+        <latex>\mathsfit{B}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00042"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL B
         </description>
     </character>
 
     <character id="U1D60A" dec="120330" mode="math" type="alphabetic">
-        <latex>\mathsfsl{C}</latex>
+        <latex>\mathsfit{C}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00043"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL C
         </description>
     </character>
 
     <character id="U1D60B" dec="120331" mode="math" type="alphabetic">
-        <latex>\mathsfsl{D}</latex>
+        <latex>\mathsfit{D}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00044"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL D
         </description>
     </character>
 
     <character id="U1D60C" dec="120332" mode="math" type="alphabetic">
-        <latex>\mathsfsl{E}</latex>
+        <latex>\mathsfit{E}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00045"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL E
         </description>
     </character>
 
     <character id="U1D60D" dec="120333" mode="math" type="alphabetic">
-        <latex>\mathsfsl{F}</latex>
+        <latex>\mathsfit{F}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00046"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL F
         </description>
     </character>
 
     <character id="U1D60E" dec="120334" mode="math" type="alphabetic">
-        <latex>\mathsfsl{G}</latex>
+        <latex>\mathsfit{G}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00047"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL G
         </description>
     </character>
 
     <character id="U1D60F" dec="120335" mode="math" type="alphabetic">
-        <latex>\mathsfsl{H}</latex>
+        <latex>\mathsfit{H}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00048"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL H
         </description>
     </character>
 
     <character id="U1D610" dec="120336" mode="math" type="alphabetic">
-        <latex>\mathsfsl{I}</latex>
+        <latex>\mathsfit{I}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00049"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL I
         </description>
     </character>
 
     <character id="U1D611" dec="120337" mode="math" type="alphabetic">
-        <latex>\mathsfsl{J}</latex>
+        <latex>\mathsfit{J}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0004A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL J
         </description>
     </character>
 
     <character id="U1D612" dec="120338" mode="math" type="alphabetic">
-        <latex>\mathsfsl{K}</latex>
+        <latex>\mathsfit{K}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0004B"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL K
         </description>
     </character>
 
     <character id="U1D613" dec="120339" mode="math" type="alphabetic">
-        <latex>\mathsfsl{L}</latex>
+        <latex>\mathsfit{L}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0004C"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL L
         </description>
     </character>
 
     <character id="U1D614" dec="120340" mode="math" type="alphabetic">
-        <latex>\mathsfsl{M}</latex>
+        <latex>\mathsfit{M}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0004D"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL M
         </description>
     </character>
 
     <character id="U1D615" dec="120341" mode="math" type="alphabetic">
-        <latex>\mathsfsl{N}</latex>
+        <latex>\mathsfit{N}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0004E"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL N
         </description>
     </character>
 
     <character id="U1D616" dec="120342" mode="math" type="alphabetic">
-        <latex>\mathsfsl{O}</latex>
+        <latex>\mathsfit{O}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0004F"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL O
         </description>
     </character>
 
     <character id="U1D617" dec="120343" mode="math" type="alphabetic">
-        <latex>\mathsfsl{P}</latex>
+        <latex>\mathsfit{P}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00050"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL P
         </description>
     </character>
 
     <character id="U1D618" dec="120344" mode="math" type="alphabetic">
-        <latex>\mathsfsl{Q}</latex>
+        <latex>\mathsfit{Q}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00051"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL Q
         </description>
     </character>
 
     <character id="U1D619" dec="120345" mode="math" type="alphabetic">
-        <latex>\mathsfsl{R}</latex>
+        <latex>\mathsfit{R}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00052"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL R
         </description>
     </character>
 
     <character id="U1D61A" dec="120346" mode="math" type="alphabetic">
-        <latex>\mathsfsl{S}</latex>
+        <latex>\mathsfit{S}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00053"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL S
         </description>
     </character>
 
     <character id="U1D61B" dec="120347" mode="math" type="alphabetic">
-        <latex>\mathsfsl{T}</latex>
+        <latex>\mathsfit{T}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00054"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL T
         </description>
     </character>
 
     <character id="U1D61C" dec="120348" mode="math" type="alphabetic">
-        <latex>\mathsfsl{U}</latex>
+        <latex>\mathsfit{U}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00055"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL U
         </description>
     </character>
 
     <character id="U1D61D" dec="120349" mode="math" type="alphabetic">
-        <latex>\mathsfsl{V}</latex>
+        <latex>\mathsfit{V}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00056"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL V
         </description>
     </character>
 
     <character id="U1D61E" dec="120350" mode="math" type="alphabetic">
-        <latex>\mathsfsl{W}</latex>
+        <latex>\mathsfit{W}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00057"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL W
         </description>
     </character>
 
     <character id="U1D61F" dec="120351" mode="math" type="alphabetic">
-        <latex>\mathsfsl{X}</latex>
+        <latex>\mathsfit{X}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00058"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL X
         </description>
     </character>
 
     <character id="U1D620" dec="120352" mode="math" type="alphabetic">
-        <latex>\mathsfsl{Y}</latex>
+        <latex>\mathsfit{Y}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00059"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL Y
         </description>
     </character>
 
     <character id="U1D621" dec="120353" mode="math" type="alphabetic">
-        <latex>\mathsfsl{Z}</latex>
+        <latex>\mathsfit{Z}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0005A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC CAPITAL Z
         </description>
     </character>
 
     <character id="U1D622" dec="120354" mode="math" type="alphabetic">
-        <latex>\mathsfsl{a}</latex>
+        <latex>\mathsfit{a}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00061"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL A
         </description>
     </character>
 
     <character id="U1D623" dec="120355" mode="math" type="alphabetic">
-        <latex>\mathsfsl{b}</latex>
+        <latex>\mathsfit{b}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00062"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL B
         </description>
     </character>
 
     <character id="U1D624" dec="120356" mode="math" type="alphabetic">
-        <latex>\mathsfsl{c}</latex>
+        <latex>\mathsfit{c}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00063"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL C
         </description>
     </character>
 
     <character id="U1D625" dec="120357" mode="math" type="alphabetic">
-        <latex>\mathsfsl{d}</latex>
+        <latex>\mathsfit{d}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00064"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL D
         </description>
     </character>
 
     <character id="U1D626" dec="120358" mode="math" type="alphabetic">
-        <latex>\mathsfsl{e}</latex>
+        <latex>\mathsfit{e}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00065"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL E
         </description>
     </character>
 
     <character id="U1D627" dec="120359" mode="math" type="alphabetic">
-        <latex>\mathsfsl{f}</latex>
+        <latex>\mathsfit{f}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00066"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL F
         </description>
     </character>
 
     <character id="U1D628" dec="120360" mode="math" type="alphabetic">
-        <latex>\mathsfsl{g}</latex>
+        <latex>\mathsfit{g}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00067"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL G
         </description>
     </character>
 
     <character id="U1D629" dec="120361" mode="math" type="alphabetic">
-        <latex>\mathsfsl{h}</latex>
+        <latex>\mathsfit{h}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00068"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL H
         </description>
     </character>
 
     <character id="U1D62A" dec="120362" mode="math" type="alphabetic">
-        <latex>\mathsfsl{i}</latex>
+        <latex>\mathsfit{i}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00069"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL I
         </description>
     </character>
 
     <character id="U1D62B" dec="120363" mode="math" type="alphabetic">
-        <latex>\mathsfsl{j}</latex>
+        <latex>\mathsfit{j}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0006A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL J
         </description>
     </character>
 
     <character id="U1D62C" dec="120364" mode="math" type="alphabetic">
-        <latex>\mathsfsl{k}</latex>
+        <latex>\mathsfit{k}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0006B"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL K
         </description>
     </character>
 
     <character id="U1D62D" dec="120365" mode="math" type="alphabetic">
-        <latex>\mathsfsl{l}</latex>
+        <latex>\mathsfit{l}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0006C"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL L
         </description>
     </character>
 
     <character id="U1D62E" dec="120366" mode="math" type="alphabetic">
-        <latex>\mathsfsl{m}</latex>
+        <latex>\mathsfit{m}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0006D"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL M
         </description>
     </character>
 
     <character id="U1D62F" dec="120367" mode="math" type="alphabetic">
-        <latex>\mathsfsl{n}</latex>
+        <latex>\mathsfit{n}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0006E"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL N
         </description>
     </character>
 
     <character id="U1D630" dec="120368" mode="math" type="alphabetic">
-        <latex>\mathsfsl{o}</latex>
+        <latex>\mathsfit{o}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0006F"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL O
         </description>
     </character>
 
     <character id="U1D631" dec="120369" mode="math" type="alphabetic">
-        <latex>\mathsfsl{p}</latex>
+        <latex>\mathsfit{p}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00070"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL P
         </description>
     </character>
 
     <character id="U1D632" dec="120370" mode="math" type="alphabetic">
-        <latex>\mathsfsl{q}</latex>
+        <latex>\mathsfit{q}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00071"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL Q
         </description>
     </character>
 
     <character id="U1D633" dec="120371" mode="math" type="alphabetic">
-        <latex>\mathsfsl{r}</latex>
+        <latex>\mathsfit{r}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00072"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL R
         </description>
     </character>
 
     <character id="U1D634" dec="120372" mode="math" type="alphabetic">
-        <latex>\mathsfsl{s}</latex>
+        <latex>\mathsfit{s}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00073"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL S
         </description>
     </character>
 
     <character id="U1D635" dec="120373" mode="math" type="alphabetic">
-        <latex>\mathsfsl{t}</latex>
+        <latex>\mathsfit{t}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00074"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL T
         </description>
     </character>
 
     <character id="U1D636" dec="120374" mode="math" type="alphabetic">
-        <latex>\mathsfsl{u}</latex>
+        <latex>\mathsfit{u}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00075"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL U
         </description>
     </character>
 
     <character id="U1D637" dec="120375" mode="math" type="alphabetic">
-        <latex>\mathsfsl{v}</latex>
+        <latex>\mathsfit{v}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00076"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL V
         </description>
     </character>
 
     <character id="U1D638" dec="120376" mode="math" type="alphabetic">
-        <latex>\mathsfsl{w}</latex>
+        <latex>\mathsfit{w}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00077"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL W
         </description>
     </character>
 
     <character id="U1D639" dec="120377" mode="math" type="alphabetic">
-        <latex>\mathsfsl{x}</latex>
+        <latex>\mathsfit{x}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00078"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL X
         </description>
     </character>
 
     <character id="U1D63A" dec="120378" mode="math" type="alphabetic">
-        <latex>\mathsfsl{y}</latex>
+        <latex>\mathsfit{y}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U00079"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL Y
         </description>
     </character>
 
     <character id="U1D63B" dec="120379" mode="math" type="alphabetic">
-        <latex>\mathsfsl{z}</latex>
+        <latex>\mathsfit{z}</latex>
         <surrogate mathvariant="sans-serif-italic" ref="U0007A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF ITALIC SMALL Z
         </description>
     </character>
 
     <character id="U1D63C" dec="120380" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{A}</latex>
+        <latex>\mathsfbfit{A}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00041"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             A
@@ -42457,7 +42457,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D63D" dec="120381" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{B}</latex>
+        <latex>\mathsfbfit{B}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00042"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             B
@@ -42465,7 +42465,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D63E" dec="120382" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{C}</latex>
+        <latex>\mathsfbfit{C}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00043"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             C
@@ -42473,7 +42473,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D63F" dec="120383" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{D}</latex>
+        <latex>\mathsfbfit{D}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00044"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             D
@@ -42481,7 +42481,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D640" dec="120384" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{E}</latex>
+        <latex>\mathsfbfit{E}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00045"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             E
@@ -42489,7 +42489,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D641" dec="120385" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{F}</latex>
+        <latex>\mathsfbfit{F}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00046"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             F
@@ -42497,7 +42497,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D642" dec="120386" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{G}</latex>
+        <latex>\mathsfbfit{G}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00047"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             G
@@ -42505,7 +42505,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D643" dec="120387" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{H}</latex>
+        <latex>\mathsfbfit{H}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00048"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             H
@@ -42513,7 +42513,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D644" dec="120388" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{I}</latex>
+        <latex>\mathsfbfit{I}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00049"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             I
@@ -42521,7 +42521,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D645" dec="120389" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{J}</latex>
+        <latex>\mathsfbfit{J}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0004A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             J
@@ -42529,7 +42529,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D646" dec="120390" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{K}</latex>
+        <latex>\mathsfbfit{K}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0004B"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             K
@@ -42537,7 +42537,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D647" dec="120391" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{L}</latex>
+        <latex>\mathsfbfit{L}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0004C"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             L
@@ -42545,7 +42545,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D648" dec="120392" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{M}</latex>
+        <latex>\mathsfbfit{M}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0004D"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             M
@@ -42553,7 +42553,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D649" dec="120393" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{N}</latex>
+        <latex>\mathsfbfit{N}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0004E"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             N
@@ -42561,7 +42561,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D64A" dec="120394" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{O}</latex>
+        <latex>\mathsfbfit{O}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0004F"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             O
@@ -42569,7 +42569,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D64B" dec="120395" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{P}</latex>
+        <latex>\mathsfbfit{P}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00050"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             P
@@ -42577,7 +42577,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D64C" dec="120396" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{Q}</latex>
+        <latex>\mathsfbfit{Q}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00051"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             Q
@@ -42585,7 +42585,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D64D" dec="120397" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{R}</latex>
+        <latex>\mathsfbfit{R}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00052"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             R
@@ -42593,7 +42593,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D64E" dec="120398" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{S}</latex>
+        <latex>\mathsfbfit{S}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00053"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             S
@@ -42601,7 +42601,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D64F" dec="120399" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{T}</latex>
+        <latex>\mathsfbfit{T}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00054"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             T
@@ -42609,7 +42609,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D650" dec="120400" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{U}</latex>
+        <latex>\mathsfbfit{U}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00055"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             U
@@ -42617,7 +42617,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D651" dec="120401" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{V}</latex>
+        <latex>\mathsfbfit{V}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00056"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             V
@@ -42625,7 +42625,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D652" dec="120402" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{W}</latex>
+        <latex>\mathsfbfit{W}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00057"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             W
@@ -42633,7 +42633,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D653" dec="120403" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{X}</latex>
+        <latex>\mathsfbfit{X}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00058"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             X
@@ -42641,7 +42641,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D654" dec="120404" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{Y}</latex>
+        <latex>\mathsfbfit{Y}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00059"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             Y
@@ -42649,7 +42649,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D655" dec="120405" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{Z}</latex>
+        <latex>\mathsfbfit{Z}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0005A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             Z
@@ -42657,182 +42657,182 @@ for borrowings from their work
     </character>
 
     <character id="U1D656" dec="120406" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{a}</latex>
+        <latex>\mathsfbfit{a}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00061"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL A
         </description>
     </character>
 
     <character id="U1D657" dec="120407" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{b}</latex>
+        <latex>\mathsfbfit{b}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00062"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL B
         </description>
     </character>
 
     <character id="U1D658" dec="120408" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{c}</latex>
+        <latex>\mathsfbfit{c}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00063"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL C
         </description>
     </character>
 
     <character id="U1D659" dec="120409" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{d}</latex>
+        <latex>\mathsfbfit{d}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00064"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL D
         </description>
     </character>
 
     <character id="U1D65A" dec="120410" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{e}</latex>
+        <latex>\mathsfbfit{e}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00065"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL E
         </description>
     </character>
 
     <character id="U1D65B" dec="120411" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{f}</latex>
+        <latex>\mathsfbfit{f}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00066"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL F
         </description>
     </character>
 
     <character id="U1D65C" dec="120412" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{g}</latex>
+        <latex>\mathsfbfit{g}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00067"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL G
         </description>
     </character>
 
     <character id="U1D65D" dec="120413" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{h}</latex>
+        <latex>\mathsfbfit{h}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00068"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL H
         </description>
     </character>
 
     <character id="U1D65E" dec="120414" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{i}</latex>
+        <latex>\mathsfbfit{i}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00069"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL I
         </description>
     </character>
 
     <character id="U1D65F" dec="120415" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{j}</latex>
+        <latex>\mathsfbfit{j}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0006A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL J
         </description>
     </character>
 
     <character id="U1D660" dec="120416" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{k}</latex>
+        <latex>\mathsfbfit{k}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0006B"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL K
         </description>
     </character>
 
     <character id="U1D661" dec="120417" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{l}</latex>
+        <latex>\mathsfbfit{l}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0006C"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL L
         </description>
     </character>
 
     <character id="U1D662" dec="120418" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{m}</latex>
+        <latex>\mathsfbfit{m}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0006D"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL M
         </description>
     </character>
 
     <character id="U1D663" dec="120419" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{n}</latex>
+        <latex>\mathsfbfit{n}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0006E"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL N
         </description>
     </character>
 
     <character id="U1D664" dec="120420" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{o}</latex>
+        <latex>\mathsfbfit{o}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0006F"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL O
         </description>
     </character>
 
     <character id="U1D665" dec="120421" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{p}</latex>
+        <latex>\mathsfbfit{p}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00070"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL P
         </description>
     </character>
 
     <character id="U1D666" dec="120422" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{q}</latex>
+        <latex>\mathsfbfit{q}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00071"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Q
         </description>
     </character>
 
     <character id="U1D667" dec="120423" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{r}</latex>
+        <latex>\mathsfbfit{r}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00072"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL R
         </description>
     </character>
 
     <character id="U1D668" dec="120424" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{s}</latex>
+        <latex>\mathsfbfit{s}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00073"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL S
         </description>
     </character>
 
     <character id="U1D669" dec="120425" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{t}</latex>
+        <latex>\mathsfbfit{t}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00074"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL T
         </description>
     </character>
 
     <character id="U1D66A" dec="120426" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{u}</latex>
+        <latex>\mathsfbfit{u}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00075"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL U
         </description>
     </character>
 
     <character id="U1D66B" dec="120427" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{v}</latex>
+        <latex>\mathsfbfit{v}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00076"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL V
         </description>
     </character>
 
     <character id="U1D66C" dec="120428" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{w}</latex>
+        <latex>\mathsfbfit{w}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00077"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL W
         </description>
     </character>
 
     <character id="U1D66D" dec="120429" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{x}</latex>
+        <latex>\mathsfbfit{x}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00078"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL X
         </description>
     </character>
 
     <character id="U1D66E" dec="120430" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{y}</latex>
+        <latex>\mathsfbfit{y}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00079"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Y
         </description>
     </character>
 
     <character id="U1D66F" dec="120431" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{z}</latex>
+        <latex>\mathsfbfit{z}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0007A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Z
         </description>
@@ -43798,76 +43798,76 @@ for borrowings from their work
     </character>
 
     <character id="U1D6E2" dec="120546" mode="math" type="alphabetic">
-        <latex>\mathsl{\Alpha}</latex>
+        <latex>\mathit{\Alpha}</latex>
         <surrogate mathvariant="italic" ref="U00391"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL ALPHA
         </description>
     </character>
 
     <character id="U1D6E3" dec="120547" mode="math" type="alphabetic">
-        <latex>\mathsl{\Beta}</latex>
+        <latex>\mathit{\Beta}</latex>
         <surrogate mathvariant="italic" ref="U00392"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL BETA
         </description>
     </character>
 
     <character id="U1D6E4" dec="120548" mode="math" type="alphabetic">
-        <latex>\mathsl{\Gamma}</latex>
+        <latex>\mathit{\Gamma}</latex>
         <surrogate mathvariant="italic" ref="U00393"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL GAMMA
         </description>
     </character>
 
     <character id="U1D6E5" dec="120549" mode="math" type="alphabetic">
-        <latex>\mathsl{\Delta}</latex>
+        <latex>\mathit{\Delta}</latex>
         <surrogate mathvariant="italic" ref="U00394"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL DELTA
         </description>
     </character>
 
     <character id="U1D6E6" dec="120550" mode="math" type="alphabetic">
-        <latex>\mathsl{\Epsilon}</latex>
+        <latex>\mathit{\Epsilon}</latex>
         <surrogate mathvariant="italic" ref="U00395"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL EPSILON
         </description>
     </character>
 
     <character id="U1D6E7" dec="120551" mode="math" type="alphabetic">
-        <latex>\mathsl{\Zeta}</latex>
+        <latex>\mathit{\Zeta}</latex>
         <surrogate mathvariant="italic" ref="U00396"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL ZETA
         </description>
     </character>
 
     <character id="U1D6E8" dec="120552" mode="math" type="alphabetic">
-        <latex>\mathsl{\Eta}</latex>
+        <latex>\mathit{\Eta}</latex>
         <surrogate mathvariant="italic" ref="U00397"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL ETA</description>
     </character>
 
     <character id="U1D6E9" dec="120553" mode="math" type="alphabetic">
-        <latex>\mathsl{\Theta}</latex>
+        <latex>\mathit{\Theta}</latex>
         <surrogate mathvariant="italic" ref="U00398"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL THETA
         </description>
     </character>
 
     <character id="U1D6EA" dec="120554" mode="math" type="alphabetic">
-        <latex>\mathsl{\Iota}</latex>
+        <latex>\mathit{\Iota}</latex>
         <surrogate mathvariant="italic" ref="U00399"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL IOTA
         </description>
     </character>
 
     <character id="U1D6EB" dec="120555" mode="math" type="alphabetic">
-        <latex>\mathsl{\Kappa}</latex>
+        <latex>\mathit{\Kappa}</latex>
         <surrogate mathvariant="italic" ref="U0039A"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL KAPPA
         </description>
     </character>
 
     <character id="U1D6EC" dec="120556" mode="math" type="alphabetic">
-        <latex>\mathsl{\Lambda}</latex>
+        <latex>\mathit{\Lambda}</latex>
         <surrogate mathvariant="italic" ref="U0039B"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL LAMDA
         </description>
@@ -43886,7 +43886,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D6EF" dec="120559" mode="math" type="alphabetic">
-        <latex>\mathsl{\Xi}</latex>
+        <latex>\mathit{\Xi}</latex>
         <surrogate mathvariant="italic" ref="U0039E"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL XI</description>
     </character>
@@ -43899,138 +43899,138 @@ for borrowings from their work
     </character>
 
     <character id="U1D6F1" dec="120561" mode="math" type="alphabetic">
-        <latex>\mathsl{\Pi}</latex>
+        <latex>\mathit{\Pi}</latex>
         <surrogate mathvariant="italic" ref="U003A0"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL PI</description>
     </character>
 
     <character id="U1D6F2" dec="120562" mode="math" type="alphabetic">
-        <latex>\mathsl{\Rho}</latex>
+        <latex>\mathit{\Rho}</latex>
         <surrogate mathvariant="italic" ref="U003A1"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL RHO</description>
     </character>
 
     <character id="U1D6F3" dec="120563" mode="mixed" type="other">
-        <latex>\mathsl{\vartheta}</latex>
+        <latex>\mathit{\vartheta}</latex>
         <surrogate mathvariant="italic" ref="U003F4"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL THETA SYMBOL
         </description>
     </character>
 
     <character id="U1D6F4" dec="120564" mode="math" type="alphabetic">
-        <latex>\mathsl{\Sigma}</latex>
+        <latex>\mathit{\Sigma}</latex>
         <surrogate mathvariant="italic" ref="U003A3"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL SIGMA
         </description>
     </character>
 
     <character id="U1D6F5" dec="120565" mode="math" type="alphabetic">
-        <latex>\mathsl{\Tau}</latex>
+        <latex>\mathit{\Tau}</latex>
         <surrogate mathvariant="italic" ref="U003A4"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL TAU</description>
     </character>
 
     <character id="U1D6F6" dec="120566" mode="math" type="alphabetic">
-        <latex>\mathsl{\Upsilon}</latex>
+        <latex>\mathit{\Upsilon}</latex>
         <surrogate mathvariant="italic" ref="U003A5"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL UPSILON
         </description>
     </character>
 
     <character id="U1D6F7" dec="120567" mode="math" type="alphabetic">
-        <latex>\mathsl{\Phi}</latex>
+        <latex>\mathit{\Phi}</latex>
         <surrogate mathvariant="italic" ref="U003A6"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL PHI</description>
     </character>
 
     <character id="U1D6F8" dec="120568" mode="math" type="alphabetic">
-        <latex>\mathsl{\Chi}</latex>
+        <latex>\mathit{\Chi}</latex>
         <surrogate mathvariant="italic" ref="U003A7"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL CHI</description>
     </character>
 
     <character id="U1D6F9" dec="120569" mode="math" type="alphabetic">
-        <latex>\mathsl{\Psi}</latex>
+        <latex>\mathit{\Psi}</latex>
         <surrogate mathvariant="italic" ref="U003A8"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL PSI</description>
     </character>
 
     <character id="U1D6FA" dec="120570" mode="math" type="alphabetic">
-        <latex>\mathsl{\Omega}</latex>
+        <latex>\mathit{\Omega}</latex>
         <surrogate mathvariant="italic" ref="U003A9"/>
         <description unicode="3.1">MATHEMATICAL ITALIC CAPITAL OMEGA
         </description>
     </character>
 
     <character id="U1D6FB" dec="120571" mode="math" type="normal">
-        <latex>\mathsl{\nabla}</latex>
+        <latex>\mathit{\nabla}</latex>
         <surrogate mathvariant="italic" ref="U02207"/>
         <description unicode="3.1">MATHEMATICAL ITALIC NABLA</description>
     </character>
 
     <character id="U1D6FC" dec="120572" mode="math" type="alphabetic">
-        <latex>\mathsl{\Alpha}</latex>
+        <latex>\mathit{\Alpha}</latex>
         <surrogate mathvariant="italic" ref="U003B1"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL ALPHA</description>
     </character>
 
     <character id="U1D6FD" dec="120573" mode="math" type="alphabetic">
-        <latex>\mathsl{\Beta}</latex>
+        <latex>\mathit{\Beta}</latex>
         <surrogate mathvariant="italic" ref="U003B2"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL BETA</description>
     </character>
 
     <character id="U1D6FE" dec="120574" mode="math" type="alphabetic">
-        <latex>\mathsl{\Gamma}</latex>
+        <latex>\mathit{\Gamma}</latex>
         <surrogate mathvariant="italic" ref="U003B3"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL GAMMA</description>
     </character>
 
     <character id="U1D6FF" dec="120575" mode="math" type="alphabetic">
-        <latex>\mathsl{\Delta}</latex>
+        <latex>\mathit{\Delta}</latex>
         <surrogate mathvariant="italic" ref="U003B4"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL DELTA</description>
     </character>
 
     <character id="U1D700" dec="120576" mode="math" type="alphabetic">
-        <latex>\mathsl{\Epsilon}</latex>
+        <latex>\mathit{\Epsilon}</latex>
         <surrogate mathvariant="italic" ref="U003B5"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL EPSILON
         </description>
     </character>
 
     <character id="U1D701" dec="120577" mode="math" type="alphabetic">
-        <latex>\mathsl{\Zeta}</latex>
+        <latex>\mathit{\Zeta}</latex>
         <surrogate mathvariant="italic" ref="U003B6"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL ZETA</description>
     </character>
 
     <character id="U1D702" dec="120578" mode="math" type="alphabetic">
-        <latex>\mathsl{\Eta}</latex>
+        <latex>\mathit{\Eta}</latex>
         <surrogate mathvariant="italic" ref="U003B7"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL ETA</description>
     </character>
 
     <character id="U1D703" dec="120579" mode="math" type="alphabetic">
-        <latex>\mathsl{\Theta}</latex>
+        <latex>\mathit{\Theta}</latex>
         <surrogate mathvariant="italic" ref="U003B8"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL THETA</description>
     </character>
 
     <character id="U1D704" dec="120580" mode="math" type="alphabetic">
-        <latex>\mathsl{\Iota}</latex>
+        <latex>\mathit{\Iota}</latex>
         <surrogate mathvariant="italic" ref="U003B9"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL IOTA</description>
     </character>
 
     <character id="U1D705" dec="120581" mode="math" type="alphabetic">
-        <latex>\mathsl{\Kappa}</latex>
+        <latex>\mathit{\Kappa}</latex>
         <surrogate mathvariant="italic" ref="U003BA"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL KAPPA</description>
     </character>
 
     <character id="U1D706" dec="120582" mode="math" type="alphabetic">
-        <latex>\mathsl{\Lambda}</latex>
+        <latex>\mathit{\Lambda}</latex>
         <surrogate mathvariant="italic" ref="U003BB"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL LAMDA</description>
     </character>
@@ -44048,7 +44048,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D709" dec="120585" mode="math" type="alphabetic">
-        <latex>\mathsl{\Xi}</latex>
+        <latex>\mathit{\Xi}</latex>
         <surrogate mathvariant="italic" ref="U003BE"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL XI</description>
     </character>
@@ -44061,63 +44061,63 @@ for borrowings from their work
     </character>
 
     <character id="U1D70B" dec="120587" mode="math" type="alphabetic">
-        <latex>\mathsl{\Pi}</latex>
+        <latex>\mathit{\Pi}</latex>
         <surrogate mathvariant="italic" ref="U003C0"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL PI</description>
     </character>
 
     <character id="U1D70C" dec="120588" mode="math" type="alphabetic">
-        <latex>\mathsl{\Rho}</latex>
+        <latex>\mathit{\Rho}</latex>
         <surrogate mathvariant="italic" ref="U003C1"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL RHO</description>
     </character>
 
     <character id="U1D70D" dec="120589" mode="math" type="alphabetic">
-        <latex>\mathsl{\varsigma}</latex>
+        <latex>\mathit{\varsigma}</latex>
         <surrogate mathvariant="italic" ref="U003C2"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL FINAL SIGMA
         </description>
     </character>
 
     <character id="U1D70E" dec="120590" mode="math" type="alphabetic">
-        <latex>\mathsl{\Sigma}</latex>
+        <latex>\mathit{\Sigma}</latex>
         <surrogate mathvariant="italic" ref="U003C3"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL SIGMA</description>
     </character>
 
     <character id="U1D70F" dec="120591" mode="math" type="alphabetic">
-        <latex>\mathsl{\Tau}</latex>
+        <latex>\mathit{\Tau}</latex>
         <surrogate mathvariant="italic" ref="U003C4"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL TAU</description>
     </character>
 
     <character id="U1D710" dec="120592" mode="math" type="alphabetic">
-        <latex>\mathsl{\Upsilon}</latex>
+        <latex>\mathit{\Upsilon}</latex>
         <surrogate mathvariant="italic" ref="U003C5"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL UPSILON
         </description>
     </character>
 
     <character id="U1D711" dec="120593" mode="math" type="alphabetic">
-        <latex>\mathsl{\Phi}</latex>
+        <latex>\mathit{\Phi}</latex>
         <surrogate mathvariant="italic" ref="U003C6"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL PHI</description>
     </character>
 
     <character id="U1D712" dec="120594" mode="math" type="alphabetic">
-        <latex>\mathsl{\Chi}</latex>
+        <latex>\mathit{\Chi}</latex>
         <surrogate mathvariant="italic" ref="U003C7"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL CHI</description>
     </character>
 
     <character id="U1D713" dec="120595" mode="math" type="alphabetic">
-        <latex>\mathsl{\Psi}</latex>
+        <latex>\mathit{\Psi}</latex>
         <surrogate mathvariant="italic" ref="U003C8"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL PSI</description>
     </character>
 
     <character id="U1D714" dec="120596" mode="math" type="alphabetic">
-        <latex>\mathsl{\Omega}</latex>
+        <latex>\mathit{\Omega}</latex>
         <surrogate mathvariant="italic" ref="U003C9"/>
         <description unicode="3.1">MATHEMATICAL ITALIC SMALL OMEGA</description>
     </character>
@@ -44137,109 +44137,109 @@ for borrowings from their work
     </character>
 
     <character id="U1D717" dec="120599" mode="mixed" type="alphabetic">
-        <latex>\mathsl{\vartheta}</latex>
+        <latex>\mathit{\vartheta}</latex>
         <surrogate mathvariant="italic" ref="U003D1"/>
         <description unicode="3.1">MATHEMATICAL ITALIC THETA SYMBOL
         </description>
     </character>
 
     <character id="U1D718" dec="120600" mode="mixed" type="alphabetic">
-        <latex>\mathsl{\varkappa}</latex>
+        <latex>\mathit{\varkappa}</latex>
         <surrogate mathvariant="italic" ref="U003F0"/>
         <description unicode="3.1">MATHEMATICAL ITALIC KAPPA SYMBOL
         </description>
     </character>
 
     <character id="U1D719" dec="120601" mode="mixed" type="alphabetic">
-        <latex>\mathsl{\phi}</latex>
+        <latex>\mathit{\phi}</latex>
         <surrogate mathvariant="italic" ref="U003D5"/>
         <description unicode="3.1">MATHEMATICAL ITALIC PHI SYMBOL</description>
     </character>
 
     <character id="U1D71A" dec="120602" mode="mixed" type="alphabetic">
-        <latex>\mathsl{\varrho}</latex>
+        <latex>\mathit{\varrho}</latex>
         <surrogate mathvariant="italic" ref="U003F1"/>
         <description unicode="3.1">MATHEMATICAL ITALIC RHO SYMBOL</description>
     </character>
 
     <character id="U1D71B" dec="120603" mode="mixed" type="alphabetic">
-        <latex>\mathsl{\varpi}</latex>
+        <latex>\mathit{\varpi}</latex>
         <surrogate mathvariant="italic" ref="U003D6"/>
         <description unicode="3.1">MATHEMATICAL ITALIC PI SYMBOL</description>
     </character>
 
     <character id="U1D71C" dec="120604" mode="math" type="alphabetic">
-        <latex>\mathbit{\Alpha}</latex>
+        <latex>\mathbfit{\Alpha}</latex>
         <surrogate mathvariant="bold-italic" ref="U00391"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL ALPHA
         </description>
     </character>
 
     <character id="U1D71D" dec="120605" mode="math" type="alphabetic">
-        <latex>\mathbit{\Beta}</latex>
+        <latex>\mathbfit{\Beta}</latex>
         <surrogate mathvariant="bold-italic" ref="U00392"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL BETA
         </description>
     </character>
 
     <character id="U1D71E" dec="120606" mode="math" type="alphabetic">
-        <latex>\mathbit{\Gamma}</latex>
+        <latex>\mathbfit{\Gamma}</latex>
         <surrogate mathvariant="bold-italic" ref="U00393"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL GAMMA
         </description>
     </character>
 
     <character id="U1D71F" dec="120607" mode="math" type="alphabetic">
-        <latex>\mathbit{\Delta}</latex>
+        <latex>\mathbfit{\Delta}</latex>
         <surrogate mathvariant="bold-italic" ref="U00394"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL DELTA
         </description>
     </character>
 
     <character id="U1D720" dec="120608" mode="math" type="alphabetic">
-        <latex>\mathbit{\Epsilon}</latex>
+        <latex>\mathbfit{\Epsilon}</latex>
         <surrogate mathvariant="bold-italic" ref="U00395"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL EPSILON
         </description>
     </character>
 
     <character id="U1D721" dec="120609" mode="math" type="alphabetic">
-        <latex>\mathbit{\Zeta}</latex>
+        <latex>\mathbfit{\Zeta}</latex>
         <surrogate mathvariant="bold-italic" ref="U00396"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL ZETA
         </description>
     </character>
 
     <character id="U1D722" dec="120610" mode="math" type="alphabetic">
-        <latex>\mathbit{\Eta}</latex>
+        <latex>\mathbfit{\Eta}</latex>
         <surrogate mathvariant="bold-italic" ref="U00397"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL ETA
         </description>
     </character>
 
     <character id="U1D723" dec="120611" mode="math" type="alphabetic">
-        <latex>\mathbit{\Theta}</latex>
+        <latex>\mathbfit{\Theta}</latex>
         <surrogate mathvariant="bold-italic" ref="U00398"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL THETA
         </description>
     </character>
 
     <character id="U1D724" dec="120612" mode="math" type="alphabetic">
-        <latex>\mathbit{\Iota}</latex>
+        <latex>\mathbfit{\Iota}</latex>
         <surrogate mathvariant="bold-italic" ref="U00399"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL IOTA
         </description>
     </character>
 
     <character id="U1D725" dec="120613" mode="math" type="alphabetic">
-        <latex>\mathbit{\Kappa}</latex>
+        <latex>\mathbfit{\Kappa}</latex>
         <surrogate mathvariant="bold-italic" ref="U0039A"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL KAPPA
         </description>
     </character>
 
     <character id="U1D726" dec="120614" mode="math" type="alphabetic">
-        <latex>\mathbit{\Lambda}</latex>
+        <latex>\mathbfit{\Lambda}</latex>
         <surrogate mathvariant="bold-italic" ref="U0039B"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL LAMDA
         </description>
@@ -44260,7 +44260,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D729" dec="120617" mode="math" type="alphabetic">
-        <latex>\mathbit{\Xi}</latex>
+        <latex>\mathbfit{\Xi}</latex>
         <surrogate mathvariant="bold-italic" ref="U0039E"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL XI
         </description>
@@ -44274,21 +44274,21 @@ for borrowings from their work
     </character>
 
     <character id="U1D72B" dec="120619" mode="math" type="alphabetic">
-        <latex>\mathbit{\Pi}</latex>
+        <latex>\mathbfit{\Pi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A0"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL PI
         </description>
     </character>
 
     <character id="U1D72C" dec="120620" mode="math" type="alphabetic">
-        <latex>\mathbit{\Rho}</latex>
+        <latex>\mathbfit{\Rho}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A1"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL RHO
         </description>
     </character>
 
     <character id="U1D72D" dec="120621" mode="mixed" type="other">
-        <latex>\mathbit{O}</latex>
+        <latex>\mathbfit{O}</latex>
         <surrogate mathvariant="bold-italic" ref="U003F4"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL THETA
             SYMBOL
@@ -44296,132 +44296,132 @@ for borrowings from their work
     </character>
 
     <character id="U1D72E" dec="120622" mode="math" type="alphabetic">
-        <latex>\mathbit{\Sigma}</latex>
+        <latex>\mathbfit{\Sigma}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A3"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL SIGMA
         </description>
     </character>
 
     <character id="U1D72F" dec="120623" mode="math" type="alphabetic">
-        <latex>\mathbit{\Tau}</latex>
+        <latex>\mathbfit{\Tau}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A4"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL TAU
         </description>
     </character>
 
     <character id="U1D730" dec="120624" mode="math" type="alphabetic">
-        <latex>\mathbit{\Upsilon}</latex>
+        <latex>\mathbfit{\Upsilon}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A5"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL UPSILON
         </description>
     </character>
 
     <character id="U1D731" dec="120625" mode="math" type="alphabetic">
-        <latex>\mathbit{\Phi}</latex>
+        <latex>\mathbfit{\Phi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A6"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL PHI
         </description>
     </character>
 
     <character id="U1D732" dec="120626" mode="math" type="alphabetic">
-        <latex>\mathbit{\Chi}</latex>
+        <latex>\mathbfit{\Chi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A7"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL CHI
         </description>
     </character>
 
     <character id="U1D733" dec="120627" mode="math" type="alphabetic">
-        <latex>\mathbit{\Psi}</latex>
+        <latex>\mathbfit{\Psi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A8"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL PSI
         </description>
     </character>
 
     <character id="U1D734" dec="120628" mode="math" type="alphabetic">
-        <latex>\mathbit{\Omega}</latex>
+        <latex>\mathbfit{\Omega}</latex>
         <surrogate mathvariant="bold-italic" ref="U003A9"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC CAPITAL OMEGA
         </description>
     </character>
 
     <character id="U1D735" dec="120629" mode="math" type="normal">
-        <latex>\mathbit{\nabla}</latex>
+        <latex>\mathbfit{\nabla}</latex>
         <surrogate mathvariant="bold-italic" ref="U02207"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC NABLA</description>
     </character>
 
     <character id="U1D736" dec="120630" mode="math" type="alphabetic">
-        <latex>\mathbit{\Alpha}</latex>
+        <latex>\mathbfit{\Alpha}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B1"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL ALPHA
         </description>
     </character>
 
     <character id="U1D737" dec="120631" mode="math" type="alphabetic">
-        <latex>\mathbit{\Beta}</latex>
+        <latex>\mathbfit{\Beta}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B2"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL BETA
         </description>
     </character>
 
     <character id="U1D738" dec="120632" mode="math" type="alphabetic">
-        <latex>\mathbit{\Gamma}</latex>
+        <latex>\mathbfit{\Gamma}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B3"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL GAMMA
         </description>
     </character>
 
     <character id="U1D739" dec="120633" mode="math" type="alphabetic">
-        <latex>\mathbit{\Delta}</latex>
+        <latex>\mathbfit{\Delta}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B4"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL DELTA
         </description>
     </character>
 
     <character id="U1D73A" dec="120634" mode="math" type="alphabetic">
-        <latex>\mathbit{\Epsilon}</latex>
+        <latex>\mathbfit{\Epsilon}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B5"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL EPSILON
         </description>
     </character>
 
     <character id="U1D73B" dec="120635" mode="math" type="alphabetic">
-        <latex>\mathbit{\Zeta}</latex>
+        <latex>\mathbfit{\Zeta}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B6"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL ZETA
         </description>
     </character>
 
     <character id="U1D73C" dec="120636" mode="math" type="alphabetic">
-        <latex>\mathbit{\Eta}</latex>
+        <latex>\mathbfit{\Eta}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B7"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL ETA
         </description>
     </character>
 
     <character id="U1D73D" dec="120637" mode="math" type="alphabetic">
-        <latex>\mathbit{\Theta}</latex>
+        <latex>\mathbfit{\Theta}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B8"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL THETA
         </description>
     </character>
 
     <character id="U1D73E" dec="120638" mode="math" type="alphabetic">
-        <latex>\mathbit{\Iota}</latex>
+        <latex>\mathbfit{\Iota}</latex>
         <surrogate mathvariant="bold-italic" ref="U003B9"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL IOTA
         </description>
     </character>
 
     <character id="U1D73F" dec="120639" mode="math" type="alphabetic">
-        <latex>\mathbit{\Kappa}</latex>
+        <latex>\mathbfit{\Kappa}</latex>
         <surrogate mathvariant="bold-italic" ref="U003BA"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL KAPPA
         </description>
     </character>
 
     <character id="U1D740" dec="120640" mode="math" type="alphabetic">
-        <latex>\mathbit{\Lambda}</latex>
+        <latex>\mathbfit{\Lambda}</latex>
         <surrogate mathvariant="bold-italic" ref="U003BB"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL LAMDA
         </description>
@@ -44442,7 +44442,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D743" dec="120643" mode="math" type="alphabetic">
-        <latex>\mathbit{\Xi}</latex>
+        <latex>\mathbfit{\Xi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003BE"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL XI
         </description>
@@ -44456,70 +44456,70 @@ for borrowings from their work
     </character>
 
     <character id="U1D745" dec="120645" mode="math" type="alphabetic">
-        <latex>\mathbit{\Pi}</latex>
+        <latex>\mathbfit{\Pi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C0"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL PI
         </description>
     </character>
 
     <character id="U1D746" dec="120646" mode="math" type="alphabetic">
-        <latex>\mathbit{\Rho}</latex>
+        <latex>\mathbfit{\Rho}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C1"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL RHO
         </description>
     </character>
 
     <character id="U1D747" dec="120647" mode="math" type="alphabetic">
-        <latex>\mathbit{\varsigma}</latex>
+        <latex>\mathbfit{\varsigma}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C2"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL FINAL SIGMA
         </description>
     </character>
 
     <character id="U1D748" dec="120648" mode="math" type="alphabetic">
-        <latex>\mathbit{\Sigma}</latex>
+        <latex>\mathbfit{\Sigma}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C3"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL SIGMA
         </description>
     </character>
 
     <character id="U1D749" dec="120649" mode="math" type="alphabetic">
-        <latex>\mathbit{\Tau}</latex>
+        <latex>\mathbfit{\Tau}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C4"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL TAU
         </description>
     </character>
 
     <character id="U1D74A" dec="120650" mode="math" type="alphabetic">
-        <latex>\mathbit{\Upsilon}</latex>
+        <latex>\mathbfit{\Upsilon}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C5"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL UPSILON
         </description>
     </character>
 
     <character id="U1D74B" dec="120651" mode="math" type="alphabetic">
-        <latex>\mathbit{\Phi}</latex>
+        <latex>\mathbfit{\Phi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C6"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL PHI
         </description>
     </character>
 
     <character id="U1D74C" dec="120652" mode="math" type="alphabetic">
-        <latex>\mathbit{\Chi}</latex>
+        <latex>\mathbfit{\Chi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C7"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL CHI
         </description>
     </character>
 
     <character id="U1D74D" dec="120653" mode="math" type="alphabetic">
-        <latex>\mathbit{\Psi}</latex>
+        <latex>\mathbfit{\Psi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C8"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL PSI
         </description>
     </character>
 
     <character id="U1D74E" dec="120654" mode="math" type="alphabetic">
-        <latex>\mathbit{\Omega}</latex>
+        <latex>\mathbfit{\Omega}</latex>
         <surrogate mathvariant="bold-italic" ref="U003C9"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC SMALL OMEGA
         </description>
@@ -44541,35 +44541,35 @@ for borrowings from their work
     </character>
 
     <character id="U1D751" dec="120657" mode="mixed" type="alphabetic">
-        <latex>\mathbit{\vartheta}</latex>
+        <latex>\mathbfit{\vartheta}</latex>
         <surrogate mathvariant="bold-italic" ref="U003D1"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC THETA SYMBOL
         </description>
     </character>
 
     <character id="U1D752" dec="120658" mode="mixed" type="alphabetic">
-        <latex>\mathbit{\varkappa}</latex>
+        <latex>\mathbfit{\varkappa}</latex>
         <surrogate mathvariant="bold-italic" ref="U003F0"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC KAPPA SYMBOL
         </description>
     </character>
 
     <character id="U1D753" dec="120659" mode="mixed" type="alphabetic">
-        <latex>\mathbit{\phi}</latex>
+        <latex>\mathbfit{\phi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003D5"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC PHI SYMBOL
         </description>
     </character>
 
     <character id="U1D754" dec="120660" mode="mixed" type="alphabetic">
-        <latex>\mathbit{\varrho}</latex>
+        <latex>\mathbfit{\varrho}</latex>
         <surrogate mathvariant="bold-italic" ref="U003F1"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC RHO SYMBOL
         </description>
     </character>
 
     <character id="U1D755" dec="120661" mode="mixed" type="alphabetic">
-        <latex>\mathbit{\varpi}</latex>
+        <latex>\mathbfit{\varpi}</latex>
         <surrogate mathvariant="bold-italic" ref="U003D6"/>
         <description unicode="3.1">MATHEMATICAL BOLD ITALIC PI SYMBOL
         </description>
@@ -44988,7 +44988,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D790" dec="120720" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Alpha}</latex>
+        <latex>\mathsfbfit{\Alpha}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00391"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             ALPHA
@@ -44996,7 +44996,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D791" dec="120721" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Beta}</latex>
+        <latex>\mathsfbfit{\Beta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00392"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             BETA
@@ -45004,7 +45004,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D792" dec="120722" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Gamma}</latex>
+        <latex>\mathsfbfit{\Gamma}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00393"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             GAMMA
@@ -45012,7 +45012,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D793" dec="120723" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Delta}</latex>
+        <latex>\mathsfbfit{\Delta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00394"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             DELTA
@@ -45020,7 +45020,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D794" dec="120724" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Epsilon}</latex>
+        <latex>\mathsfbfit{\Epsilon}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00395"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             EPSILON
@@ -45028,7 +45028,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D795" dec="120725" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Zeta}</latex>
+        <latex>\mathsfbfit{\Zeta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00396"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             ZETA
@@ -45036,7 +45036,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D796" dec="120726" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Eta}</latex>
+        <latex>\mathsfbfit{\Eta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00397"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             ETA
@@ -45044,7 +45044,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D797" dec="120727" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\vartheta}</latex>
+        <latex>\mathsfbfit{\vartheta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00398"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             THETA
@@ -45052,7 +45052,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D798" dec="120728" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Iota}</latex>
+        <latex>\mathsfbfit{\Iota}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U00399"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             IOTA
@@ -45060,7 +45060,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D799" dec="120729" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Kappa}</latex>
+        <latex>\mathsfbfit{\Kappa}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0039A"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             KAPPA
@@ -45068,7 +45068,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D79A" dec="120730" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Lambda}</latex>
+        <latex>\mathsfbfit{\Lambda}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0039B"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             LAMDA
@@ -45092,7 +45092,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D79D" dec="120733" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Xi}</latex>
+        <latex>\mathsfbfit{\Xi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U0039E"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             XI
@@ -45108,7 +45108,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D79F" dec="120735" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Pi}</latex>
+        <latex>\mathsfbfit{\Pi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A0"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             PI
@@ -45116,7 +45116,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A0" dec="120736" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Rho}</latex>
+        <latex>\mathsfbfit{\Rho}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A1"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             RHO
@@ -45124,7 +45124,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A1" dec="120737" mode="mixed" type="other">
-        <latex>\mathsfbfsl{\vartheta}</latex>
+        <latex>\mathsfbfit{\vartheta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003F4"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             THETA SYMBOL
@@ -45132,7 +45132,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A2" dec="120738" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Sigma}</latex>
+        <latex>\mathsfbfit{\Sigma}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A3"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             SIGMA
@@ -45140,7 +45140,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A3" dec="120739" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Tau}</latex>
+        <latex>\mathsfbfit{\Tau}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A4"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             TAU
@@ -45148,7 +45148,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A4" dec="120740" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Upsilon}</latex>
+        <latex>\mathsfbfit{\Upsilon}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A5"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             UPSILON
@@ -45156,7 +45156,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A5" dec="120741" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Phi}</latex>
+        <latex>\mathsfbfit{\Phi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A6"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             PHI
@@ -45164,7 +45164,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A6" dec="120742" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Chi}</latex>
+        <latex>\mathsfbfit{\Chi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A7"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             CHI
@@ -45172,7 +45172,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A7" dec="120743" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Psi}</latex>
+        <latex>\mathsfbfit{\Psi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A8"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             PSI
@@ -45180,7 +45180,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A8" dec="120744" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Omega}</latex>
+        <latex>\mathsfbfit{\Omega}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003A9"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL
             OMEGA
@@ -45188,14 +45188,14 @@ for borrowings from their work
     </character>
 
     <character id="U1D7A9" dec="120745" mode="math" type="normal">
-        <latex>\mathsfbfsl{\nabla}</latex>
+        <latex>\mathsfbfit{\nabla}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U02207"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC NABLA
         </description>
     </character>
 
     <character id="U1D7AA" dec="120746" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Alpha}</latex>
+        <latex>\mathsfbfit{\Alpha}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B1"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             ALPHA
@@ -45203,7 +45203,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7AB" dec="120747" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Beta}</latex>
+        <latex>\mathsfbfit{\Beta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B2"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             BETA
@@ -45211,7 +45211,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7AC" dec="120748" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Gamma}</latex>
+        <latex>\mathsfbfit{\Gamma}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B3"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             GAMMA
@@ -45219,7 +45219,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7AD" dec="120749" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Delta}</latex>
+        <latex>\mathsfbfit{\Delta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B4"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             DELTA
@@ -45227,7 +45227,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7AE" dec="120750" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Epsilon}</latex>
+        <latex>\mathsfbfit{\Epsilon}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B5"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             EPSILON
@@ -45235,7 +45235,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7AF" dec="120751" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Zeta}</latex>
+        <latex>\mathsfbfit{\Zeta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B6"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             ZETA
@@ -45243,7 +45243,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7B0" dec="120752" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Eta}</latex>
+        <latex>\mathsfbfit{\Eta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B7"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             ETA
@@ -45251,7 +45251,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7B1" dec="120753" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\vartheta}</latex>
+        <latex>\mathsfbfit{\vartheta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B8"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             THETA
@@ -45259,7 +45259,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7B2" dec="120754" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Iota}</latex>
+        <latex>\mathsfbfit{\Iota}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003B9"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             IOTA
@@ -45267,7 +45267,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7B3" dec="120755" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Kappa}</latex>
+        <latex>\mathsfbfit{\Kappa}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003BA"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             KAPPA
@@ -45275,7 +45275,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7B4" dec="120756" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Lambda}</latex>
+        <latex>\mathsfbfit{\Lambda}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003BB"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             LAMDA
@@ -45299,7 +45299,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7B7" dec="120759" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Xi}</latex>
+        <latex>\mathsfbfit{\Xi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003BE"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             XI
@@ -45315,7 +45315,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7B9" dec="120761" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Pi}</latex>
+        <latex>\mathsfbfit{\Pi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C0"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             PI
@@ -45323,7 +45323,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7BA" dec="120762" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Rho}</latex>
+        <latex>\mathsfbfit{\Rho}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C1"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             RHO
@@ -45331,7 +45331,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7BB" dec="120763" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\varsigma}</latex>
+        <latex>\mathsfbfit{\varsigma}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C2"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             FINAL SIGMA
@@ -45339,7 +45339,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7BC" dec="120764" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Sigma}</latex>
+        <latex>\mathsfbfit{\Sigma}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C3"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             SIGMA
@@ -45347,7 +45347,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7BD" dec="120765" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Tau}</latex>
+        <latex>\mathsfbfit{\Tau}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C4"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             TAU
@@ -45355,7 +45355,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7BE" dec="120766" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Upsilon}</latex>
+        <latex>\mathsfbfit{\Upsilon}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C5"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             UPSILON
@@ -45363,7 +45363,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7BF" dec="120767" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Phi}</latex>
+        <latex>\mathsfbfit{\Phi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C6"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             PHI
@@ -45371,7 +45371,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7C0" dec="120768" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Chi}</latex>
+        <latex>\mathsfbfit{\Chi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C7"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             CHI
@@ -45379,7 +45379,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7C1" dec="120769" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Psi}</latex>
+        <latex>\mathsfbfit{\Psi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C8"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             PSI
@@ -45387,7 +45387,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7C2" dec="120770" mode="math" type="alphabetic">
-        <latex>\mathsfbfsl{\Omega}</latex>
+        <latex>\mathsfbfit{\Omega}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003C9"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL
             OMEGA
@@ -45411,7 +45411,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7C5" dec="120773" mode="mixed" type="alphabetic">
-        <latex>\mathsfbfsl{\vartheta}</latex>
+        <latex>\mathsfbfit{\vartheta}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003D1"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC THETA
             SYMBOL
@@ -45419,7 +45419,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7C6" dec="120774" mode="mixed" type="alphabetic">
-        <latex>\mathsfbfsl{\varkappa}</latex>
+        <latex>\mathsfbfit{\varkappa}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003F0"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC KAPPA
             SYMBOL
@@ -45427,7 +45427,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7C7" dec="120775" mode="mixed" type="alphabetic">
-        <latex>\mathsfbfsl{\phi}</latex>
+        <latex>\mathsfbfit{\phi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003D5"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC PHI
             SYMBOL
@@ -45435,7 +45435,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7C8" dec="120776" mode="mixed" type="alphabetic">
-        <latex>\mathsfbfsl{\varrho}</latex>
+        <latex>\mathsfbfit{\varrho}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003F1"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC RHO
             SYMBOL
@@ -45443,7 +45443,7 @@ for borrowings from their work
     </character>
 
     <character id="U1D7C9" dec="120777" mode="mixed" type="alphabetic">
-        <latex>\mathsfbfsl{\varpi}</latex>
+        <latex>\mathsfbfit{\varpi}</latex>
         <surrogate mathvariant="sans-serif-bold-italic" ref="U003D6"/>
         <description unicode="3.1">MATHEMATICAL SANS-SERIF BOLD ITALIC PI
             SYMBOL
@@ -45819,5 +45819,4 @@ for borrowings from their work
         <description unicode="3.1">MATHEMATICAL MONOSPACE DIGIT NINE
         </description>
     </character>
-
 </charlist>
